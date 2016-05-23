@@ -1,0 +1,558 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#其它"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#公司"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#漫画"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#制作人">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#歌手">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#院校"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#爱情">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#电影"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#监制">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#科幻">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#电影"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#日本">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#漫画"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#音乐人">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#音乐"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#地区"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#演员">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#喜剧">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#电影"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#动画"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#制片人">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#商人">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#出品人">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#编曲"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#发行"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#好友"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#作者"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#前女友"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#导演">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#学生"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#编写"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#执导"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有编剧">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#毕业于"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#出版在"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#出品公司"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#谱曲"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#主演"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#发行公司"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有演员"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有电影"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#制作"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#出品"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#是"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#连载"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#演唱"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#连载在"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#老师"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主演">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#妻子"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#出演"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#外祖母"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#经纪公司"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#属于"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有制片人">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有导演">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有制片"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#搭档"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#创作"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#出版"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#父亲"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#参演"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#母亲"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#编剧">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主要成就"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有描述"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有URL信息来源"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有imdb编码"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有外文名称"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有上映时间"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有填词"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有制作"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有谱曲"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有职业"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有血型"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有体重"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有星座"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有发行公司"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有片长"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有其他名称"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有出版社"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有英文名称"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有音乐风格"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有色彩"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有歌曲时长"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有官方语言"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有类型"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有简称"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有出品公司"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有原版名称"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有出品时间"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有单行本册数"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有所属洲"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有歌曲原唱"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有代表事物"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有其他出版社"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有制片成本"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有地区"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有picSrc"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有揭载号"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有文化思想"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有民族"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有出生地"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有拍摄地点"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有歧义说明"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有籍贯"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有出生日期"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有连载期间"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有外文名"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有中文名"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有出版期间"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有拍摄日期"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有对白语言"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有作者"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主要宗教"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有国籍"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主要民族"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有制片地区"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有代表人物"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有票房"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有经纪公司"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有丛书系列"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有通用文字"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有代表作品"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有所属专辑"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有别名"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有中文名称"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有身高"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有生肖"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有歌曲语言"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有连载杂志"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有编曲"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有发行时间"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有毕业院校"/>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#ef4e7ba32fa1492ba5d2455c744a36be">
+    <编曲>
+      <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#4a8bb9d98cfb45ca8296389f91e7de21">
+        <有URL信息来源>http://baike.baidu.com/subview/9514/13552337.htm</有URL信息来源>
+        <有歧义说明>周杰伦创作歌曲</有歧义说明>
+        <有谱曲>周杰伦</有谱曲>
+        <有中文名称>美人鱼</有中文名称>
+        <有编曲>林迈可</有编曲>
+        <有歌曲语言>中文</有歌曲语言>
+        <有制作>周杰伦</有制作>
+        <有歌曲时长>3分47秒</有歌曲时长>
+        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#4a8bb9d98cfb45ca8296389f91e7de21"/>
+        <有picSrc>1463073968117618.jpg</有picSrc>
+        <有填词>罗宇轩，黄婕熙</有填词>
+        <有歌曲原唱>周杰伦</有歌曲原唱>
+        <有发行时间>2014年12月26日</有发行时间>
+        <有外文名称>Mermaid</有外文名称>
+        <有音乐风格>流行</有音乐风格>
+        <有所属专辑>《哎呦，不错哦》</有所属专辑>
+        <rdfs:comment>美人鱼</rdfs:comment>
+        <有描述>《美人鱼》是周杰伦演唱的一首歌曲，由周杰伦谱曲，罗宇轩、黄婕熙填词，林迈可编曲，收录在周杰伦2014年12月26日发行的个人第13张国语专辑《哎呦，不错哦》中[1]  。</有描述>
+      </音乐>
+    </编曲>
+    <rdfs:comment>林迈可</rdfs:comment>
+  </拟人>
+  <导演 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#8af94adf4b0e47f983821b0d3041fd44">
+    <搭档>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#6cfc5010316d445db5bff649ee0d18e0">
+        <rdfs:comment>石班瑜</rdfs:comment>
+      </拟人>
+    </搭档>
+    <制作>
+      <爱情 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867">
+        <有票房>¥33.9亿元（中国内地）</有票房>
+        <有制片 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#8af94adf4b0e47f983821b0d3041fd44"/>
+        <有片长>93分钟</有片长>
+        <有对白语言>汉语普通话/粤语</有对白语言>
+        <有主演>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#9411dfd5506341bf99c0fc107cc27566">
+            <参演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <出演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <主演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <有电影 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <rdfs:comment>罗志祥</rdfs:comment>
+          </拟人>
+        </有主演>
+        <有演员>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#22c05b4e5d6743d3a8cdb0b4f41aa614">
+            <参演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <出演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <主演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <有电影 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <rdfs:comment>邓超</rdfs:comment>
+          </拟人>
+        </有演员>
+        <有拍摄地点>深圳、东莞、广州</有拍摄地点>
+        <有上映时间>2016年2月8日</有上映时间>
+        <有外文名>The Mermaid</有外文名>
+        <有类型>爱情/喜剧/科幻</有类型>
+        <rdfs:comment>美人鱼</rdfs:comment>
+        <有演员>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#01f801a61dd74a7dbf71e8f60695ff6b">
+            <参演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <出演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <主演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <有电影 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <rdfs:comment>林允</rdfs:comment>
+          </拟人>
+        </有演员>
+        <有制片成本>3亿</有制片成本>
+        <有编剧>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#99ef05e089294a378e915fffce2e85da">
+            <编剧 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <编写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <rdfs:comment>卢正雨</rdfs:comment>
+          </拟人>
+        </有编剧>
+        <发行公司>
+          <公司 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#74637991a4034e749ce5ed728cbcdc17">
+            <发行 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <rdfs:comment>比高集团</rdfs:comment>
+          </公司>
+        </发行公司>
+        <有imdb编码>tt4701660</有imdb编码>
+        <有主演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#22c05b4e5d6743d3a8cdb0b4f41aa614"/>
+        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+        <发行公司>
+          <公司 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#1742cd72ca5e4c86a5f751c84640d283">
+            <发行 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <rdfs:comment>光线传媒有限公司</rdfs:comment>
+          </公司>
+        </发行公司>
+        <有编剧 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#8af94adf4b0e47f983821b0d3041fd44"/>
+        <有出品时间>2016年</有出品时间>
+        <有编剧>周星驰、李思臻、何妙祺、曾谨昌、卢正雨、江玉仪、冯志强、陈庆嘉</有编剧>
+        <有编剧>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#d2f421e80c834f3d8ebe395bea503825">
+            <编剧 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <编写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <rdfs:comment>江玉仪</rdfs:comment>
+          </拟人>
+        </有编剧>
+        <有导演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#8af94adf4b0e47f983821b0d3041fd44"/>
+        <有演员>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0c417643ad094239b16369d004c4c145">
+            <参演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <出演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <主演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <有电影 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <rdfs:comment>张雨绮</rdfs:comment>
+          </拟人>
+        </有演员>
+        <有URL信息来源>http://baike.baidu.com/subview/9514/15201085.htm</有URL信息来源>
+        <有导演>周星驰</有导演>
+        <有编剧>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#58790508b816400498563291b1cc4088">
+            <编剧 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <编写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <rdfs:comment>陈庆嘉</rdfs:comment>
+          </拟人>
+        </有编剧>
+        <有出品公司>中国电影股份有限公司、星辉海外有限公司、和和(上海)影业有限公司</有出品公司>
+        <有编剧>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#02efca96c2094458ab3f5c2eb20f0718">
+            <编剧 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <编写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <rdfs:comment>曾谨昌</rdfs:comment>
+          </拟人>
+        </有编剧>
+        <出品公司>
+          <公司 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#82c081b4be644a63b587b8480a3f5b8a">
+            <出品 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+            <rdfs:comment>中国电影股份有限公司</rdfs:comment>
+          </公司>
+        </出品公司>
+        <有制片人>周星驰</有制片人>
+        <有主演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0c417643ad094239b16369d004c4c145"/>
+        <有主演>邓超，罗志祥，张雨绮，林允</有主演>
+        <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#科幻"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#喜剧"/>
+        <有色彩>彩色</有色彩>
+        <有主演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#01f801a61dd74a7dbf71e8f60695ff6b"/>
+        <有演员 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#9411dfd5506341bf99c0fc107cc27566"/>
+        <有歧义说明>2016年周星驰执导3D喜剧电影</有歧义说明>
+        <有中文名>美人鱼</有中文名>
+        <有制片人 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#8af94adf4b0e47f983821b0d3041fd44"/>
+        <有描述>《美人鱼》是由周星驰执导，由江玉仪监制的喜剧爱情片，邓超、罗志祥、张雨绮、林允等领衔出演[1]  。 该片讲述了富豪刘轩和为了拯救同族前往刺杀他的美人鱼珊珊坠入爱河，谱写了一段人鱼爱情童话的故事。该片于2016年2月8日在中国上映[2-3]  。</有描述>
+        <有发行公司>比高集团、光线传媒有限公司</有发行公司>
+        <有制片地区>中国大陆、中国香港</有制片地区>
+        <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#电影"/>
+        <有拍摄日期>2014年10月－2015年2月</有拍摄日期>
+      </爱情>
+    </制作>
+    <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#监制"/>
+    <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#8af94adf4b0e47f983821b0d3041fd44"/>
+    <搭档>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#174ec4864ae041808bd8020b691cf607">
+        <rdfs:comment>张敏</rdfs:comment>
+      </拟人>
+    </搭档>
+    <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#商人"/>
+    <执导 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+    <有电影 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+    <有出生地>香港</有出生地>
+    <rdfs:comment>周星驰</rdfs:comment>
+    <owl:sameAs>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#9076b8bac3e941c49734d38e624b8fbf">
+        <rdfs:comment>阿星</rdfs:comment>
+      </拟人>
+    </owl:sameAs>
+    <有代表作品>功夫、少林足球、喜剧之王、食神、大话西游、国产凌凌漆、唐伯虎点秋香、审死官、逃学威龙、赌圣</有代表作品>
+    <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
+    <有别名>星爷、星仔、阿星</有别名>
+    <有主要成就>6次打破香港电影票房纪录 8次获得香港电影年度票房冠军 台湾电影金马奖最佳导演 香港电影金紫荆奖最佳导演 亚洲电影博览会最佳导演 展开 主要成就 6次打破香港电影票房纪录 8次获得香港电影年度票房冠军 台湾电影金马奖最佳导演 香港电影金紫荆奖最佳导演 亚洲电影博览会最佳导演 香港电影评论学会奖最佳男主角 香港电影金紫荆奖最佳男主角 亚太电影节最佳男主角 中国电影百年百位优秀演员 国际杰人会港澳杰人之星 收起</有主要成就>
+    <有血型>O型</有血型>
+    <有毕业院校>无线电视艺员训练班</有毕业院校>
+    <有出生日期>1962年6月22日</有出生日期>
+    <有主要成就>6次打破香港电影票房纪录 8次获得香港电影年度票房冠军 台湾电影金马奖最佳导演 香港电影金紫荆奖最佳导演 亚洲电影博览会最佳导演 香港电影评论学会奖最佳男主角 香港电影金紫荆奖最佳男主角 亚太电影节最佳男主角 中国电影百年百位优秀演员 国际杰人会港澳杰人之星 收起</有主要成就>
+    <owl:sameAs>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#66a639d0cb254fb58066120333571e2c">
+        <rdfs:comment>星爷</rdfs:comment>
+      </拟人>
+    </owl:sameAs>
+    <导演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+    <有外文名>Stephen Chow</有外文名>
+    <有picSrc>1463073956214701.jpg</有picSrc>
+    <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#编剧"/>
+    <有中文名>周星驰</有中文名>
+    <有民族>汉族</有民族>
+    <有身高>174cm</有身高>
+    <有星座>巨蟹座</有星座>
+    <有描述>周星驰，1962年6月22日生于香港，祖籍浙江宁波，中国香港演员、导演、编剧、制作人、商人，毕业于无线电视艺员训练班。 1980年成为丽的电视台的特约演员，从而进入演艺圈。1981年出演个人首部电视剧《IQ成熟时》。1983年成为无线电视台的签约艺员。1988年将演艺事业的重心转向电影；同年出演电影处女作《霹雳先锋》。1990年凭借喜剧片《一本漫画闯天涯》确立其无厘头的表演风格[1]  ；同年凭借喜剧动作片《赌圣》获得关注。1991年主演的喜剧动作片《逃学威龙》打破香港地区的票房纪录[2]  。1995年主演的喜剧爱情片《大话西游》奠定其在华语影坛的地位。1999年自导自演的喜剧片《喜剧之王》获得香港电影年度票房冠军[3]  。 2002年凭借喜剧片《少林足球》获得第21届香港电影金像奖最佳男主角奖以及最佳导演奖[4]  。2003年成为美国《时代周刊》的封面人物[5]  。2004年自导自演的喜剧动作片《功夫》打破香港地区的票房纪录[6]  。2007年自导自演科幻喜剧片《长江7号》获得香港电影年度票房冠军[7]  。2013年执导的古装喜剧片《西游·降魔篇》以2.18亿美元的票房成绩打破华语电影在全球的票房纪录[8-9]  。2015年担任科幻喜剧片《美人鱼》的导演、编剧以及制作人；该片上映以后累积票房超过33亿元，打破华语电影的票房纪录[10-13]  。截至2016年，他主演的电影6次打破香港地区的票房纪录，并有8部电影获得香港年度票房冠军[14]  。 演艺事业外，周星驰还涉足商界。1989年成立星炜有限公司。1996年成立星辉公司。2010年出任比高集团有限公司执行董事[15]  。</有描述>
+    <有经纪公司>星辉公司、比高集团</有经纪公司>
+    <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#出品人"/>
+    <有生肖>虎</有生肖>
+    <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#制片人"/>
+    <有籍贯>浙江宁波</有籍贯>
+    <有国籍>中国</有国籍>
+    <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#演员"/>
+    <编剧 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+    <搭档>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#59d7eb68bf6d4c06aa48cae91119cfa8">
+        <rdfs:comment>吴孟达</rdfs:comment>
+      </拟人>
+    </搭档>
+    <编写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a9e98ccae0fc48d885c636a1e1787867"/>
+    <经纪公司>
+      <公司 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#8147b56153244beda52c361583563127">
+        <rdfs:comment>星辉公司</rdfs:comment>
+      </公司>
+    </经纪公司>
+    <有职业>演员、导演、编剧、监制、制片人、出品人、商人</有职业>
+    <母亲>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#3ff8a38f6e1c431e883e517bc89247f4">
+        <rdfs:comment>凌宝儿</rdfs:comment>
+      </拟人>
+    </母亲>
+    <有体重>70kg</有体重>
+    <有URL信息来源>http://baike.baidu.com/view/5081.htm</有URL信息来源>
+    <经纪公司 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#74637991a4034e749ce5ed728cbcdc17"/>
+    <owl:sameAs>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2b6f99b7880c4641816a9fd03ffbf80d">
+        <rdfs:comment>星仔</rdfs:comment>
+      </拟人>
+    </owl:sameAs>
+  </导演>
+  <日本 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#301445f754f84e8095cc3b2cb5a08914">
+    <有揭载号>1999年43号</有揭载号>
+    <有歧义说明>岸本齐史创作的少年漫画</有歧义说明>
+    <有picSrc>1463073965981876.jpg</有picSrc>
+    <有其他名称>狐忍</有其他名称>
+    <有连载杂志>周刊少年JUMP</有连载杂志>
+    <有单行本册数>全72卷+外传1卷</有单行本册数>
+    <有中文名>火影忍者</有中文名>
+    <出版在>
+      <公司 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#129eefbbca6c4c83963f84ed09b778a3">
+        <出版 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#301445f754f84e8095cc3b2cb5a08914"/>
+        <rdfs:comment>集英社</rdfs:comment>
+      </公司>
+    </出版在>
+    <属于>
+      <地区 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#3c1d6cc5e2c6497eb3a0bea14e210ac1">
+        <rdfs:comment>日本</rdfs:comment>
+      </地区>
+    </属于>
+    <有出版期间>2000年3月3日－2015年2月4日</有出版期间>
+    <rdfs:comment>火影忍者</rdfs:comment>
+    <有描述>《火影忍者》是日本漫画家岸本齐史的代表作，作品于1999年开始在《周刊少年JUMP》上连载，于2014年11月10日发售的JUMP第50号完结；后日谈性质的外传漫画《火影忍者外传：第七代火影与绯色花月》则于同杂志2015年第22、23合并号开始短期连载，至同年第32号完结。 故事成功地将原本隐藏在黑暗中，用世界上最强大的毅力和最艰辛的努力去做最密不可宣和隐讳残酷的事情的忍者，描绘成了太阳下最值得骄傲最光明无限的职业。在岸本齐史笔下的忍者世界中，每一位年轻的忍者都在开拓着属于自己的忍道。</有描述>
+    <有出版社>集英社</有出版社>
+    <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#301445f754f84e8095cc3b2cb5a08914"/>
+    <连载在>
+      <公司 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a367162880404b10be5b21fb49247ff6">
+        <连载 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#301445f754f84e8095cc3b2cb5a08914"/>
+        <rdfs:comment>周刊少年JUMP</rdfs:comment>
+      </公司>
+    </连载在>
+    <有原版名称>NARUTO -ナルト-</有原版名称>
+    <有URL信息来源>http://baike.baidu.com/subview/2321/5786291.htm</有URL信息来源>
+    <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#漫画"/>
+    <有地区>日本</有地区>
+    <有类型>少年漫画</有类型>
+    <作者>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#201ed91deee749d4be66f6a7ad20664a">
+        <创作 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#301445f754f84e8095cc3b2cb5a08914"/>
+        <rdfs:comment>岸本齐史</rdfs:comment>
+      </拟人>
+    </作者>
+    <有连载期间>1999年43号－2014年50号（全700话）</有连载期间>
+    <有作者>岸本齐史</有作者>
+    <有其他出版社>东立出版社（中国台湾） 北京中少动漫发行，连环画出版社出版（中国大陆）</有其他出版社>
+    <有丛书系列>JUMP COMICS</有丛书系列>
+  </日本>
+  <制作人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#cb5030c9eaae42e791422115384cdad0">
+    <母亲>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f6ad8f92fefb422cbec8b1298226f59f">
+        <rdfs:comment>叶惠美</rdfs:comment>
+      </拟人>
+    </母亲>
+    <父亲>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#fff6055576ab42a59f0626d6f4ef2ae5">
+        <rdfs:comment>周耀中</rdfs:comment>
+      </拟人>
+    </父亲>
+    <有描述>周杰伦（Jay Chou），1979年1月18日出生于台湾省新北市，中国台湾流行乐男歌手、音乐人、演员、导演、编剧、监制、商人。 2000年发行首张个人专辑《Jay》。2002年发行的专辑《范特西》奠定其融合中西方音乐的风格。2003年成为美国《时代周刊》的封面人物[1-2]  。2004年获得世界音乐大奖中国最畅销艺人奖[3]  。2005年凭借动作片《头文字D》获得台湾电影金马奖、香港电影金像奖最佳新人奖[4]  。2006年起连续三年获得世界音乐大奖中国最畅销艺人奖[5]  。2007年自编自导的文艺片《不能说的秘密》获得台湾电影金马奖年度台湾杰出电影奖[6]  ；同年获得第18届金曲奖最佳单曲制作人奖[7]  。 2008年凭借歌曲《青花瓷》获得第19届金曲奖最佳作曲人奖[8]  。2009年入选美国CNN评出的“25位亚洲最具影响力的人物”[9]  ；同年凭借专辑《魔杰座》获得第20届金曲奖最佳国语男歌手奖[10]  。2010年入选美国《Fast Company》评出的“全球百大创意人物”[11]  。2011年，在第22届金曲奖颁奖礼中凭借专辑《跨时代》获得最佳国语男歌手奖，并且第4次获得最佳国语专辑奖[12]  ；同年主演好莱坞电影《青蜂侠》[13]  。2012年登福布斯中国名人榜榜首[14]  。2013年自编自导的爱情片《天台爱情》被选为纽约电影节闭幕片[15]  。2015年监制爱情片《一万公里的约定》[16]  。 演艺事业外，他还涉足商业、设计等领域。2007年成立杰威尔有限公司[17]  。2011年担任华硕笔电设计师并入股香港文化传信集团[18-19]  。2012年投资开设真爱范特西连锁KTV[20]  。 周杰伦热心公益慈善，多次向中国内地灾区捐款。2008年捐款援建希望小学[21]  。</有描述>
+    <有别名>周董</有别名>
+    <有中文名>周杰伦</有中文名>
+    <有星座>摩羯座</有星座>
+    <好友>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#060d73152b1046ea9683b0248e9ed166">
+        <rdfs:comment>陈建州</rdfs:comment>
+      </拟人>
+    </好友>
+    <rdfs:comment>周杰伦</rdfs:comment>
+    <有毕业院校>淡江中学</有毕业院校>
+    <有主要成就>获得十五座金曲奖 四届世界音乐大奖最畅销中华区艺人 入选美国CNN亚洲25位最具影响力人物 《Fast Company》全球百大创意人物[22] 大中华区8次年度唱片销量冠军 展开 主要成就 获得十五座金曲奖 四届世界音乐大奖最畅销中华区艺人 入选美国CNN亚洲25位最具影响力人物 《Fast Company》全球百大创意人物[22] 大中华区8次年度唱片销量冠军 2010年MP3下载量全球第三 2009年悉尼演唱会票房公告牌全球第二 两届MTV亚洲大奖最受欢迎艺人 连续7年获得IFPI香港唱片销量大奖十大销量国语唱片 四届新加坡金曲奖最受欢迎男歌手 收起</有主要成就>
+    <有身高>175cm</有身高>
+    <有代表作品>JAY、范特西、八度空间、叶惠美、七里香、头文字D、不能说的秘密、逆战、青蜂侠、天台等</有代表作品>
+    <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#商人"/>
+    <谱曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#4a8bb9d98cfb45ca8296389f91e7de21"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
+    <有职业>歌手、音乐人、制作人、导演、商人</有职业>
+    <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#歌手"/>
+    <有民族>汉族</有民族>
+    <外祖母>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#48d3528deedd4c63baea88d29aff4040">
+        <rdfs:comment>叶詹阿妹</rdfs:comment>
+      </拟人>
+    </外祖母>
+    <有经纪公司>杰威尔音乐有限公司</有经纪公司>
+    <经纪公司>
+      <公司 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#ec8097b6d2ea46048c42f4ef1292c1a5">
+        <rdfs:comment>杰威尔音乐有限公司</rdfs:comment>
+      </公司>
+    </经纪公司>
+    <前女友>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#ca52a90aa59f4d9aa034c1a1c9c6313e">
+        <rdfs:comment>侯佩岑</rdfs:comment>
+      </拟人>
+    </前女友>
+    <有国籍>中国</有国籍>
+    <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#音乐人"/>
+    <有URL信息来源>http://baike.baidu.com/view/2632.htm</有URL信息来源>
+    <有picSrc>1463073951696117.jpg</有picSrc>
+    <老师>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#7ecd5e0b33c646c3b59e8f731c03521a">
+        <rdfs:comment>吴宗宪</rdfs:comment>
+      </拟人>
+    </老师>
+    <好友>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#7cec50ad5e364015b0ba10d37c775bfd">
+        <rdfs:comment>刘畊宏</rdfs:comment>
+      </拟人>
+    </好友>
+    <毕业于>
+      <院校 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#578f7e11507d448791db27193d76b571">
+        <学生 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#cb5030c9eaae42e791422115384cdad0"/>
+        <rdfs:comment>淡江中学</rdfs:comment>
+      </院校>
+    </毕业于>
+    <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#cb5030c9eaae42e791422115384cdad0"/>
+    <有外文名>Jay Chou</有外文名>
+    <有出生日期>1979年1月18日</有出生日期>
+    <有出生地>台湾省新北市</有出生地>
+    <有血型>O型</有血型>
+    <有主要成就>获得十五座金曲奖 四届世界音乐大奖最畅销中华区艺人 入选美国CNN亚洲25位最具影响力人物 《Fast Company》全球百大创意人物[22] 大中华区8次年度唱片销量冠军 2010年MP3下载量全球第三 2009年悉尼演唱会票房公告牌全球第二 两届MTV亚洲大奖最受欢迎艺人 连续7年获得IFPI香港唱片销量大奖十大销量国语唱片 四届新加坡金曲奖最受欢迎男歌手 收起</有主要成就>
+    <妻子>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#90b76d0b67aa4d82926d3d67e09e2cb8">
+        <rdfs:comment>昆凌</rdfs:comment>
+      </拟人>
+    </妻子>
+    <owl:sameAs>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#19c60fb8d01742efafffd49afeb41ab9">
+        <rdfs:comment>周董</rdfs:comment>
+      </拟人>
+    </owl:sameAs>
+    <演唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#4a8bb9d98cfb45ca8296389f91e7de21"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#导演"/>
+  </制作人>
+  <其它 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#be2083ac8b5c4a59b1b316572fc96ed7">
+    <有中文名称>中国</有中文名称>
+    <有URL信息来源>http://baike.baidu.com/subview/61891/14022133.htm</有URL信息来源>
+    <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#be2083ac8b5c4a59b1b316572fc96ed7"/>
+    <有主要民族>汉族</有主要民族>
+    <有描述>中国是以华夏文明为源泉、中华文化为基础并以汉族为主体民族的多民族国家，通用汉语。中国人常以龙的传人、炎黄子孙自居。 中国是世界四大文明古国之一，有着悠久的历史，距今约5000年前，以中原地区为中心开始出现聚落组织进而形成国家，后历经多次民族交融和朝代更迭，直至形成多民族国家的大一统局面。20世纪初辛亥革命后，君主政体退出历史舞台，共和政体建立。1949年中华人民共和国成立后，在中国大陆建立了人民代表大会制度的政体。 中国疆域辽阔、民族众多，先秦时期的华夏族在中原地区繁衍生息，到了汉代通过文化交融使汉族正式成型，奠定了中国主体民族的基础。[1]  后又通过与周边民族的交融，逐步形成统一多民族国家的局面，而人口也不断攀升，宋代中国人口突破一亿[2]  ，清朝时期人口突破四亿[3]  ，到目前中国人口已突破十三亿[4]  。 中国文化渊远流长、博大精深、绚烂多彩，是东亚文化圈的文化宗主国，在世界文化体系内占有重要地位，由于各地的地理位置、自然条件的差异，人文、经济方面也各有特点。而且还有有多彩的民俗文化，传统艺术形式有诗词、戏曲、书法、国画等，而春节、元宵、清明、端午、中秋、重阳等是中国重要的传统节日。</有描述>
+    <rdfs:comment>中国</rdfs:comment>
+    <有代表人物>炎帝、黄帝、孔子、孙中山等</有代表人物>
+    <有picSrc>146307396227250.jpg</有picSrc>
+    <有官方语言>汉语</有官方语言>
+    <有文化思想>诸子百家、汉服文化、唐诗宋词等</有文化思想>
+    <有英文名称>China</有英文名称>
+    <有简称>华、夏</有简称>
+    <有歧义说明>世界四大文明古国之一</有歧义说明>
+    <有通用文字>汉字</有通用文字>
+    <有主要宗教>佛教，道教、儒教、伊斯兰教</有主要宗教>
+    <有代表事物>长城，故宫，龙，凤等</有代表事物>
+    <有所属洲>亚洲</有所属洲>
+    <有picSrc>http://d.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=1a3dfb13b1fd5266a72b3b129323f016/11385343fbf2b21108e572b6cd8065380dd78e7b.jpg</有picSrc>
+  </其它>
+</rdf:RDF>

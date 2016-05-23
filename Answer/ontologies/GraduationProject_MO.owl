@@ -1,0 +1,625 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.semanticweb.org/narutoku/ontologies/2016/2/untitled-ontology-17#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:mymovie-ontology="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#大洋洲">
+    <rdfs:subClassOf>
+      <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#国家"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#非洲">
+    <rdfs:subClassOf>
+      <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#国家"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#南极洲">
+    <rdfs:subClassOf>
+      <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#国家"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#人">
+    <rdfs:comment>人类</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#电影">
+    <rdfs:comment>电影类</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#演员">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#人"/>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#电影"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有电影"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#电影"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#出演"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#北美洲">
+    <rdfs:subClassOf>
+      <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#国家"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#国内公司">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#公司"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#公司">
+    <rdfs:comment>公司类</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#欧洲">
+    <rdfs:subClassOf>
+      <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#国家"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#南美洲">
+    <rdfs:subClassOf>
+      <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#国家"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#国外公司">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#公司"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#亚洲">
+    <rdfs:subClassOf>
+      <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#国家"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有主演">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#演员"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#电影"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有演员"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#拍摄"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有导演">
+    <rdfs:range>
+      <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#导演"/>
+    </rdfs:range>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#电影"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#出演">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#电影"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#人"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有演员"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有演员">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#人"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#电影"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#imdb编码"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#生肖"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#香港票房"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#出品时间"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#子女"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#国籍"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#籍贯"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#播出平台"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#首播时间"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#外文名称"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#上映时间"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#主演">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#电影"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#人"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#出演"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#色彩"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有代表作品"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#主要奖项"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#国际刊号"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#票房"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有出生地点"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有生肖"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#性别"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#在线播放平台"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有民族"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#编剧">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#人"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有职业"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#外文名"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#中文名"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#制片人">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#人"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#类型"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#代表作品"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#分级"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#洗印格式"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#主要成就"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#民族"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#主办单位"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有国籍"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#出品公司"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#家庭成员"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有外文名"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#制片地区"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#血型"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#对白语言"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#制片成本"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#主管单位"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#星座"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#最佳搭档"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有经纪公司"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#类别"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有身高"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#导演">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#电影"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#导演"/>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#电影"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#导演"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#人"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#电影"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有电影"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有导演"/>
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#拍摄"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#语言"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有毕业院校"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#摄制格式"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有出生地"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#官网"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#中文名称"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#主题曲"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#拍摄日期"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有中文名"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#创刊时间"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#毕业院校"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#出生地"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#经纪公司"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#插曲"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#国家">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#集数"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#职业"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#主编"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#体重"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#片长"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#出生日期"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有别名"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有主要成就"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#爱好"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#其它译名"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#拍摄地点"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#字幕"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有血型"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有籍贯"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有体重"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#发行公司"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有星座"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#出版周期"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#幸运数字"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#别名"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#声音"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#身高"/>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有出生日期">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#人"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有性别">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#人"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有年龄">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#人"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#有姓名">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#人"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:ReflexiveProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#是">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:ReflexiveProperty>
+  <mymovie-ontology:演员 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#莫文蔚">
+    <mymovie-ontology:有电影>
+      <mymovie-ontology:电影 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#喜剧之王">
+        <mymovie-ontology:有演员 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#莫文蔚"/>
+        <mymovie-ontology:有演员>
+          <mymovie-ontology:演员 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#周星驰">
+            <mymovie-ontology:出品时间>1993年</mymovie-ontology:出品时间>
+            <mymovie-ontology:其它译名>《凌凌漆大战金枪客》《国产007》</mymovie-ontology:其它译名>
+            <mymovie-ontology:中文名称>时代周刊</mymovie-ontology:中文名称>
+            <mymovie-ontology:其它译名>除魔传奇/三藏伏魔/西游</mymovie-ontology:其它译名>
+            <mymovie-ontology:经纪公司>音华娱乐</mymovie-ontology:经纪公司>
+            <mymovie-ontology:导演>刘镇伟</mymovie-ontology:导演>
+            <mymovie-ontology:上映时间>1999年02月13日</mymovie-ontology:上映时间>
+            <mymovie-ontology:导演>周星驰，李力持</mymovie-ontology:导演>
+            <mymovie-ontology:首播时间>1981年6月8日</mymovie-ontology:首播时间>
+            <mymovie-ontology:中文名>少林足球</mymovie-ontology:中文名>
+            <mymovie-ontology:主演>邓超，林允，张雨绮，罗志祥</mymovie-ontology:主演>
+            <mymovie-ontology:主演>周星驰，莫文蔚，张柏芝，吴孟达，林子善，田启文，李兆基，成龙</mymovie-ontology:主演>
+            <mymovie-ontology:主要奖项>第24届香港电影金像奖最佳影片 第42届台湾电影金马奖最佳剧情片 第42届台湾电影金马奖最佳导演 第11届美国评论家选择奖最佳外语片 第63届美国金球奖最佳外语片提名</mymovie-ontology:主要奖项>
+            <mymovie-ontology:片长>93分钟</mymovie-ontology:片长>
+            <mymovie-ontology:外文名>A Chinese Odyssey</mymovie-ontology:外文名>
+            <mymovie-ontology:主演>周星驰，吴孟达，张敏，吴君如</mymovie-ontology:主演>
+            <mymovie-ontology:外文名>Kung Fu Hustle</mymovie-ontology:外文名>
+            <mymovie-ontology:出生日期>1940年</mymovie-ontology:出生日期>
+            <mymovie-ontology:制片人>韩三平，周星驰</mymovie-ontology:制片人>
+            <mymovie-ontology:出品时间>1996</mymovie-ontology:出品时间>
+            <mymovie-ontology:制片成本>3亿</mymovie-ontology:制片成本>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+            <mymovie-ontology:创刊时间>1923年3月3日</mymovie-ontology:创刊时间>
+            <mymovie-ontology:编剧>周星驰、谷德昭、李力持</mymovie-ontology:编剧>
+            <mymovie-ontology:发行公司>寰亚综艺集团</mymovie-ontology:发行公司>
+            <mymovie-ontology:票房>内地：1.73亿 香港：61278697</mymovie-ontology:票房>
+            <mymovie-ontology:导演>元奎，刘镇伟</mymovie-ontology:导演>
+            <mymovie-ontology:有别名>星爷、星仔、阿星</mymovie-ontology:有别名>
+            <mymovie-ontology:别名>星爷、星仔、阿星</mymovie-ontology:别名>
+            <mymovie-ontology:主要成就>6次打破香港电影票房纪录 8次获得香港电影年度票房冠军 台湾电影金马奖最佳导演 香港电影金紫荆奖最佳导演 亚洲电影博览会最佳导演 香港电影评论学会奖最佳男主角 香港电影金紫荆奖最佳男主角 亚太电影节最佳男主角 中国电影百年百位优秀演员 国际杰人会港澳杰人之星 收起</mymovie-ontology:主要成就>
+            <mymovie-ontology:票房>$15,149,253.00</mymovie-ontology:票房>
+            <mymovie-ontology:外文名>The God of Cookery</mymovie-ontology:外文名>
+            <mymovie-ontology:制片人>霍惠萍</mymovie-ontology:制片人>
+            <mymovie-ontology:对白语言>粤语，普通话</mymovie-ontology:对白语言>
+            <mymovie-ontology:制片人>萧若元，向华强，向华胜</mymovie-ontology:制片人>
+            <mymovie-ontology:类型>家庭，喜剧，科幻，剧情，奇幻</mymovie-ontology:类型>
+            <mymovie-ontology:别名>石仁茂</mymovie-ontology:别名>
+            <mymovie-ontology:有民族>汉族</mymovie-ontology:有民族>
+            <mymovie-ontology:主要成就>1990年香港年度票房冠军</mymovie-ontology:主要成就>
+            <mymovie-ontology:外文名>JUSTICE,MY FOOT!</mymovie-ontology:外文名>
+            <mymovie-ontology:中文名>一本漫画闯天涯</mymovie-ontology:中文名>
+            <mymovie-ontology:拍摄地点>中国内地</mymovie-ontology:拍摄地点>
+            <mymovie-ontology:编剧>周星驰、李思臻、何妙祺、曾谨昌、卢正雨、江玉仪、冯志强、陈庆嘉</mymovie-ontology:编剧>
+            <mymovie-ontology:片长>102分钟</mymovie-ontology:片长>
+            <mymovie-ontology:导演>黄柏文</mymovie-ontology:导演>
+            <mymovie-ontology:编剧>何东，左颂升，梁家仁</mymovie-ontology:编剧>
+            <mymovie-ontology:制片人>詹伟伟</mymovie-ontology:制片人>
+            <mymovie-ontology:imdb编码>第一部tt0112778，第二部tt0114996</mymovie-ontology:imdb编码>
+            <mymovie-ontology:其它译名>威龙闯天关</mymovie-ontology:其它译名>
+            <mymovie-ontology:上映时间>1988/6/13-1988/7/13（香港）</mymovie-ontology:上映时间>
+            <mymovie-ontology:票房>2.18亿美元</mymovie-ontology:票房>
+            <mymovie-ontology:代表作品>功夫、少林足球、喜剧之王、食神、大话西游、国产凌凌漆、唐伯虎点秋香、审死官、逃学威龙、赌圣</mymovie-ontology:代表作品>
+            <mymovie-ontology:最佳搭档>周星驰</mymovie-ontology:最佳搭档>
+            <mymovie-ontology:生肖>龙</mymovie-ontology:生肖>
+            <mymovie-ontology:国际刊号>0040-781X</mymovie-ontology:国际刊号>
+            <mymovie-ontology:出生日期>1962年6月22日</mymovie-ontology:出生日期>
+            <mymovie-ontology:外文名>Chang Jiang Qi Hao</mymovie-ontology:外文名>
+            <mymovie-ontology:身高>174cm</mymovie-ontology:身高>
+            <mymovie-ontology:外文名>From China with Love，From Beijing with Love</mymovie-ontology:外文名>
+            <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#导演"/>
+            <mymovie-ontology:主演>周星驰，赵薇，吴孟达，谢贤，林子聪，曹华</mymovie-ontology:主演>
+            <mymovie-ontology:导演>周星驰,郭子健</mymovie-ontology:导演>
+            <mymovie-ontology:出品公司>浚升影业公司</mymovie-ontology:出品公司>
+            <mymovie-ontology:血型>A型</mymovie-ontology:血型>
+            <mymovie-ontology:片长>110分钟</mymovie-ontology:片长>
+            <mymovie-ontology:制片人>元奎，刘镇伟</mymovie-ontology:制片人>
+            <mymovie-ontology:发行公司>安乐影片</mymovie-ontology:发行公司>
+            <mymovie-ontology:中文名>唐伯虎点秋香</mymovie-ontology:中文名>
+            <mymovie-ontology:编剧>周星驰、谷德昭 、曾谨昌</mymovie-ontology:编剧>
+            <mymovie-ontology:分级>Hong Kong：II</mymovie-ontology:分级>
+            <mymovie-ontology:出品时间>1988年</mymovie-ontology:出品时间>
+            <mymovie-ontology:出生地>台湾</mymovie-ontology:出生地>
+            <mymovie-ontology:拍摄日期>2011年3月-2011年7月10日</mymovie-ontology:拍摄日期>
+            <mymovie-ontology:分级>IIA（港）、普（台）</mymovie-ontology:分级>
+            <mymovie-ontology:出品时间>1990年</mymovie-ontology:出品时间>
+            <mymovie-ontology:票房>4132万</mymovie-ontology:票房>
+            <mymovie-ontology:在线播放平台>优酷、爱奇艺等</mymovie-ontology:在线播放平台>
+            <mymovie-ontology:出品公司>华谊兄弟</mymovie-ontology:出品公司>
+            <mymovie-ontology:主管单位>时代华纳</mymovie-ontology:主管单位>
+            <mymovie-ontology:中文名>美人鱼</mymovie-ontology:中文名>
+            <mymovie-ontology:身高>175cm</mymovie-ontology:身高>
+            <mymovie-ontology:有出生地点>香港</mymovie-ontology:有出生地点>
+            <mymovie-ontology:出品时间>2013年</mymovie-ontology:出品时间>
+            <mymovie-ontology:声音>立体声</mymovie-ontology:声音>
+            <mymovie-ontology:出品公司>嘉峰电影有限公司</mymovie-ontology:出品公司>
+            <mymovie-ontology:出生地>香港</mymovie-ontology:出生地>
+            <mymovie-ontology:体重>86kg</mymovie-ontology:体重>
+            <mymovie-ontology:片长>101分钟</mymovie-ontology:片长>
+            <mymovie-ontology:身高>166CM</mymovie-ontology:身高>
+            <mymovie-ontology:外文名>Sharla Cheung</mymovie-ontology:外文名>
+            <mymovie-ontology:是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#周星驰"/>
+            <mymovie-ontology:制片地区>中国香港</mymovie-ontology:制片地区>
+            <owl:sameAs>
+              <owl:NamedIndividual rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#星仔"/>
+            </owl:sameAs>
+            <mymovie-ontology:出生日期>1968年02月07日</mymovie-ontology:出生日期>
+            <mymovie-ontology:发行公司>哥伦比亚电影公司（亚洲）</mymovie-ontology:发行公司>
+            <mymovie-ontology:有国籍>中国</mymovie-ontology:有国籍>
+            <mymovie-ontology:对白语言>粤语</mymovie-ontology:对白语言>
+            <mymovie-ontology:外文名>Flirting Scholar</mymovie-ontology:外文名>
+            <mymovie-ontology:国家>美国</mymovie-ontology:国家>
+            <mymovie-ontology:上映时间>1994年9月17日 香港</mymovie-ontology:上映时间>
+            <mymovie-ontology:类型>喜剧，动作</mymovie-ontology:类型>
+            <mymovie-ontology:发行公司>德宝影片有限公司</mymovie-ontology:发行公司>
+            <mymovie-ontology:家庭成员>父母、一弟</mymovie-ontology:家庭成员>
+            <mymovie-ontology:有主要成就>6次打破香港电影票房纪录 8次获得香港电影年度票房冠军 台湾电影金马奖最佳导演 香港电影金紫荆奖最佳导演 亚洲电影博览会最佳导演 展开 主要成就 6次打破香港电影票房纪录 8次获得香港电影年度票房冠军 台湾电影金马奖最佳导演 香港电影金紫荆奖最佳导演 亚洲电影博览会最佳导演 香港电影评论学会奖最佳男主角 香港电影金紫荆奖最佳男主角 亚太电影节最佳男主角 中国电影百年百位优秀演员 国际杰人会港澳杰人之星 收起</mymovie-ontology:有主要成就>
+            <mymovie-ontology:发行公司>米拉麦克斯公司（美国）</mymovie-ontology:发行公司>
+            <mymovie-ontology:主演>文章，舒淇，黄渤，罗志祥</mymovie-ontology:主演>
+            <mymovie-ontology:有外文名>Stephen Chow</mymovie-ontology:有外文名>
+            <mymovie-ontology:票房>$42776760美元</mymovie-ontology:票房>
+            <mymovie-ontology:制片地区>中国大陆、中国香港</mymovie-ontology:制片地区>
+            <mymovie-ontology:片长>89分钟Japan: 90 分钟 / USA: 89 分钟</mymovie-ontology:片长>
+            <mymovie-ontology:中文名>喜剧之王</mymovie-ontology:中文名>
+            <mymovie-ontology:出生地>福建厦门</mymovie-ontology:出生地>
+            <mymovie-ontology:中文名>吴孟达</mymovie-ontology:中文名>
+            <mymovie-ontology:出品公司>彩星电影公司</mymovie-ontology:出品公司>
+            <mymovie-ontology:中文名>审死官</mymovie-ontology:中文名>
+            <mymovie-ontology:类型>喜剧/动作</mymovie-ontology:类型>
+            <mymovie-ontology:外文名称>Time</mymovie-ontology:外文名称>
+            <mymovie-ontology:生肖>虎</mymovie-ontology:生肖>
+            <mymovie-ontology:主要成就>6次打破香港电影票房纪录 8次获得香港电影年度票房冠军 台湾电影金马奖最佳导演 香港电影金紫荆奖最佳导演 亚洲电影博览会最佳导演 展开 主要成就 6次打破香港电影票房纪录 8次获得香港电影年度票房冠军 台湾电影金马奖最佳导演 香港电影金紫荆奖最佳导演 亚洲电影博览会最佳导演 香港电影评论学会奖最佳男主角 香港电影金紫荆奖最佳男主角 亚太电影节最佳男主角 中国电影百年百位优秀演员 国际杰人会港澳杰人之星 收起</mymovie-ontology:主要成就>
+            <mymovie-ontology:类型>青春爱情广东话轻喜剧</mymovie-ontology:类型>
+            <mymovie-ontology:有代表作品>功夫、少林足球、喜剧之王、食神、大话西游、国产凌凌漆、唐伯虎点秋香、审死官、逃学威龙、赌圣</mymovie-ontology:有代表作品>
+            <mymovie-ontology:上映时间>1996年12月21日</mymovie-ontology:上映时间>
+            <mymovie-ontology:性别>男</mymovie-ontology:性别>
+            <mymovie-ontology:主要奖项>香港电影金像奖最佳男主角、最佳男配角提名[2]</mymovie-ontology:主要奖项>
+            <mymovie-ontology:外文名>All for the Winner</mymovie-ontology:外文名>
+            <mymovie-ontology:国籍>中国</mymovie-ontology:国籍>
+            <mymovie-ontology:出版周期>周刊</mymovie-ontology:出版周期>
+            <mymovie-ontology:有姓名>周星驰</mymovie-ontology:有姓名>
+            <mymovie-ontology:主题曲>求神</mymovie-ontology:主题曲>
+            <mymovie-ontology:语言>英语</mymovie-ontology:语言>
+            <mymovie-ontology:籍贯>浙江宁波</mymovie-ontology:籍贯>
+            <mymovie-ontology:集数>20集</mymovie-ontology:集数>
+            <mymovie-ontology:语言>德语意大利语阿拉伯语等几十版本</mymovie-ontology:语言>
+            <mymovie-ontology:中文名>国产凌凌漆</mymovie-ontology:中文名>
+            <mymovie-ontology:体重>49KG</mymovie-ontology:体重>
+            <mymovie-ontology:色彩>彩色</mymovie-ontology:色彩>
+            <mymovie-ontology:有出生日期>1962年6月22日</mymovie-ontology:有出生日期>
+            <mymovie-ontology:片长>113分钟</mymovie-ontology:片长>
+            <mymovie-ontology:毕业院校>亚洲电视艺员训练班</mymovie-ontology:毕业院校>
+            <mymovie-ontology:对白语言>粤语，普通话，闽南语</mymovie-ontology:对白语言>
+            <mymovie-ontology:毕业院校>无线电视艺员培训班</mymovie-ontology:毕业院校>
+            <mymovie-ontology:经纪公司>星辉公司、比高集团</mymovie-ontology:经纪公司>
+            <mymovie-ontology:导演>梁家仁</mymovie-ontology:导演>
+            <mymovie-ontology:票房>$40,171,033.00</mymovie-ontology:票房>
+            <mymovie-ontology:星座>摩羯座</mymovie-ontology:星座>
+            <mymovie-ontology:类型>喜剧，剧情，动作</mymovie-ontology:类型>
+            <mymovie-ontology:外文名>Fight Back to School</mymovie-ontology:外文名>
+            <mymovie-ontology:类型>剧情，喜剧，爱情</mymovie-ontology:类型>
+            <mymovie-ontology:对白语言>国语，粤语</mymovie-ontology:对白语言>
+            <mymovie-ontology:主演>蔡枫华，钟保罗，邓蔼霖，庄静而</mymovie-ontology:主演>
+            <mymovie-ontology:编剧>曾谨昌，周星驰</mymovie-ontology:编剧>
+            <owl:sameAs>
+              <owl:NamedIndividual rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#阿星"/>
+            </owl:sameAs>
+            <mymovie-ontology:主演>周星驰，莫文蔚，刘以达，吴孟达，薛家燕，谷德昭，李兆基</mymovie-ontology:主演>
+            <mymovie-ontology:主演>周星驰，巩俐，陈百祥，朱咪咪，郑佩佩，吴镇宇，黄一山</mymovie-ontology:主演>
+            <mymovie-ontology:编剧>周星驰、曾谨昌、霍昕、陈文强</mymovie-ontology:编剧>
+            <mymovie-ontology:出演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#喜剧之王"/>
+            <mymovie-ontology:上映时间>1990年8月18日</mymovie-ontology:上映时间>
+            <mymovie-ontology:职业>演员；编剧</mymovie-ontology:职业>
+            <mymovie-ontology:籍贯>上海人，童年随父母移居香港</mymovie-ontology:籍贯>
+            <mymovie-ontology:出品公司>中国电影集团公司</mymovie-ontology:出品公司>
+            <mymovie-ontology:对白语言>普通话，粤语</mymovie-ontology:对白语言>
+            <mymovie-ontology:主要成就>1999年年度票房冠军</mymovie-ontology:主要成就>
+            <mymovie-ontology:imdb编码>tt0126301</mymovie-ontology:imdb编码>
+            <mymovie-ontology:编剧>邵丽琼</mymovie-ontology:编剧>
+            <mymovie-ontology:主办单位>时代华纳</mymovie-ontology:主办单位>
+            <mymovie-ontology:有血型>O型</mymovie-ontology:有血型>
+            <mymovie-ontology:票房>¥33.9亿元[4]</mymovie-ontology:票房>
+            <mymovie-ontology:片长>84 min</mymovie-ontology:片长>
+            <mymovie-ontology:imdb编码>tt4701660</mymovie-ontology:imdb编码>
+            <mymovie-ontology:出品公司>中国电影股份有限公司、星辉海外有限公司、和和(上海)影业有限公司</mymovie-ontology:出品公司>
+            <mymovie-ontology:有经纪公司>星辉公司、比高集团</mymovie-ontology:有经纪公司>
+            <mymovie-ontology:血型>O型</mymovie-ontology:血型>
+            <mymovie-ontology:中文名>逃学威龙</mymovie-ontology:中文名>
+            <mymovie-ontology:上映时间>1991年7月18日</mymovie-ontology:上映时间>
+            <mymovie-ontology:导演>周星驰 、李力持</mymovie-ontology:导演>
+            <mymovie-ontology:制片人>胡素玲</mymovie-ontology:制片人>
+            <mymovie-ontology:编剧>冯瑞熊</mymovie-ontology:编剧>
+            <mymovie-ontology:主演>周星驰，黄圣依，陈国坤，元华，元秋</mymovie-ontology:主演>
+            <mymovie-ontology:上映时间>1990年3月22日</mymovie-ontology:上映时间>
+            <mymovie-ontology:拍摄日期>2000年</mymovie-ontology:拍摄日期>
+            <mymovie-ontology:出生地>上海</mymovie-ontology:出生地>
+            <mymovie-ontology:有星座>巨蟹座</mymovie-ontology:有星座>
+            <mymovie-ontology:片长>116分钟</mymovie-ontology:片长>
+            <mymovie-ontology:主要成就>第10届香港电影金像奖最佳男配角</mymovie-ontology:主要成就>
+            <mymovie-ontology:外文名>Shaolin Soccer</mymovie-ontology:外文名>
+            <mymovie-ontology:出品时间>2004年</mymovie-ontology:出品时间>
+            <mymovie-ontology:拍摄地点>中国香港</mymovie-ontology:拍摄地点>
+            <mymovie-ontology:类型>喜剧</mymovie-ontology:类型>
+            <mymovie-ontology:导演>陈嘉上</mymovie-ontology:导演>
+            <mymovie-ontology:上映时间>2008年1月30日</mymovie-ontology:上映时间>
+            <mymovie-ontology:编剧>陈文强，谷德昭，李力持</mymovie-ontology:编剧>
+            <mymovie-ontology:出品公司>永盛电影制作有限公司</mymovie-ontology:出品公司>
+            <mymovie-ontology:香港票房>9,916,612港元</mymovie-ontology:香港票房>
+            <mymovie-ontology:类型>古装，喜剧，爱情</mymovie-ontology:类型>
+            <mymovie-ontology:imdb编码>tt2017561</mymovie-ontology:imdb编码>
+            <mymovie-ontology:编剧>技安（刘镇伟）</mymovie-ontology:编剧>
+            <mymovie-ontology:其它译名>卧底神探</mymovie-ontology:其它译名>
+            <mymovie-ontology:对白语言>粤语/国语</mymovie-ontology:对白语言>
+            <mymovie-ontology:制片人>周星驰，王中磊，韩三平</mymovie-ontology:制片人>
+            <mymovie-ontology:出品时间>1999年</mymovie-ontology:出品时间>
+            <mymovie-ontology:拍摄日期>1994年七八月间</mymovie-ontology:拍摄日期>
+            <mymovie-ontology:imdb编码>0940709</mymovie-ontology:imdb编码>
+            <mymovie-ontology:外文名>Final Justice</mymovie-ontology:外文名>
+            <mymovie-ontology:发行公司>哥伦比亚电影公司</mymovie-ontology:发行公司>
+            <mymovie-ontology:导演>
+              <mymovie-ontology:电影 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#美人鱼">
+                <mymovie-ontology:有导演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#周星驰"/>
+                <mymovie-ontology:是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#美人鱼"/>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+              </mymovie-ontology:电影>
+            </mymovie-ontology:导演>
+            <mymovie-ontology:爱好>运动、扮靓</mymovie-ontology:爱好>
+            <mymovie-ontology:对白语言>汉语普通话/粤语</mymovie-ontology:对白语言>
+            <mymovie-ontology:主要奖项>第25届台湾电影金马奖最佳男配角奖</mymovie-ontology:主要奖项>
+            <mymovie-ontology:中文名>赌圣[3]</mymovie-ontology:中文名>
+            <mymovie-ontology:上映时间>1992年7月2日</mymovie-ontology:上映时间>
+            <owl:sameAs>
+              <owl:NamedIndividual rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#星爷"/>
+            </owl:sameAs>
+            <mymovie-ontology:上映时间>2001年7月5日</mymovie-ontology:上映时间>
+            <mymovie-ontology:中文名>张敏</mymovie-ontology:中文名>
+            <mymovie-ontology:中文名>石班瑜</mymovie-ontology:中文名>
+            <mymovie-ontology:上映时间>1993年07月01日</mymovie-ontology:上映时间>
+            <mymovie-ontology:出品时间>2016年</mymovie-ontology:出品时间>
+            <mymovie-ontology:有中文名>周星驰</mymovie-ontology:有中文名>
+            <mymovie-ontology:类型>喜剧/奇幻/冒险</mymovie-ontology:类型>
+            <mymovie-ontology:编剧>周星驰,郭子健,霍昕,王芸,冯志强,卢正雨,李尚正,江玉仪</mymovie-ontology:编剧>
+            <mymovie-ontology:票房>$43,829,449.00</mymovie-ontology:票房>
+            <mymovie-ontology:票房>$49,884,734.00</mymovie-ontology:票房>
+            <mymovie-ontology:制片成本>2000万美元</mymovie-ontology:制片成本>
+            <mymovie-ontology:拍摄日期>2014年10月－2015年2月</mymovie-ontology:拍摄日期>
+            <mymovie-ontology:主演>周星驰，林俊贤，成奎安，袁和平，梁家仁，柏安妮</mymovie-ontology:主演>
+            <mymovie-ontology:中文名>功夫</mymovie-ontology:中文名>
+            <mymovie-ontology:有电影 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#喜剧之王"/>
+            <mymovie-ontology:别名>星妈（周星驰粉丝对其的爱称）</mymovie-ontology:别名>
+            <mymovie-ontology:有主要成就>6次打破香港电影票房纪录 8次获得香港电影年度票房冠军 台湾电影金马奖最佳导演 香港电影金紫荆奖最佳导演 亚洲电影博览会最佳导演 香港电影评论学会奖最佳男主角 香港电影金紫荆奖最佳男主角 亚太电影节最佳男主角 中国电影百年百位优秀演员 国际杰人会港澳杰人之星 收起</mymovie-ontology:有主要成就>
+            <mymovie-ontology:类型>爱情，动作，奇幻 ，冒险，喜剧，悲剧</mymovie-ontology:类型>
+            <mymovie-ontology:职业>演员</mymovie-ontology:职业>
+            <mymovie-ontology:分级>ⅡB</mymovie-ontology:分级>
+            <mymovie-ontology:主演>周星驰，吴孟达，张敏</mymovie-ontology:主演>
+            <mymovie-ontology:主演>李修贤，周星驰，成奎安，卢惠光</mymovie-ontology:主演>
+            <mymovie-ontology:类型>动作</mymovie-ontology:类型>
+            <mymovie-ontology:有身高>174cm</mymovie-ontology:有身高>
+            <mymovie-ontology:外文名>My Hero</mymovie-ontology:外文名>
+            <mymovie-ontology:拍摄地点>深圳、东莞、广州</mymovie-ontology:拍摄地点>
+            <mymovie-ontology:出品时间>1994年</mymovie-ontology:出品时间>
+            <mymovie-ontology:上映时间>1995年1月21日，1995年2月4日，2014年10月24日（大陆重映）</mymovie-ontology:上映时间>
+            <mymovie-ontology:片长>96分钟</mymovie-ontology:片长>
+            <mymovie-ontology:代表作品>赌侠、极道学园</mymovie-ontology:代表作品>
+            <mymovie-ontology:插曲>三笑、画观音</mymovie-ontology:插曲>
+            <mymovie-ontology:在线播放平台>腾讯、优酷、爱奇艺</mymovie-ontology:在线播放平台>
+            <mymovie-ontology:编剧>刘镇伟，吴思远</mymovie-ontology:编剧>
+            <mymovie-ontology:中文名>《长江7号》</mymovie-ontology:中文名>
+            <mymovie-ontology:主编>理查德·斯坦格尔</mymovie-ontology:主编>
+            <mymovie-ontology:主演>周星驰，梅艳芳，吴家丽，吴孟达，秦沛，黄一飞</mymovie-ontology:主演>
+            <mymovie-ontology:上映时间>2016年2月8日</mymovie-ontology:上映时间>
+            <mymovie-ontology:上映时间>2013年02月10日(中国大陆)</mymovie-ontology:上映时间>
+            <mymovie-ontology:中文名>周星驰</mymovie-ontology:中文名>
+            <mymovie-ontology:有生肖>虎</mymovie-ontology:有生肖>
+            <mymovie-ontology:外文名>Ng Man Tat</mymovie-ontology:外文名>
+            <mymovie-ontology:片长>第一部96min，第二部105min</mymovie-ontology:片长>
+            <mymovie-ontology:官网>http://time.com/</mymovie-ontology:官网>
+            <mymovie-ontology:主演>周星驰，吴孟达，朱茵，莫文蔚，蓝洁瑛，罗家英，刘镇伟，蔡少芬，江约诚，陆树铭，吴珏瑾</mymovie-ontology:主演>
+            <mymovie-ontology:主演>周星驰，袁咏仪，罗家英，陈宝莲，黄锦江，郑祖</mymovie-ontology:主演>
+            <mymovie-ontology:制片人>冯志伟,陈克文</mymovie-ontology:制片人>
+            <mymovie-ontology:有毕业院校>无线电视艺员训练班</mymovie-ontology:有毕业院校>
+            <mymovie-ontology:片长>87分钟</mymovie-ontology:片长>
+            <mymovie-ontology:代表作品>《鹿鼎记》、《新精武门》、《九品芝麻官》、《赌神》</mymovie-ontology:代表作品>
+            <mymovie-ontology:上映时间>2004年12月23日（中国大陆）2015年1月15日重映[1]</mymovie-ontology:上映时间>
+            <mymovie-ontology:外文名>King of comedy</mymovie-ontology:外文名>
+            <mymovie-ontology:体重>70kg</mymovie-ontology:体重>
+            <mymovie-ontology:分级>Hong Kong:II</mymovie-ontology:分级>
+            <mymovie-ontology:导演>周星驰</mymovie-ontology:导演>
+            <mymovie-ontology:拍摄地点>香港</mymovie-ontology:拍摄地点>
+            <mymovie-ontology:出生日期>1953年01月02日</mymovie-ontology:出生日期>
+            <mymovie-ontology:制片地区>香港</mymovie-ontology:制片地区>
+            <mymovie-ontology:中文名>西游：降魔篇</mymovie-ontology:中文名>
+            <mymovie-ontology:民族>汉族</mymovie-ontology:民族>
+            <mymovie-ontology:职业>演员、导演、编剧、监制、制片人、出品人、商人</mymovie-ontology:职业>
+            <mymovie-ontology:生肖>猴</mymovie-ontology:生肖>
+            <mymovie-ontology:字幕>中英文</mymovie-ontology:字幕>
+            <mymovie-ontology:有性别>男</mymovie-ontology:有性别>
+            <mymovie-ontology:别名>达叔</mymovie-ontology:别名>
+            <mymovie-ontology:主演>周星驰，徐娇，张雨绮，林子聪</mymovie-ontology:主演>
+            <mymovie-ontology:幸运数字>4、7</mymovie-ontology:幸运数字>
+            <mymovie-ontology:编剧>周星驰、曾谨昌、冯勉恒、冯志强、卢薇</mymovie-ontology:编剧>
+            <mymovie-ontology:出品公司>大都会电影制作有限公司</mymovie-ontology:出品公司>
+            <mymovie-ontology:导演>杜琪峰</mymovie-ontology:导演>
+            <mymovie-ontology:对白语言>粤语、普通话</mymovie-ontology:对白语言>
+            <mymovie-ontology:摄制格式>35mm</mymovie-ontology:摄制格式>
+            <mymovie-ontology:主要成就>1991年度票房冠军</mymovie-ontology:主要成就>
+            <mymovie-ontology:子女>周星驰、周文姬、周星霞</mymovie-ontology:子女>
+            <mymovie-ontology:类型>爱情/喜剧/科幻</mymovie-ontology:类型>
+            <mymovie-ontology:imdb编码>tt0104147</mymovie-ontology:imdb编码>
+            <mymovie-ontology:片长>120分钟</mymovie-ontology:片长>
+            <mymovie-ontology:洗印格式>35mm</mymovie-ontology:洗印格式>
+            <mymovie-ontology:发行公司>比高集团、光线传媒有限公司</mymovie-ontology:发行公司>
+            <mymovie-ontology:导演>周星驰、李力持</mymovie-ontology:导演>
+            <mymovie-ontology:中文名>食神</mymovie-ontology:中文名>
+            <mymovie-ontology:外文名>The Mermaid</mymovie-ontology:外文名>
+            <mymovie-ontology:毕业院校>无线电视艺员训练班</mymovie-ontology:毕业院校>
+            <mymovie-ontology:出生日期>1961年</mymovie-ontology:出生日期>
+            <mymovie-ontology:出品公司>比高,文化中国,华谊兄弟,威秀,安乐,中影</mymovie-ontology:出品公司>
+            <mymovie-ontology:出品公司>万能影业有限公司</mymovie-ontology:出品公司>
+            <mymovie-ontology:主要奖项>提名香港电影金像奖最佳新演员[2]</mymovie-ontology:主要奖项>
+            <mymovie-ontology:编剧>周星驰，谷德昭，曾谨昌等</mymovie-ontology:编剧>
+            <mymovie-ontology:出生地>广东宝安县</mymovie-ontology:出生地>
+            <mymovie-ontology:中文名>霹雳先锋</mymovie-ontology:中文名>
+            <mymovie-ontology:分级>USA:R</mymovie-ontology:分级>
+            <mymovie-ontology:出品时间>1980年</mymovie-ontology:出品时间>
+            <mymovie-ontology:对白语言>粤语，英语，普通话</mymovie-ontology:对白语言>
+            <mymovie-ontology:有出生地>香港</mymovie-ontology:有出生地>
+            <mymovie-ontology:职业>影视配音演员</mymovie-ontology:职业>
+            <mymovie-ontology:出品时间>2001年</mymovie-ontology:出品时间>
+            <mymovie-ontology:类型>喜剧，爱情，动作</mymovie-ontology:类型>
+            <mymovie-ontology:主要成就>拍过近70部影视剧 第11届香港电影金像奖最佳女主角 香港电影金龙奖“最有前途新人奖 香港十大性感美女" 之一</mymovie-ontology:主要成就>
+            <mymovie-ontology:制片成本>2500万港元</mymovie-ontology:制片成本>
+            <mymovie-ontology:片长>95分钟</mymovie-ontology:片长>
+            <mymovie-ontology:播出平台>百度影音</mymovie-ontology:播出平台>
+            <mymovie-ontology:有导演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#喜剧之王"/>
+            <mymovie-ontology:类别>新闻杂志</mymovie-ontology:类别>
+            <mymovie-ontology:代表作品>逃学威龙、武状元苏乞儿、大话西游、九岁县太爷、少林足球</mymovie-ontology:代表作品>
+            <mymovie-ontology:星座>巨蟹座</mymovie-ontology:星座>
+            <mymovie-ontology:有体重>70kg</mymovie-ontology:有体重>
+            <mymovie-ontology:中文名>凌宝儿</mymovie-ontology:中文名>
+            <mymovie-ontology:有年龄>54</mymovie-ontology:有年龄>
+            <mymovie-ontology:制片人>周星驰、杨国辉</mymovie-ontology:制片人>
+            <mymovie-ontology:中文名>大话西游</mymovie-ontology:中文名>
+            <mymovie-ontology:制片人>向华强</mymovie-ontology:制片人>
+            <mymovie-ontology:民族>汉</mymovie-ontology:民族>
+            <mymovie-ontology:拍摄地点>宁夏镇北堡影视城</mymovie-ontology:拍摄地点>
+            <mymovie-ontology:有电影 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#美人鱼"/>
+            <mymovie-ontology:语言>粤语、沪语、英语</mymovie-ontology:语言>
+            <mymovie-ontology:有籍贯>浙江宁波</mymovie-ontology:有籍贯>
+            <mymovie-ontology:拍摄地点>中国</mymovie-ontology:拍摄地点>
+            <mymovie-ontology:外文名>Stephen Chow</mymovie-ontology:外文名>
+            <mymovie-ontology:制片人>周星驰</mymovie-ontology:制片人>
+            <mymovie-ontology:票房>25324203+28885865港元（香港）</mymovie-ontology:票房>
+            <mymovie-ontology:出品公司>星辉海外有限公司</mymovie-ontology:出品公司>
+            <mymovie-ontology:出品时间>2008年</mymovie-ontology:出品时间>
+            <mymovie-ontology:中文名>《IQ成熟时》</mymovie-ontology:中文名>
+            <mymovie-ontology:外文名>Journey to the West: Conquering the Demons</mymovie-ontology:外文名>
+            <mymovie-ontology:拍摄地点>香港石澳</mymovie-ontology:拍摄地点>
+            <mymovie-ontology:有职业>演员、导演、编剧、监制、制片人、出品人、商人</mymovie-ontology:有职业>
+            <mymovie-ontology:制片地区>中国大陆</mymovie-ontology:制片地区>
+          </mymovie-ontology:演员>
+        </mymovie-ontology:有演员>
+        <mymovie-ontology:有导演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#周星驰"/>
+        <mymovie-ontology:是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#喜剧之王"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </mymovie-ontology:电影>
+    </mymovie-ontology:有电影>
+    <mymovie-ontology:是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#莫文蔚"/>
+    <mymovie-ontology:出演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#喜剧之王"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </mymovie-ontology:演员>
+  <mymovie-ontology:演员 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#张柏芝">
+    <mymovie-ontology:有电影 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#喜剧之王"/>
+    <mymovie-ontology:是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#张柏芝"/>
+    <mymovie-ontology:出演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#喜剧之王"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </mymovie-ontology:演员>
+  <mymovie-ontology:导演 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#李力持">
+    <mymovie-ontology:有电影 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#喜剧之王"/>
+    <mymovie-ontology:是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#李力持"/>
+    <mymovie-ontology:导演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/2/mymovie-ontology#喜剧之王"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </mymovie-ontology:导演>
+</rdf:RDF>
