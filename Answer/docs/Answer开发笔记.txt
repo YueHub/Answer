@@ -1,0 +1,72 @@
+问题记录：
+一、在Web项目中，导入官方提供的example后还会存在一定的问题，提示初始化失败。
+解决方法：
+第一步：将Data文件夹和NLPIR.dll文件拷贝到/src/main/source文件夹下
+第二步：将Data文件夹中的Configure.xml文件也拷贝都/src/main/source文件夹下
+第三步：将Data文件夹拷贝到eclipse的根目录下：G:\Programming\eclipse-j2ee\win64\eclipse
+
+二、StanfordParser使用
+导入包的时候不能使用自定义的UserLib，项目会找不到（为什么？）
+将项目jar包放入（lib文件夹下并可）
+
+三、如果需要多次调用分词方法，那么就不能条用Exit方法（他将会清空内存）
+
+注意：Stanford Parser中也有一个Word类 到时候看看这个Word 看看可不可以利用 好友一个Sentence类 也可以看看
+Stanfor Parser 还有一个语义图对象SemanticGraph类 也可以看看
+
+四：导演喜剧之王的是谁，Stanford Parser解析的结果是导演为名词、喜剧之王为动词，这是并需要设置喜剧之王（领域名词）为NN，这样
+解析的结果为正确的 导演动词、喜剧至名词
+
+TODO：助词和客气词过滤
+
+TODO:添加开发者异步调用模式?
+
+目前能识别的问题：
+美人鱼的导演是谁？
+美人鱼导演是谁？
+美人鱼的导演是哪位？
+美人鱼导演是哪位？
+美人鱼的导演的出生日期？
+美人鱼导演的出生日期？
+美人鱼的导演的年龄？
+美人鱼的导演的性别？
+
+TODO:SPARQL语句构造策略可以改成，几个断言组合查询
+TODO:导演和电影之间添加有电影这个关系
+TODO-----前端展示功能-----TODO
+1、分词结果、词性标注
+2、实体识别、实体类别
+3、实体消岐
+4、谓语消岐
+5、语法依存关系
+6、语义图
+7、构建的查询语句
+8、答案
+依存关系：
+
+1	美人鱼	美人鱼	n	n	    _	3	ATT	_	_
+2	的		     的	    u	ude1	_	1	RAD	_	_
+3	导演		   导演	nz	nnt	    _	4	SBV	_	_
+4	是	                 是	v	vshi	_	0	HED	_	_
+5	谁	                 谁	r	ry	    _	4	VOB	_	_
+6	？	                 ？	wp	w	    _	4	WP	_	_
+
+
+程序结构：
+前端：
+1、answer_js
+3、answer_css
+2、arbor_js
+
+
+可改进：
+日志记录是否需要用拦截器实现
+
+
+日志模块
+1、用户业务操作日志 UserOperationLog
+2、业务异常日志 NoActionFoundExceptionLog、OntologyQueryExcetpionLog、SemanticGraphExceptionLog..
+3、系统异常日志 java.lang.Exception
+
+词典
+一、多功能复用词典 （爬虫的时候构建）
