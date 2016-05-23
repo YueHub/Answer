@@ -164,7 +164,6 @@
         document.getElementById('rfc').id = "fc";
         document.getElementById('rfi').id = "fi";
        </script>
-
 <!-- 模式选择 -->
 	<script src="jquery_js/jquery-2.2.3.min.js"></script>
 	<script src="./answer_select/answer_select_js/fancySelect.js"></script>
