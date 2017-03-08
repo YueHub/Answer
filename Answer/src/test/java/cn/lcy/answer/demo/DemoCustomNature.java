@@ -1,5 +1,5 @@
-package cn.lcy.answer.demo;
-/*
+/*package cn.lcy.answer.demo;
+
  * <summary></summary>
  * <author>He Han</author>
  * <email>me@hankcs.com</email>
@@ -9,7 +9,9 @@ package cn.lcy.answer.demo;
  * Copyright (c) 2008-2016, 码农场. All Right Reserved, http://www.hankcs.com/
  * This source is subject to Hankcs. Please contact Hankcs to get more information.
  * </copyright>
- */
+ 
+
+import java.util.List;
 
 import com.hankcs.hanlp.HanLP;
 import com.hankcs.hanlp.corpus.tag.Nature;
@@ -18,14 +20,12 @@ import com.hankcs.hanlp.dictionary.CustomDictionary;
 import com.hankcs.hanlp.seg.common.Term;
 import com.hankcs.hanlp.utility.LexiconUtility;
 
-import java.util.List;
-
-/**
+*//**
  * 演示自定义词性,以及往词典中插入自定义词性的词语
  * !!!由于采用了反射技术,用户需对本地环境的兼容性和稳定性负责!!!
  *
  * @author hankcs
- */
+ *//*
 public class DemoCustomNature
 {
     @SuppressWarnings("incomplete-switch")
@@ -68,3 +68,4 @@ public class DemoCustomNature
         }
     }
 }
+*/

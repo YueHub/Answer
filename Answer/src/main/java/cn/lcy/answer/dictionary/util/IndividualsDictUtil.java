@@ -24,7 +24,7 @@ public class IndividualsDictUtil extends BaseDAOImpl {
 	
     public static String ontologySource = SOURCE + "GraduationProject_MO.owl";
     
-    public static final String CUSTOMDICTDIR = "G:/GraduationProject/HanLP/DataAndModel/data/dictionary/custom/";
+    public static final String CUSTOMDICTDIR = "I:/IT/GraduationProject/HanLP/DataAndModel/data/dictionary/custom/";
     
     public static final Model loadModel = FileManager.get().readModel(model, ontologySource);
     

@@ -181,7 +181,6 @@
 	<link href="./scroll_bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
 	<!-- 滚动条 -->
 	
-	
 	<!-- 传统搜索结果  -->
 	<style type="text/css">
 	</style>
@@ -326,7 +325,7 @@
 		</div>
 		
 		<!-- 答案 -->
-		<s:if test="#session.answerResultVO.polysemantSituationVOs.size != 0">
+		<%-- <s:if test="#session.answerResultVO.polysemantSituationVOs.size > 1"> --%>
 			<s:iterator value='#session.answerResultVO.polysemantSituationVOs' id='polysemantSituationVO'>
 				<s:if test="#polysemantSituationVO.queryResults.size != 0">
 				<div class="bsm">
@@ -366,81 +365,95 @@
 				</div>
 				</s:if>
 			</s:iterator>
-		</s:if>
+		<%-- </s:if> --%>
 		<!-- 答案 -->
 		
 		
-		<!-- 使用原力 绘制知识图谱-->
-		<div class="bsm">
-			<i class="fa fa-cog fa-spin fa-fw" style='font-size:30px;color:#777777;'></i>
-			<span style='font-size:20px;font-family:"SimHei";'>Answer知识图谱</span>
+		<!-- 使用原力 绘制逻辑图谱-->
+		<div id='knowledge'>
+			<div class='bsm'>
+				<i class='fa fa-cog fa-spin fa-fw' style='font-size:30px;color:#777777;'></i>
+				<span style='font-size:20px;font-family:SimHei;'>Answer逻辑图谱</span>
+			</div>
+			<div class='k' style='min-height:54px;'>
+				<canvas id='knowledge_graph' width='800' height='448' style='opacity: 1;'></canvas>
+			</div>
+			<div class='container' style='padding-left: 0;'></div>
 		</div>
-		<div class="k" style="min-height:54px;">
-			<canvas id="knowledge_graph" width="800" height="448" style="opacity: 1;"></canvas>
-		</div>
-		<div class="container" style="padding-left: 0; "></div>
-		<!-- 使用原力 绘制知识图谱-->
+		<!-- 使用原力 绘制逻辑图谱-->
 		
 		<!-- 命名实体识别 -->
-		<div class="bsm">
-			<i class="fa fa-cog fa-spin fa-fw" style='font-size:30px;color:#777777;'></i>
-			<span style='font-size:20px;font-family:"SimHei";'>命名实体识别</span>
-		</div>
-		<div class="k" style="min-height: 54px;">
-			<div class="n tb"></div>
-			<div class="tbx">
-				<table class="bt" border="1" style='text-align:center;'>
-					<tbody>
-						<tr class="th">
-							<th class="tn tny">实体</th>
-							<th width='70%'>歧义理解</th>
-							<th width='30%'>所属类</th>
-						</tr>
-						<s:iterator value='#session.answerResultVO.words' id='word'>
-						<s:if test="#word.polysemantNamedEntities.size != 0">
-						<s:iterator value='#word.polysemantNamedEntities' id='polysemantNamedEntity' status="st">
-						<s:if test="#st.index % 2 == 0">
-						<tr class="trh">
-							<td class="tn">
-								<a href="${pageContext.request.contextPath}/front/developerAction!answer.action?question=<s:property value='#word.name'/>" class="lk" target="_blank">
-									<span style='font-family:"SimHei";font-weight:bold;'><s:property value='#word.name'/></span>
-								</a>
-							</td>
-							<td>
-								<span style='font-family:"SimHei";'><s:property value='#polysemantNamedEntity.polysemantExplain'/></span>
-							</td>
-							<td>
-								<span style='font-family:"SimHei";'><s:property value='#polysemantNamedEntity.ontClass'/></span>
-							</td>
-						</tr>
-						</s:if>
-						<s:else>
-						<tr>
-							<td class="tn">
-								<a href="${pageContext.request.contextPath}/front/developerAction!answer.action?question=<s:property value='#word.name'/>" class="lk" target="_blank">
-									<span style='font-family:"SimHei";font-weight:bold;'><s:property value='#word.name'/></span>
-								</a>
-							</td>
-							<td>
-								<span style='font-family:"SimHei";'><s:property value='#polysemantNamedEntity.polysemantExplain'/></span>
-							</td>
-							<td>
-								<span style='font-family:"SimHei";'><s:property value='#polysemantNamedEntity.ontClass'/></span>
-							</td>
-						</tr>
-						</s:else>
-						</s:iterator>
-						</s:if>
-						</s:iterator>
-					</tbody>
-				</table>
+		<s:set name='flag' value='0' scope='request'></s:set>
+		<s:iterator value='#session.answerResultVO.words' id='word'>
+			<s:if test="#word.polysemantNamedEntities.size != 0">
+				<s:iterator value='#word.polysemantNamedEntities' id='polysemantNamedEntity' status="st">
+					<s:set name='flag' value='1' scope='request'></s:set>
+				</s:iterator>
+			</s:if>
+		</s:iterator>
+		<s:if test="#request.flag == 1">
+		<div class="ner">
+			<div class="bsm">
+				<i class="fa fa-cog fa-spin fa-fw" style='font-size:30px;color:#777777;'></i>
+				<span style='font-size:20px;font-family:"SimHei";'>命名实体识别</span>
 			</div>
-			<div class="in" style='text-align:center;'>
-				<section class="section--white">
-					<div class="btn" style='font-size:17px;' data-cta-target=".js-sidebar">知识网络</div>
-				</section>
+			<div class="k" style="min-height: 54px;">
+				<div class="n tb"></div>
+				<div class="tbx">
+					<table class="bt" border="1" style='text-align:center;'>
+						<tbody>
+							<tr class="th">
+								<th class="tn tny">实体</th>
+								<th width='70%'>歧义理解</th>
+								<th width='30%'>所属类</th>
+							</tr>
+							<s:iterator value='#session.answerResultVO.words' id='word'>
+							<s:if test="#word.polysemantNamedEntities.size != 0">
+							<s:iterator value='#word.polysemantNamedEntities' id='polysemantNamedEntity' status="st">
+							<s:if test="#st.index % 2 == 0">
+							<tr class="trh">
+								<td class="tn">
+									<a href="${pageContext.request.contextPath}/front/developerAction!answer.action?question=<s:property value='#word.name'/>" class="lk" target="_blank">
+										<span style='font-family:"SimHei";font-weight:bold;'><s:property value='#word.name'/></span>
+									</a>
+								</td>
+								<td>
+									<span style='font-family:"SimHei";'><s:property value='#polysemantNamedEntity.polysemantExplain'/></span>
+								</td>
+								<td>
+									<span style='font-family:"SimHei";'><s:property value='#polysemantNamedEntity.ontClass'/></span>
+								</td>
+							</tr>
+							</s:if>
+							<s:else>
+							<tr>
+								<td class="tn">
+									<a href="${pageContext.request.contextPath}/front/developerAction!answer.action?question=<s:property value='#word.name'/>" class="lk" target="_blank">
+										<span style='font-family:"SimHei";font-weight:bold;'><s:property value='#word.name'/></span>
+									</a>
+								</td>
+								<td>
+									<span style='font-family:"SimHei";'><s:property value='#polysemantNamedEntity.polysemantExplain'/></span>
+								</td>
+								<td>
+									<span style='font-family:"SimHei";'><s:property value='#polysemantNamedEntity.ontClass'/></span>
+								</td>
+							</tr>
+							</s:else>
+							</s:iterator>
+							</s:if>
+							</s:iterator>
+						</tbody>
+					</table>
+				</div>
+				<div class="in" style='text-align:center;'>
+					<section class="section--white">
+						<div class="btn" style='font-size:17px;' data-cta-target=".js-sidebar">知识网络</div>
+					</section>
+				</div>
 			</div>
 		</div>
+		</s:if>
 		<!-- 命名实体识别 -->
 		
 			
@@ -491,14 +504,16 @@
 	
 		
 		<!-- 使用原力 语义图构建-->
-		<div class="bsm">
-		<i class="fa fa-cog fa-spin fa-fw" style='font-size:30px;color:#777777;'></i>
-		<span style='font-size:20px;font-family:"SimHei";'>Answer语义图构建</span>
-		</div>
-		<div class="k" style="min-height:54px;">
-			<canvas id="semantic_graph" width="800" height="348" style="opacity: 1;"></canvas>
-		</div>
-		<div class="container" style="padding-left: 0; "></div>
+		<div id='semantic'>
+			<div class="bsm">
+			<i class="fa fa-cog fa-spin fa-fw" style='font-size:30px;color:#777777;'></i>
+			<span style='font-size:20px;font-family:"SimHei";'>Answer语义图构建</span>
+			</div>
+			<div class="k" style="min-height:54px;">
+				<canvas id="semantic_graph" width="800" height="348" style="opacity: 1;"></canvas>
+			</div>
+			<div class="container" style="padding-left: 0; "></div>
+		</div>	
 		<!-- 使用原力 语义图构建-->
 	
 		<!-- 分词结果 -->
@@ -573,6 +588,9 @@
 	<!-- 依存关系分析画图 -->
 		
 		<!-- 消岐 -->
+		<%-- <s:if test="#session.answerResultVO.polysemantSituationVOs.size > 1"> --%>
+		<div id='disambiguation'>
+		
 		<div class="bsm">
 			<i class="fa fa-cog fa-spin fa-fw" style='font-size:30px;color:#777777;'></i>
 			<span style='font-size:20px;font-family:"SimHei";'>消岐</span>
@@ -621,10 +639,14 @@
 			</s:iterator>
 			</div>
 		</s:iterator>
+		</div>
+		<%-- </s:if> --%>
 		<!-- 消岐 -->
 		
 		
 		<!-- 查询语句 -->
+		<%-- <s:if test="#session.answerResultVO.polysemantSituationVOs.size > 1"> --%>
+		<div id='query'>
 		<div class="bsm">
 		<i class="fa fa-cog fa-spin fa-fw" style='font-size:30px;color:#777777;'></i>
 		<span style='font-size:20px;font-family:"SimHei";'>构造的查询语句</span>
@@ -649,11 +671,13 @@
 			</s:iterator>
 			</div>
 		</s:iterator>
+		</div>
+		<%-- </s:if> --%>
 		<!-- 查询语句 -->
 	
 	<div style="height: 10px; display: block;"></div>
-	<script language="javascript" type="text/javascript">
-		window.parent.postMessage('magibox-answer:true', '*');
+	<%-- <script language="javascript" type="text/javascript">
+		/* window.parent.postMessage('magibox-answer:true', '*'); */
 		var lastHeight = -1;
 		function heightReport() {
 			if (true) {
@@ -665,7 +689,7 @@
 			}
 		}
 		setInterval('heightReport()', 32);
-	</script>
+	</script> --%>
 	
 	<!-- 模式选择 -->
 	<script src="jquery_js/jquery-2.2.3.min.js"></script>
@@ -762,7 +786,7 @@
         var params = {
             // Request parameters
             "q": $question.val(),
-            "count": "5",
+            "count": "10",
             "offset": "0",
             "mkt": "en-us",
             "safesearch": "Moderate",
@@ -770,8 +794,8 @@
         $.ajax({
             url: "https://bingapis.azure-api.net/api/v5/search/?" + $.param(params),
             beforeSend: function(xhrObj){
-                // Request headers 2792e3f2441c4bf38cc357116aeb781b
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","");
+                // Request headers 767fb82fcabf4c48badea4a21ea4927d
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","767fb82fcabf4c48badea4a21ea4927d");
             },
             type: "GET",
             // Request body

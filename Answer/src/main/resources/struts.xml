@@ -49,7 +49,7 @@
         <!-- 全局result -->
 		<global-results>
 			<result name="default_redirect" type="redirect">/front/answer_index.jsp</result>
-			<result name="system_error" type="redirect">/front/system_error.jsp</result>
+			<result name="system_error" type="redirect">/front/answer_result.jsp</result>
 			<!-- 无法解答异常 -->
 			<result name="semantic_graph_exception" type="redirect">/front/semantic_defect.jsp</result>
 			<result name="ontoloty_query_exception" type="redirect">/front/ontoloty_query_defect.jsp</result>

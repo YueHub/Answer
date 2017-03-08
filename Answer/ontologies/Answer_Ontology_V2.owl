@@ -16,12 +16,12 @@
     xmlns:j.10="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有日 "
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
   <owl:Ontology rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology"/>
-  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#演戏">
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#甜品店老板">
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#甜品店老板">
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#演戏">
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
   </owl:Class>
   <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#励志">
@@ -29,10 +29,10 @@
       <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#电影"/>
     </rdfs:subClassOf>
   </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#公司"/>
   <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#主播">
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
   </owl:Class>
-  <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#公司"/>
   <owl:Class rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology# 喜剧">
     <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#电影"/>
   </owl:Class>
@@ -240,8 +240,8 @@
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#师生"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有师傅"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#同学"/>
-  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#演唱"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#连载"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#演唱"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有弟弟">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </owl:ObjectProperty>
@@ -249,8 +249,8 @@
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有前女友"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有恩师"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有父子"/>
-  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#哥哥"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#曾祖父"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#哥哥"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#配音"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有动画"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#创作"/>
@@ -297,8 +297,8 @@
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#主演"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#姐姐"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有演员"/>
-  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#制作"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#恩师"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#制作"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#出品"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有哥哥">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -311,8 +311,8 @@
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#出演"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#唱"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有养父"/>
-  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有外祖母"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#经纪公司"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有外祖母"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有制片"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有前夫"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有妻子">
@@ -330,8 +330,8 @@
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#儿子"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有师生"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#养父"/>
-  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#旧爱"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有搭档"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#旧爱"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#女友"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有儿子"/>
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有电影"/>
@@ -353,6 +353,7 @@
   <owl:ObjectProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#出版"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有中文队名"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有外曾祖父"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有发行商"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有上星平台"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有文科资深教授"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有集数"/>
@@ -373,6 +374,7 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有时间"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有第五名"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有所属公司"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有原意"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有总决赛时间"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有目"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有注音"/>
@@ -389,8 +391,8 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有出生日期"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有签约公司"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有奶奶"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有公开课"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有常见病因"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有公开课"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有发生时间"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有对白语言"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有制片地区"/>
@@ -400,25 +402,27 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有开播日期"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有绰号"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有通用文字"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有开发商"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有登记机关"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有最强战队"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有游戏平台"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有分布区域"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有运动项目"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有完成时间"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主办"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有歌曲语言"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主办"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有德文"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有GDP"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有总部地点"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有首次颁发"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有获得奖项"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有首次颁发"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有类别"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有imdb编码"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有殿军"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有来源"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有英文名"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有博士后流动站"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有其它名称"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有博士后流动站"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有日播精编频道"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有作用"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有出版社"/>
@@ -428,6 +432,7 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有属性"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有专业技术级别"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有来自"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有英译"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有所在地"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有小学"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有性别"/>
@@ -437,11 +442,13 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有国际刊号"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有含义"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有音乐类型"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有法译"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有方言"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有节目口号"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有曲目数量"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有擅长"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有MV出演"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有实名"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有偶像"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有用途"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有繁体中文"/>
@@ -455,6 +462,7 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有词性"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有应用于"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有命名人及年代"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有论坛"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有MV主演"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有出自专辑"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有原作"/>
@@ -488,6 +496,7 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有梦想导师"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主题曲"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有表彰对象"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有德译"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有放映格式"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有制作公司"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有学位"/>
@@ -510,8 +519,8 @@
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有爱好"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有偏旁部首"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有合声编写"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有官网"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有合声编写"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有球衣号码"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有编曲"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有季军"/>
@@ -519,8 +528,8 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有外文名称"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有团体"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有上映时间"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有亦作"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有纲"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有亦作"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有国家/地区"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有编剧">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -542,6 +551,7 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有学校代码"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有创刊时间"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有出生地"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有俄译"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主要配音"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有语 言"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有专辑名称"/>
@@ -558,8 +568,8 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有机场"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有气候特点"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有气候条件"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有拥有者"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有别名"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有拥有者"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有播出平台"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有身高"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有总裁"/>
@@ -571,6 +581,7 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有公 司"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有颁奖时间"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有奖项类型"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有运营商"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有改编自"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有年代"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有分布"/>
@@ -585,18 +596,19 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有色彩"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有类型"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有简称"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有游戏语言"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有分级"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有创立时间"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有创办人"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主办单位"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有创立时间"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有电话区号"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有企业愿景"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有鞋号"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主演">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有原成员"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有歌手"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有原成员"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有学历"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有演唱"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有监制"/>
@@ -618,13 +630,13 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有资费提示"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有相关地区"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主要成就"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有规划时间"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有地理位置"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有规划时间"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有占地面积"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有同名电影"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有填词"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有谱曲"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有知名人物"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有谱曲"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有弊端"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有体重"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有ISRC中国"/>
@@ -636,6 +648,7 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有MV导演"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有核心业务"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有建于"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有火山类型"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有所属洲"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有条型码"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有制片成本"/>
@@ -683,13 +696,13 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有场上位置"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有唱片公司"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有毕业院校"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有家庭状况"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有所属地区"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有家庭状况"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有副业"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有描述"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有公司口号"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有开放时间"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有URL信息来源"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有开放时间"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有公司性质"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有专辑歌手"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有游戏类型"/>
@@ -705,8 +718,8 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有音乐"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有专长"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有其他名称"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有英文名称"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有校歌"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有英文名称"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有粉丝昵称"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有硕士点"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有音乐风格"/>
@@ -717,15 +730,15 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有亚种"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主要奖项"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有歌曲原唱"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有员工数"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有播出状态"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有员工数"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有专辑"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有节日原由"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有代表事物"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主持人"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有节日时间"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有上映版本"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有歌手星座"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有上映版本"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有词"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有排 量"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有最崇拜的人物"/>
@@ -739,6 +752,7 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有国家或地区"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有唱片销量"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有代表人物"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有游戏画面"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有别称"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有算命种类"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有亚纲"/>
@@ -746,8 +760,8 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有作曲"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有寓意性质"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有所属专辑"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有董事局主席"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有歌坛出道时间"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有董事局主席"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有制作人"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有性质"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有发明者"/>
@@ -763,15 +777,16 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有分类"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有外孙"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有血型"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有冠军"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有门票价格"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有冠军"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有发行日期"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有起源年代"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有擅长的舞蹈"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有首次颁奖"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有拉丁学名"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有女儿">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有拉丁学名"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有名词解释"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有片长"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有中文学名"/>
@@ -788,8 +803,8 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有主办方"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有知名校友"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有三围"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有港口"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有地区"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有港口"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有相关团体"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有理论依据"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有法文"/>
@@ -798,10 +813,10 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有首席执行官"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有二轮上星"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有合声"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有父母"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有学校地址"/>
-  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有长江学者"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有父母"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有现成员"/>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有长江学者"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有文职级别"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有家人"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有年营业额"/>
@@ -825,35 +840,6 @@
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有在线播放平台"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有组合成军日"/>
   <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#有发行时间"/>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#29a5be86cc994a6e836f793aa033fdde">
-    <rdfs:comment>苍老师</rdfs:comment>
-  </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#4e299245b2684ca1862d686d3bdc8da3">
-    <rdfs:comment>费玉清</rdfs:comment>
-    <演唱>
-      <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91">
-        <有歧义说明>费玉清、周杰伦合唱歌曲</有歧义说明>
-        <有发行时间>2006</有发行时间>
-        <有歌曲时长>04:20</有歌曲时长>
-        <有中文名称>《千里之外》</有中文名称>
-        <有URL信息来源>http://baike.baidu.com/subview/426372/5040112.htm</有URL信息来源>
-        <有歌曲原唱>费玉清，周杰伦</有歌曲原唱>
-        <有所属专辑>《依然范特西》</有所属专辑>
-        <有MV导演>周杰伦</有MV导演>
-        <有谱曲>周杰伦</有谱曲>
-        <有MV出演>费玉清、周杰伦、夏如芝</有MV出演>
-        <有填词>方文山</有填词>
-        <有歌曲语言>国语</有歌曲语言>
-        <有音乐风格>流行，中国风</有音乐风格>
-        <有描述>《千里之外》是费玉清、周杰伦合唱的一首歌曲，由周杰伦作曲，方文山作词，收录于周杰伦2006年发行的专辑《依然范特西》中，是周杰伦的代表作品之一。这首歌曲有独唱版，由费玉清演唱。 2007年这首歌曲获得了第十三届全球华语音乐榜中榜年度最佳歌曲奖、第29届十大中文金曲全国最受欢迎中文歌曲奖、第7届蒙牛酸酸乳音乐风云榜年度最佳歌曲奖[1-3]  。</有描述>
-        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
-        <有编曲>林迈可</有编曲>
-        <有picSrc>1463382701776137.jpg</有picSrc>
-        <rdfs:comment>千里之外</rdfs:comment>
-      </音乐>
-    </演唱>
-    <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
-  </拟人>
   <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#45f9ef3f3590478faf3c78711ca4fd0d">
     <rdfs:comment>张美贤</rdfs:comment>
     <填词>
@@ -869,27 +855,6 @@
       </音乐>
     </填词>
     <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#836ccae9b1974ffa9cba9372f6e1b0ca"/>
-  </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#653bb58908a94843a60a41f80e3a7cf9">
-    <rdfs:comment>弹头</rdfs:comment>
-    <填词>
-      <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#31d0b5162e624eafa4251ab7a730e46a">
-        <有所属公司>弦音唱片</有所属公司>
-        <有歌曲语言>国语</有歌曲语言>
-        <有描述>周杰伦认为最好听的一首情歌，原本想放在自己的下张专辑中，但在听了两个大男生合唱后，发觉有他们特别的味道，于是割爱将这首歌给南拳妈妈使用。这首歌转音多折，尤其在副歌转调，对于新人来说是相当难唱的；歌里有2条旋律，弹头和宇豪分别唱一高一低，他们真假音的转换，有新人青涩的味道，虽然旋律不同，却能互补结合，产生他们2人独特的风格。</有描述>
-        <有填词>弹头</有填词>
-        <有URL信息来源>http://baike.baidu.com/view/758065.htm</有URL信息来源>
-        <有谱曲>周杰伦</有谱曲>
-        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#31d0b5162e624eafa4251ab7a730e46a"/>
-        <有所属专辑>南拳妈妈的夏天</有所属专辑>
-        <有歧义说明>周杰伦创作歌曲</有歧义说明>
-        <有歌曲原唱>南拳妈妈</有歌曲原唱>
-        <rdfs:comment>瓦解</rdfs:comment>
-        <有单曲名称>瓦解</有单曲名称>
-        <有picSrc>1463383357777190.jpg</有picSrc>
-      </音乐>
-    </填词>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#31d0b5162e624eafa4251ab7a730e46a"/>
   </拟人>
   <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#af21c4e8ad8244108b853f88587e7c71">
     <rdfs:comment>熊天平</rdfs:comment>
@@ -1289,7 +1254,28 @@
                                             <有歧义说明>蔡依林演唱歌曲</有歧义说明>
                                           </音乐>
                                         </谱曲>
-                                        <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
+                                        <唱>
+                                          <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91">
+                                            <有歧义说明>费玉清、周杰伦合唱歌曲</有歧义说明>
+                                            <有发行时间>2006</有发行时间>
+                                            <有歌曲时长>04:20</有歌曲时长>
+                                            <有中文名称>《千里之外》</有中文名称>
+                                            <有URL信息来源>http://baike.baidu.com/subview/426372/5040112.htm</有URL信息来源>
+                                            <有歌曲原唱>费玉清，周杰伦</有歌曲原唱>
+                                            <有所属专辑>《依然范特西》</有所属专辑>
+                                            <有MV导演>周杰伦</有MV导演>
+                                            <有谱曲>周杰伦</有谱曲>
+                                            <有MV出演>费玉清、周杰伦、夏如芝</有MV出演>
+                                            <有填词>方文山</有填词>
+                                            <有歌曲语言>国语</有歌曲语言>
+                                            <有音乐风格>流行，中国风</有音乐风格>
+                                            <有描述>《千里之外》是费玉清、周杰伦合唱的一首歌曲，由周杰伦作曲，方文山作词，收录于周杰伦2006年发行的专辑《依然范特西》中，是周杰伦的代表作品之一。这首歌曲有独唱版，由费玉清演唱。 2007年这首歌曲获得了第十三届全球华语音乐榜中榜年度最佳歌曲奖、第29届十大中文金曲全国最受欢迎中文歌曲奖、第7届蒙牛酸酸乳音乐风云榜年度最佳歌曲奖[1-3]  。</有描述>
+                                            <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
+                                            <有编曲>林迈可</有编曲>
+                                            <有picSrc>1463382701776137.jpg</有picSrc>
+                                            <rdfs:comment>千里之外</rdfs:comment>
+                                          </音乐>
+                                        </唱>
                                         <写>
                                           <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b79a990528404996a656565470f96b52">
                                             <有编曲>钟兴民</有编曲>
@@ -2864,7 +2850,25 @@
                                                 >南拳妈妈</rdfs:comment>
                                                 <参演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f766dab8033941a0b56f5b4d186d33d5"/>
                                                 <有URL信息来源>http://baike.baidu.com/view/4944.htm</有URL信息来源>
-                                                <演唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#31d0b5162e624eafa4251ab7a730e46a"/>
+                                                <演唱>
+                                                  <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#31d0b5162e624eafa4251ab7a730e46a">
+                                                    <有所属公司>弦音唱片</有所属公司>
+                                                    <有歌曲语言>国语</有歌曲语言>
+                                                    <有描述>周杰伦认为最好听的一首情歌，原本想放在自己的下张专辑中，但在听了两个大男生合唱后，发觉有他们特别的味道，于是割爱将这首歌给南拳妈妈使用。这首歌转音多折，尤其在副歌转调，对于新人来说是相当难唱的；歌里有2条旋律，弹头和宇豪分别唱一高一低，他们真假音的转换，有新人青涩的味道，虽然旋律不同，却能互补结合，产生他们2人独特的风格。</有描述>
+                                                    <有填词>弹头</有填词>
+                                                    <有URL信息来源
+                                                    >http://baike.baidu.com/view/758065.htm</有URL信息来源>
+                                                    <有谱曲>周杰伦</有谱曲>
+                                                    <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#31d0b5162e624eafa4251ab7a730e46a"/>
+                                                    <有所属专辑>南拳妈妈的夏天</有所属专辑>
+                                                    <有歧义说明>周杰伦创作歌曲</有歧义说明>
+                                                    <有歌曲原唱>南拳妈妈</有歌曲原唱>
+                                                    <rdfs:comment
+                                                    >瓦解</rdfs:comment>
+                                                    <有单曲名称>瓦解</有单曲名称>
+                                                    <有picSrc>1463383357777190.jpg</有picSrc>
+                                                  </音乐>
+                                                </演唱>
                                                 <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#bf50d1b3188149cb81746d01df6ea66b"/>
                                                 <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#31d0b5162e624eafa4251ab7a730e46a"/>
                                                 <有职业>歌手，演员</有职业>
@@ -4990,17 +4994,6 @@
       </中国>
     </配音>
   </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2453bcf06f3b4cbfaeeea52dfcdce0b8">
-    <rdfs:comment>毛毛</rdfs:comment>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#bec0c333bc584c34967bd5f8460c5242"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#bec0c333bc584c34967bd5f8460c5242"/>
-  </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dbb5cb0ef1ba4ae78d53aeb3f3524b93">
-    <rdfs:comment>詹宇豪</rdfs:comment>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#de292203366045669aebdc1e102416ee"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#de292203366045669aebdc1e102416ee"/>
-    <谱曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#de292203366045669aebdc1e102416ee"/>
-  </拟人>
   <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e1a69a1ea60f40738ab40f4607d70992">
     <rdfs:comment>左安安</rdfs:comment>
     <谱曲>
@@ -5025,11 +5018,6 @@
       </音乐>
     </谱曲>
     <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#07c2e2a51bb4406e8b7377df754bbc74"/>
-  </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#9a4e4ee87cfa4478b525a7d110441d45">
-    <rdfs:comment>潘协庆</rdfs:comment>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#5d3d42b8166748318255acdb6773aec8"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#5d3d42b8166748318255acdb6773aec8"/>
   </拟人>
   <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#44c132c3ad3442498d8253844ddac598">
     <rdfs:comment>G-Dragon</rdfs:comment>
@@ -5119,63 +5107,6 @@
     <rdfs:comment>洪敬尧</rdfs:comment>
     <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#57b72476be404a00aebcbbf9a3c72b2d"/>
   </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f2c16d795242408995b76e435313cdfa">
-    <rdfs:comment>宝木中阳</rdfs:comment>
-    <配音 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#be9281fd777a43ea98f017c3ede4166a"/>
-  </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#988b8a708a9a473892e8a14200a94767">
-    <rdfs:comment>胡彦斌</rdfs:comment>
-    <演唱>
-      <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee">
-        <有歌曲原唱>胡彦斌</有歌曲原唱>
-        <有描述>《月光》是胡彦斌演唱的一首歌曲，由林文炫填词，胡彦斌作曲，是国产动画《秦时明月》的片头曲和主题曲[1]  。</有描述>
-        <有编曲>胡彦斌</有编曲>
-        <有谱曲>胡彦斌</有谱曲>
-        <有中文名称>月光</有中文名称>
-        <有音乐风格>R&amp;B音乐</有音乐风格>
-        <有歌曲时长>4分32秒</有歌曲时长>
-        <有歌曲语言>国语</有歌曲语言>
-        <有picSrc>1463382829423655.jpg</有picSrc>
-        <有歧义说明>胡彦斌演唱《秦时明月》系列片头曲</有歧义说明>
-        <有URL信息来源>http://baike.baidu.com/view/18752.htm</有URL信息来源>
-        <rdfs:comment>月光</rdfs:comment>
-        <有填词>林文炫</有填词>
-        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
-      </音乐>
-    </演唱>
-    <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
-    <谱曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
-    <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
-  </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b4ce3ef0594f431487d57f318cd46e1b">
-    <rdfs:comment>平安</rdfs:comment>
-    <演唱>
-      <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f">
-        <有URL信息来源>http://baike.baidu.com/view/299701.htm</有URL信息来源>
-        <有中文名称>圆梦</有中文名称>
-        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
-        <有编曲>张江</有编曲>
-        <有歌曲时长>3分32秒</有歌曲时长>
-        <有歌曲原唱>平安</有歌曲原唱>
-        <有picSrc>1463383171404116.jpg</有picSrc>
-        <rdfs:comment>圆梦</rdfs:comment>
-        <有填词>韩冰</有填词>
-        <有发行时间>2013-12-23</有发行时间>
-        <有音乐风格>流行</有音乐风格>
-        <有描述>《圆梦》由年青音乐人张江作曲、韩冰作词、歌手平安演唱。 《圆梦》在2013年12月23日上海市委宣传部、上海市文广局主办的“我的中国梦”原创歌曲征集评选活动音乐会上，得到现场观众和现场专业评委的极高评价，勇夺银奖。[1] </有描述>
-        <有MV导演>张蒙舟</有MV导演>
-        <有歌曲语言>汉语</有歌曲语言>
-        <有歧义说明>歌手平安演唱的歌曲</有歧义说明>
-        <有谱曲>张江</有谱曲>
-      </音乐>
-    </演唱>
-    <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
-  </拟人>
-  <地区 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#368c677876a942d9a9f3baf1396d7865">
-    <rdfs:comment>加拿大</rdfs:comment>
-    <公民 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#63f5e4f5215a437db01f076dc30afc23"/>
-  </地区>
   <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#41b5aef28a714de98e576268c730822e">
     <rdfs:comment>Daishi Dance</rdfs:comment>
     <谱曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e50ffc7b69d5434ebb6349e54fe393f1"/>
@@ -5260,11 +5191,6 @@
       </歌手>
     </公民>
   </地区>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#bb06116e6301478dac95a305f4ea4c66">
-    <rdfs:comment>易家扬</rdfs:comment>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#84ae8a4f491b4f0cad9e1be4fd6b3af4"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#84ae8a4f491b4f0cad9e1be4fd6b3af4"/>
-  </拟人>
   <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#27e1ad947bb3467a98102617b0d568e8">
     <rdfs:comment>黄俊郎</rdfs:comment>
     <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2751ecc6dbc64db984141522696e08a1"/>
@@ -5294,290 +5220,39 @@
     <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#6cade72254f4416e9a3468ce2822559d"/>
     <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#6cade72254f4416e9a3468ce2822559d"/>
   </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a36d9dcc42594ee18bc04b720fd931c8">
-    <编曲>
-      <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2088d36f19d44e5b96872e16bdfff99d">
-        <有合声>周杰伦</有合声>
-        <有所属专辑>《范特西》</有所属专辑>
-        <有发行时间>2001年9月14日</有发行时间>
-        <有合声编写>周杰伦</有合声编写>
-        <有歌曲原唱>周杰伦</有歌曲原唱>
-        <有歌曲语言>国语</有歌曲语言>
-        <有歧义说明>周杰伦创作歌曲</有歧义说明>
-        <rdfs:comment>简单爱</rdfs:comment>
-        <有URL信息来源>http://baike.baidu.com/subview/116599/5089663.htm</有URL信息来源>
-        <有编曲>林迈可</有编曲>
-        <有MV导演>黄中平</有MV导演>
-        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2088d36f19d44e5b96872e16bdfff99d"/>
-        <有音乐风格>R&amp;B，流行</有音乐风格>
-        <有填词>徐若瑄</有填词>
-        <有picSrc>1463382590091134.jpg</有picSrc>
-        <有谱曲>周杰伦</有谱曲>
-        <有录音工程>Gary Yang(J&amp;A STUDIO)</有录音工程>
-        <有歌曲时长>04:32</有歌曲时长>
-        <有中文名称>简单爱</有中文名称>
-        <有混音工程>杨大纬（杨大纬录音工作室）</有混音工程>
-        <有描述>《简单爱》由周杰伦作曲徐若瑄填词，是2001年9月14日发行周杰伦第二张专辑《范特西》中第三支歌曲。 《简单爱》在2001年年度HitFM联播网百首单曲中名列亚军。</有描述>
-      </音乐>
-    </编曲>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#6cade72254f4416e9a3468ce2822559d"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2088d36f19d44e5b96872e16bdfff99d"/>
-    <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#6cade72254f4416e9a3468ce2822559d"/>
-    <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
-    <编曲>
-      <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e6d2b94abaca4607bbb28ef5abefc2d8">
-        <有歌曲原唱>周杰伦</有歌曲原唱>
-        <有MV导演>黄中平</有MV导演>
-        <rdfs:comment>简单爱</rdfs:comment>
-        <有合声>周杰伦</有合声>
-        <有所属专辑>《范特西》</有所属专辑>
-        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e6d2b94abaca4607bbb28ef5abefc2d8"/>
-        <有音乐风格>R&amp;B，流行</有音乐风格>
-        <有歧义说明>周杰伦创作歌曲</有歧义说明>
-        <有发行时间>2001年9月14日</有发行时间>
-        <有歌曲时长>04:32</有歌曲时长>
-        <有填词>徐若瑄</有填词>
-        <有合声编写>周杰伦</有合声编写>
-        <有录音工程>Gary Yang(J&amp;A STUDIO)</有录音工程>
-        <有混音工程>杨大纬（杨大纬录音工作室）</有混音工程>
-        <有picSrc>1463382798754721.jpg</有picSrc>
-        <有中文名称>简单爱</有中文名称>
-        <有编曲>林迈可</有编曲>
-        <有描述>《简单爱》由周杰伦作曲徐若瑄填词，是2001年9月14日发行周杰伦第二张专辑《范特西》中第三支歌曲。 《简单爱》在2001年年度HitFM联播网百首单曲中名列亚军。</有描述>
-        <有谱曲>周杰伦</有谱曲>
-        <有URL信息来源>http://baike.baidu.com/view/116599.htm</有URL信息来源>
-        <有歌曲语言>国语</有歌曲语言>
-      </音乐>
-    </编曲>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e6d2b94abaca4607bbb28ef5abefc2d8"/>
-    <rdfs:comment>林迈可</rdfs:comment>
-  </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#5f63c2d6ccfb409fbd4446c8f6974942">
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b4af6e3d16c044a889fe6efdfd8be353"/>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0462449fe97345d58166356b88c7c499"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2c2f3c51e392462fb7d3adf4733d1826"/>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#241220f5b2344270be0f71135952029d"/>
-    <填词>
-      <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#36506eebb3b142b3ae3e1d451a1f1ecc">
-        <rdfs:comment>河流·午后·我经过</rdfs:comment>
-        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#36506eebb3b142b3ae3e1d451a1f1ecc"/>
-        <有URL信息来源>http://baike.baidu.com/view/3930066.htm</有URL信息来源>
-        <有描述>周杰伦将自己作品割爱给南拳妈妈，编曲偏向日系软摇滚，略为成熟的曲风很适合弹头、宇豪这个新南拳组合，『很舒服的歌曲，听起来彷佛是我跟弹头漫步在草原里…』 两位原来的南拳妈妈成员选择单飞，所以现在的南拳妈妈还剩下两位成员——弹头、宇豪。 弹头的声音非常绵软，让人百听不厌的天籁之音非常适合这首歌的可爱之处，而宇豪比较相对来说是帅气一点的声音，此曲中也显得让人恋爱不已。 现在网上已经可以试听此歌完整版了。</有描述>
-        <有中文名称>河流·午后·我经过</有中文名称>
-        <有所属专辑>决斗巴哈</有所属专辑>
-        <有歌曲原唱>周杰伦</有歌曲原唱>
-        <有填词>方文山</有填词>
-      </音乐>
-    </填词>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#60de5ba1ca5b497a8c0e376303904e32"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e46b8ff05d294aa3bd34ee4148b89166"/>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e9ffe37bc1e24f119b8e3e472d4a05a7"/>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#488ccd4ec9e14e078cfb6b784b8033e5"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#36506eebb3b142b3ae3e1d451a1f1ecc"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#241220f5b2344270be0f71135952029d"/>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2c2f3c51e392462fb7d3adf4733d1826"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#26f42a2cd1cc43fe92043a7b358fc304"/>
-    <rdfs:comment>方文山</rdfs:comment>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b79a990528404996a656565470f96b52"/>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2d38bacfdfb84f7ca0c42d993cffb60e"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b4af6e3d16c044a889fe6efdfd8be353"/>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e46b8ff05d294aa3bd34ee4148b89166"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b79a990528404996a656565470f96b52"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#26f42a2cd1cc43fe92043a7b358fc304"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#40fda681d6cb417dbb28bfee3a573e73"/>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#40fda681d6cb417dbb28bfee3a573e73"/>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#60de5ba1ca5b497a8c0e376303904e32"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2d38bacfdfb84f7ca0c42d993cffb60e"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#488ccd4ec9e14e078cfb6b784b8033e5"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e9ffe37bc1e24f119b8e3e472d4a05a7"/>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#ba8c89ccde994064acfd1da38663ef93"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#ba8c89ccde994064acfd1da38663ef93"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0462449fe97345d58166356b88c7c499"/>
-  </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#847ba3dc5a7d400d95e6846e40cb6eb3">
-    <rdfs:comment>张江</rdfs:comment>
-    <谱曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
-    <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
-  </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2cf506a8b53840b1b3a22091f806c9fc">
-    <rdfs:comment>齐秦</rdfs:comment>
-    <演唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#01005481865545128e2b28cab127c4fb"/>
-    <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#01005481865545128e2b28cab127c4fb"/>
-  </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e8f4f8cd206f4470bb1893e7dd57d906">
-    <rdfs:comment>袁咏琳</rdfs:comment>
-    <演唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0bc35157d89e44feb0fd8b1f59848294"/>
-    <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0bc35157d89e44feb0fd8b1f59848294"/>
-  </拟人>
-  <地区 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a64882524aa2411e85b1f6f8503384b4">
-    <rdfs:comment>美国</rdfs:comment>
-    <公民>
-      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#7ef376a8aebc49ca95bb5128674da1b8">
-        <有身高>198厘米/6英尺6英寸</有身高>
-        <有URL信息来源>http://baike.baidu.com/view/2879.htm</有URL信息来源>
-        <有NBA选秀>1996年第1轮第13位被黄蜂队选中</有NBA选秀>
-        <有毕业院校>劳尔梅里恩高中</有毕业院校>
-        <有场上位置>得分后卫/小前锋（锋卫摇摆人）</有场上位置>
-        <owl:sameAs>
-          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#040d7885c5f84f6496d337fb1c3d0430">
-            <rdfs:comment>渣科</rdfs:comment>
-          </拟人>
-        </owl:sameAs>
-        <有别名>飞侠，黑曼巴、蜗壳、渣科</有别名>
-        <有球衣号码>24号</有球衣号码>
-        <owl:sameAs>
-          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#348e10a903e44813a9976d363a9661e1">
-            <rdfs:comment>飞侠，黑曼巴</rdfs:comment>
-          </拟人>
-        </owl:sameAs>
-        <有描述>科比·布莱恩特（Kobe Bryant），1978年8月23日出生于美国宾夕法尼亚州费城，前美国职业篮球运动员，司职得分后卫/小前锋（锋卫摇摆人），整个篮球职业生涯（1996年-2016年）一直效力于NBA洛杉矶湖人队，是前美国职业篮球运动员乔·布莱恩特的儿子。 科比是NBA最好的得分手之一，突破、投篮、罚球、三分球他都驾轻就熟，几乎没有进攻盲区，单场比赛81分的个人纪录就有力地证明了这一点。除了疯狂的得分外，科比的组织能力也很出众，经常担任球队进攻的第一发起人。另外科比还是联盟中最好的防守人之一，贴身防守非常具有压迫性。 2016年4月14日，在结束了生涯最后一场主场对阵爵士的常规赛之后，科比·布莱恩特正式宣布退役。</有描述>
-        <有出生地>美国宾夕法尼亚州费城</有出生地>
-        <有专业特点>高效的得分手、善于组织与防守</有专业特点>
-        <有体重>96千克/205磅</有体重>
-        <有主要奖项>NBA最有价值球员奖（2008） 两届NBA总决赛最有价值球员奖（2009-2010） 四届NBA全明星赛最有价值球员奖（2002；2007；2009；2011） 五届NBA总冠军（2000-2002；2009-2010） 18次全明星（1998；2000-2016）</有主要奖项>
-        <有官网>http://www.kobebryant.com/</有官网>
-        <owl:sameAs>
-          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#ddcf2f5bbe424424b81b7515c6b3a585">
-            <rdfs:comment>蜗壳</rdfs:comment>
-          </拟人>
-        </owl:sameAs>
-        <rdfs:comment>科比·布莱恩特</rdfs:comment>
-        <有父亲>乔·布莱恩特[1]</有父亲>
-        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#7ef376a8aebc49ca95bb5128674da1b8"/>
-        <有运动项目>篮球</有运动项目>
-        <有国籍>美国</有国籍>
-        <有中文名>科比·比恩·布莱恩特</有中文名>
-        <有出生日期>1978年8月23日</有出生日期>
-        <有所属运动队>已退役</有所属运动队>
-        <有妻子>瓦妮莎·布莱恩特</有妻子>
-        <有外文名>Kobe Bean Bryant</有外文名>
-        <有picSrc>1463382751378882.jpg</有picSrc>
-      </拟人>
-    </公民>
-    <公民 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e4b1896956e444c98dc445451968c910"/>
-    <公民>
-      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e8f85c67e03648c2a8daaebeb4f97276">
-        <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#cd7101eb2c4444718a805c6ab24b5ea1"/>
-        <有职业>歌手、演员</有职业>
-        <有中文名>许慧欣</有中文名>
-        <有picSrc>1463383478395784.jpg</有picSrc>
-        <有外文名>eVonne</有外文名>
-        <j.0:体重>163cm/45kg</j.0:体重>
-        <有唱片公司>环球唱片、大国翼星</有唱片公司>
-        <有出生日期>1979年12月5日</有出生日期>
-        <有国籍>美国</有国籍>
-        <有毕业院校>德州大学奥斯汀心理系</有毕业院校>
-        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e8f85c67e03648c2a8daaebeb4f97276"/>
-        <演唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#cd7101eb2c4444718a805c6ab24b5ea1"/>
-        <有妹妹>
-          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0fde4ec92efd448786492a925d2d6feb">
-            <rdfs:comment>许嘉凌</rdfs:comment>
-          </拟人>
-        </有妹妹>
-        <有出生地>美国德克萨斯州</有出生地>
-        <有URL信息来源>http://baike.baidu.com/view/6674.htm</有URL信息来源>
-        <妹妹 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0fde4ec92efd448786492a925d2d6feb"/>
-        <有主要成就>第十四届金曲奖最佳新人奖 2002TVB8金曲榜最佳女新人奖 G-Music风云榜白金音乐奖 2010 中国能量女性奖</有主要成就>
-        <有描述>许慧欣，1979年12月5日生于美国德克萨斯州，中国台湾女歌手、演员，毕业于德州大学奥斯汀心理系。 许慧欣，在上大学期间，帮朋友的朋友Benny录制的Demos而意外被前经纪人韩罗贤发掘入行。2002年，发行首张音乐专辑《快乐为主》，正式步入歌坛并凭借该专辑获得第14届金曲奖最佳新人奖。2011年，参演百老汇舞台剧《Anything Goes海上情缘》。2013年1月11日，发行音乐专辑《欣进化eVolution》。[1-2]  2013年10月，许慧欣与男友在巴厘岛举行婚礼。[3] </有描述>
-        <有代表作品>爱情抗体、孤独芭蕾、七月七日晴、威尼斯迷路、爱极限、黑天鹅</有代表作品>
-        <有经纪公司>北京百娱国际文化传媒有限公司</有经纪公司>
-        <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#歌手"/>
-        <rdfs:comment>许慧欣</rdfs:comment>
-        <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#演员"/>
-      </拟人>
-    </公民>
-  </地区>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#3f510f5befc24f51905c7f39f23af9e4">
-    <rdfs:comment>卢恒宇</rdfs:comment>
-    <导演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#be9281fd777a43ea98f017c3ede4166a"/>
-    <执导 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#be9281fd777a43ea98f017c3ede4166a"/>
-    <拍 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#be9281fd777a43ea98f017c3ede4166a"/>
-  </拟人>
-  <地区 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#c2457b1812b442e19aa712abf32e5982">
-    <rdfs:comment>新加坡</rdfs:comment>
-    <公民>
-      <歌手 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#94b9c006140548f9b3fba31ea424e524">
-        <有好友>
-          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f9f79c7999aa40f7993c4e7e89a3302d">
-            <rdfs:comment>吴克羣</rdfs:comment>
-          </拟人>
-        </有好友>
-        <有夫妻>
-          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#7b793b50a77b4aa587b2eebdb8a1ec78">
-            <rdfs:comment>李鑫雨</rdfs:comment>
-          </拟人>
-        </有夫妻>
-        <有国籍>新加坡</有国籍>
-        <有URL信息来源>http://baike.baidu.com/view/9141.htm</有URL信息来源>
-        <好友 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f9f79c7999aa40f7993c4e7e89a3302d"/>
-        <经纪公司>
-          <公司 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e6c55afd88b9452088ca67313433da47">
-            <rdfs:comment>乐华娱乐</rdfs:comment>
-          </公司>
-        </经纪公司>
-        <夫妻 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#7b793b50a77b4aa587b2eebdb8a1ec78"/>
-        <有中文名>阿杜</有中文名>
-        <有主要成就>2002年全球华语歌曲排行榜最佳新人铜奖 新加坡金曲奖“最佳新人奖”金奖、“最具潜质本地新人” 第二届金曲红人颁奖典礼最佳新人 十大华语金曲：他一定很爱你 2003年年度最受欢迎男歌手五强奖 2004年港台地区最佳销量男歌手 2010年媒体推荐最具特色艺人大奖 海外华人特别成就奖 收起</有主要成就>
-        <rdfs:comment>阿杜</rdfs:comment>
-        <有歧义说明>新加坡歌手</有歧义说明>
-        <有外文名>Ado</有外文名>
-        <有职业>歌手</有职业>
-        <有体重>64kg</有体重>
-        <owl:sameAs>
-          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#3686e8f1be644f2d88349f3d53ebf585">
-            <rdfs:comment>杜成义</rdfs:comment>
-          </拟人>
-        </owl:sameAs>
-        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#94b9c006140548f9b3fba31ea424e524"/>
-        <有别名>杜成义</有别名>
-        <有师弟>林俊杰</有师弟>
-        <有描述>阿杜，原名杜成义，1973年3月11日出生，新加坡歌手。 在当歌手之前，阿杜是建筑工地的工头，直到有一天，阿杜陪同朋友去参加一个三千多人报名的试音比赛，意外受到评审的肯定与青睐，立刻与他签约为培训的歌手，加入海蝶唱片，从此步入歌坛[1]  。2002年发行第一张专辑《天黑》；同年，发行专辑《坚持到底》。2007年，发行专辑《差一点》[2]  ，阿杜凭借歌曲《差一点》获得雪碧原创港台金曲奖[3]  。2008年，发行专辑《Do The Best》[4]  。2010年，发行专辑《没什么好怕》[5-6]  ，并凭借该专辑获得CCTV《环球红歌盛典》媒体推荐最具特色艺人大奖。2011年11月8日，签约乐华娱乐[7]  。2012年，发行专辑《第9次初恋》[8]  。2013年，参与安徽卫视的综艺节目《我为歌狂》[9]  。 2016年1月11日，阿杜在微博宣布结婚喜讯[10]  。</有描述>
-        <有星座>双鱼座</有星座>
-        <有经纪公司>乐华娱乐</有经纪公司>
-        <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
-        <有主要成就>2002年全球华语歌曲排行榜最佳新人铜奖 新加坡金曲奖“最佳新人奖”金奖、“最具潜质本地新人” 第二届金曲红人颁奖典礼最佳新人 十大华语金曲：他一定很爱你 2003年年度最受欢迎男歌手五强奖 展开 主要成就 2002年全球华语歌曲排行榜最佳新人铜奖 新加坡金曲奖“最佳新人奖”金奖、“最具潜质本地新人” 第二届金曲红人颁奖典礼最佳新人 十大华语金曲：他一定很爱你 2003年年度最受欢迎男歌手五强奖 2004年港台地区最佳销量男歌手 2010年媒体推荐最具特色艺人大奖 海外华人特别成就奖 收起</有主要成就>
-        <有代表作品>坚持到底、他一定很爱你、天黑、第九次出恋</有代表作品>
-        <有picSrc>1463383325240726.jpg</有picSrc>
-        <有身高>172cm</有身高>
-        <有语言>国语、英语、闽南语</有语言>
-        <有出生日期>1973年3月11日</有出生日期>
-        <有血型>AB型</有血型>
-      </歌手>
-    </公民>
-  </地区>
   <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#68d0dd04dab548d8bd86b372276519cd">
     <rdfs:comment>厉曼婷</rdfs:comment>
     <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b43f0b91ec574cf9969cf99343bec155"/>
     <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b43f0b91ec574cf9969cf99343bec155"/>
   </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#bddf16bd37de493dbc0d93a9196ad203">
-    <rdfs:comment>庄冬昕</rdfs:comment>
-    <编曲>
-      <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b7128e5dbe974e4aa61c5fb3a3cc0aeb">
-        <有描述>《连带关系》是由Twins演唱的一首歌曲，由周杰伦作曲，陈少琪作词，收录于专辑《桐话妍语》中。</有描述>
-        <有谱曲>周杰伦</有谱曲>
-        <rdfs:comment>连带关系</rdfs:comment>
-        <有编曲>庄冬昕</有编曲>
-        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b7128e5dbe974e4aa61c5fb3a3cc0aeb"/>
-        <有所属专辑>桐话妍语</有所属专辑>
-        <有歌曲原唱>Twins</有歌曲原唱>
-        <有发行时间>2008年1月</有发行时间>
-        <有URL信息来源>http://baike.baidu.com/view/1741596.htm</有URL信息来源>
-        <有填词>陈少琪</有填词>
-        <有中文名称>连带关系</有中文名称>
-        <有picSrc>1463383590304165.jpg</有picSrc>
-      </音乐>
-    </编曲>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b7128e5dbe974e4aa61c5fb3a3cc0aeb"/>
-  </拟人>
   <地区 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#aea783d3bd05475f952343462b48801e">
     <公民>
       <演员 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#df1438e95fb048f986af22fdfd6e2925">
-        <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2088d36f19d44e5b96872e16bdfff99d"/>
+        <写>
+          <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2088d36f19d44e5b96872e16bdfff99d">
+            <有合声>周杰伦</有合声>
+            <有所属专辑>《范特西》</有所属专辑>
+            <有发行时间>2001年9月14日</有发行时间>
+            <有合声编写>周杰伦</有合声编写>
+            <有歌曲原唱>周杰伦</有歌曲原唱>
+            <有歌曲语言>国语</有歌曲语言>
+            <有歧义说明>周杰伦创作歌曲</有歧义说明>
+            <rdfs:comment>简单爱</rdfs:comment>
+            <有URL信息来源>http://baike.baidu.com/subview/116599/5089663.htm</有URL信息来源>
+            <有编曲>林迈可</有编曲>
+            <有MV导演>黄中平</有MV导演>
+            <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2088d36f19d44e5b96872e16bdfff99d"/>
+            <有音乐风格>R&amp;B，流行</有音乐风格>
+            <有填词>徐若瑄</有填词>
+            <有picSrc>1463382590091134.jpg</有picSrc>
+            <有谱曲>周杰伦</有谱曲>
+            <有录音工程>Gary Yang(J&amp;A STUDIO)</有录音工程>
+            <有歌曲时长>04:32</有歌曲时长>
+            <有中文名称>简单爱</有中文名称>
+            <有混音工程>杨大纬（杨大纬录音工作室）</有混音工程>
+            <有描述>《简单爱》由周杰伦作曲徐若瑄填词，是2001年9月14日发行周杰伦第二张专辑《范特西》中第三支歌曲。 《简单爱》在2001年年度HitFM联播网百首单曲中名列亚军。</有描述>
+          </音乐>
+        </写>
         <有丈夫>
           <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#12705deda75f444b891a9b27ae1a9a7d">
             <rdfs:comment>李云峰</rdfs:comment>
@@ -5632,7 +5307,31 @@
             <rdfs:comment>贺锡敬</rdfs:comment>
           </拟人>
         </旧爱>
-        <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e6d2b94abaca4607bbb28ef5abefc2d8"/>
+        <写>
+          <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e6d2b94abaca4607bbb28ef5abefc2d8">
+            <有歌曲原唱>周杰伦</有歌曲原唱>
+            <有MV导演>黄中平</有MV导演>
+            <rdfs:comment>简单爱</rdfs:comment>
+            <有合声>周杰伦</有合声>
+            <有所属专辑>《范特西》</有所属专辑>
+            <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e6d2b94abaca4607bbb28ef5abefc2d8"/>
+            <有音乐风格>R&amp;B，流行</有音乐风格>
+            <有歧义说明>周杰伦创作歌曲</有歧义说明>
+            <有发行时间>2001年9月14日</有发行时间>
+            <有歌曲时长>04:32</有歌曲时长>
+            <有填词>徐若瑄</有填词>
+            <有合声编写>周杰伦</有合声编写>
+            <有录音工程>Gary Yang(J&amp;A STUDIO)</有录音工程>
+            <有混音工程>杨大纬（杨大纬录音工作室）</有混音工程>
+            <有picSrc>1463382798754721.jpg</有picSrc>
+            <有中文名称>简单爱</有中文名称>
+            <有编曲>林迈可</有编曲>
+            <有描述>《简单爱》由周杰伦作曲徐若瑄填词，是2001年9月14日发行周杰伦第二张专辑《范特西》中第三支歌曲。 《简单爱》在2001年年度HitFM联播网百首单曲中名列亚军。</有描述>
+            <有谱曲>周杰伦</有谱曲>
+            <有URL信息来源>http://baike.baidu.com/view/116599.htm</有URL信息来源>
+            <有歌曲语言>国语</有歌曲语言>
+          </音乐>
+        </写>
         <前男友>
           <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70adaab2187549d1bec07f6e3c3b0ac2">
             <rdfs:comment>吴奇隆</rdfs:comment>
@@ -5928,20 +5627,10 @@
     </公民>
     <公民 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#7fa263570d544dfdacd158ebb9c6d798"/>
   </地区>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f21b5b9672424a168690d2e83d3a4e28">
-    <rdfs:comment>施人诚</rdfs:comment>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f0c28fb947eb44c8b357a8584dfdc584"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f0c28fb947eb44c8b357a8584dfdc584"/>
-  </拟人>
   <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a0276966fd794a12ac97ea87ad1c3c6d">
     <rdfs:comment>屠颖</rdfs:comment>
     <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#488ccd4ec9e14e078cfb6b784b8033e5"/>
     <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#488ccd4ec9e14e078cfb6b784b8033e5"/>
-  </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#8b95d133dbf14a32b2990814068c8966">
-    <rdfs:comment>韩冰</rdfs:comment>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
   </拟人>
   <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#eea8b70d45bb49209efeb84fb7c4af14">
     <rdfs:comment>黄雨勋</rdfs:comment>
@@ -5974,16 +5663,6 @@
     <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#07c2e2a51bb4406e8b7377df754bbc74"/>
     <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#260c7fcff46d4d9b86e7dab9c7109d9f"/>
     <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#260c7fcff46d4d9b86e7dab9c7109d9f"/>
-  </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#003591e11a2541229dae8d9f88744e9c">
-    <rdfs:comment>林文炫</rdfs:comment>
-    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
-  </拟人>
-  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#6284aeab88114e5eb0068eaf6a660ef2">
-    <rdfs:comment>吴庆隆</rdfs:comment>
-    <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#5d3d42b8166748318255acdb6773aec8"/>
-    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#5d3d42b8166748318255acdb6773aec8"/>
   </拟人>
   <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#ff2c0e82833f44299b616605200fa381">
     <rdfs:comment>钟兴民</rdfs:comment>
@@ -6195,6 +5874,344 @@
     <rdfs:comment>Selina</rdfs:comment>
     <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#57b72476be404a00aebcbbf9a3c72b2d"/>
     <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#57b72476be404a00aebcbbf9a3c72b2d"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#29a5be86cc994a6e836f793aa033fdde">
+    <rdfs:comment>苍老师</rdfs:comment>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#4e299245b2684ca1862d686d3bdc8da3">
+    <rdfs:comment>费玉清</rdfs:comment>
+    <演唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
+    <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#653bb58908a94843a60a41f80e3a7cf9">
+    <rdfs:comment>弹头</rdfs:comment>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#31d0b5162e624eafa4251ab7a730e46a"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#31d0b5162e624eafa4251ab7a730e46a"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2453bcf06f3b4cbfaeeea52dfcdce0b8">
+    <rdfs:comment>毛毛</rdfs:comment>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#bec0c333bc584c34967bd5f8460c5242"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#bec0c333bc584c34967bd5f8460c5242"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dbb5cb0ef1ba4ae78d53aeb3f3524b93">
+    <rdfs:comment>詹宇豪</rdfs:comment>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#de292203366045669aebdc1e102416ee"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#de292203366045669aebdc1e102416ee"/>
+    <谱曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#de292203366045669aebdc1e102416ee"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#9a4e4ee87cfa4478b525a7d110441d45">
+    <rdfs:comment>潘协庆</rdfs:comment>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#5d3d42b8166748318255acdb6773aec8"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#5d3d42b8166748318255acdb6773aec8"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f2c16d795242408995b76e435313cdfa">
+    <rdfs:comment>宝木中阳</rdfs:comment>
+    <配音 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#be9281fd777a43ea98f017c3ede4166a"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#988b8a708a9a473892e8a14200a94767">
+    <rdfs:comment>胡彦斌</rdfs:comment>
+    <演唱>
+      <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee">
+        <有歌曲原唱>胡彦斌</有歌曲原唱>
+        <有描述>《月光》是胡彦斌演唱的一首歌曲，由林文炫填词，胡彦斌作曲，是国产动画《秦时明月》的片头曲和主题曲[1]  。</有描述>
+        <有编曲>胡彦斌</有编曲>
+        <有谱曲>胡彦斌</有谱曲>
+        <有中文名称>月光</有中文名称>
+        <有音乐风格>R&amp;B音乐</有音乐风格>
+        <有歌曲时长>4分32秒</有歌曲时长>
+        <有歌曲语言>国语</有歌曲语言>
+        <有picSrc>1463382829423655.jpg</有picSrc>
+        <有歧义说明>胡彦斌演唱《秦时明月》系列片头曲</有歧义说明>
+        <有URL信息来源>http://baike.baidu.com/view/18752.htm</有URL信息来源>
+        <rdfs:comment>月光</rdfs:comment>
+        <有填词>林文炫</有填词>
+        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
+      </音乐>
+    </演唱>
+    <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
+    <谱曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
+    <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b4ce3ef0594f431487d57f318cd46e1b">
+    <rdfs:comment>平安</rdfs:comment>
+    <演唱>
+      <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f">
+        <有URL信息来源>http://baike.baidu.com/view/299701.htm</有URL信息来源>
+        <有中文名称>圆梦</有中文名称>
+        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
+        <有编曲>张江</有编曲>
+        <有歌曲时长>3分32秒</有歌曲时长>
+        <有歌曲原唱>平安</有歌曲原唱>
+        <有picSrc>1463383171404116.jpg</有picSrc>
+        <rdfs:comment>圆梦</rdfs:comment>
+        <有填词>韩冰</有填词>
+        <有发行时间>2013-12-23</有发行时间>
+        <有音乐风格>流行</有音乐风格>
+        <有描述>《圆梦》由年青音乐人张江作曲、韩冰作词、歌手平安演唱。 《圆梦》在2013年12月23日上海市委宣传部、上海市文广局主办的“我的中国梦”原创歌曲征集评选活动音乐会上，得到现场观众和现场专业评委的极高评价，勇夺银奖。[1] </有描述>
+        <有MV导演>张蒙舟</有MV导演>
+        <有歌曲语言>汉语</有歌曲语言>
+        <有歧义说明>歌手平安演唱的歌曲</有歧义说明>
+        <有谱曲>张江</有谱曲>
+      </音乐>
+    </演唱>
+    <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
+  </拟人>
+  <地区 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#368c677876a942d9a9f3baf1396d7865">
+    <rdfs:comment>加拿大</rdfs:comment>
+    <公民 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#63f5e4f5215a437db01f076dc30afc23"/>
+  </地区>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#bb06116e6301478dac95a305f4ea4c66">
+    <rdfs:comment>易家扬</rdfs:comment>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#84ae8a4f491b4f0cad9e1be4fd6b3af4"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#84ae8a4f491b4f0cad9e1be4fd6b3af4"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a36d9dcc42594ee18bc04b720fd931c8">
+    <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2088d36f19d44e5b96872e16bdfff99d"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#6cade72254f4416e9a3468ce2822559d"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2088d36f19d44e5b96872e16bdfff99d"/>
+    <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#6cade72254f4416e9a3468ce2822559d"/>
+    <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
+    <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e6d2b94abaca4607bbb28ef5abefc2d8"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e6d2b94abaca4607bbb28ef5abefc2d8"/>
+    <rdfs:comment>林迈可</rdfs:comment>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#5f63c2d6ccfb409fbd4446c8f6974942">
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b4af6e3d16c044a889fe6efdfd8be353"/>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0462449fe97345d58166356b88c7c499"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2c2f3c51e392462fb7d3adf4733d1826"/>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#241220f5b2344270be0f71135952029d"/>
+    <填词>
+      <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#36506eebb3b142b3ae3e1d451a1f1ecc">
+        <rdfs:comment>河流·午后·我经过</rdfs:comment>
+        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#36506eebb3b142b3ae3e1d451a1f1ecc"/>
+        <有URL信息来源>http://baike.baidu.com/view/3930066.htm</有URL信息来源>
+        <有描述>周杰伦将自己作品割爱给南拳妈妈，编曲偏向日系软摇滚，略为成熟的曲风很适合弹头、宇豪这个新南拳组合，『很舒服的歌曲，听起来彷佛是我跟弹头漫步在草原里…』 两位原来的南拳妈妈成员选择单飞，所以现在的南拳妈妈还剩下两位成员——弹头、宇豪。 弹头的声音非常绵软，让人百听不厌的天籁之音非常适合这首歌的可爱之处，而宇豪比较相对来说是帅气一点的声音，此曲中也显得让人恋爱不已。 现在网上已经可以试听此歌完整版了。</有描述>
+        <有中文名称>河流·午后·我经过</有中文名称>
+        <有所属专辑>决斗巴哈</有所属专辑>
+        <有歌曲原唱>周杰伦</有歌曲原唱>
+        <有填词>方文山</有填词>
+      </音乐>
+    </填词>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#60de5ba1ca5b497a8c0e376303904e32"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e46b8ff05d294aa3bd34ee4148b89166"/>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e9ffe37bc1e24f119b8e3e472d4a05a7"/>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#488ccd4ec9e14e078cfb6b784b8033e5"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#36506eebb3b142b3ae3e1d451a1f1ecc"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#241220f5b2344270be0f71135952029d"/>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2c2f3c51e392462fb7d3adf4733d1826"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#26f42a2cd1cc43fe92043a7b358fc304"/>
+    <rdfs:comment>方文山</rdfs:comment>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b79a990528404996a656565470f96b52"/>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2d38bacfdfb84f7ca0c42d993cffb60e"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b4af6e3d16c044a889fe6efdfd8be353"/>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e46b8ff05d294aa3bd34ee4148b89166"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b79a990528404996a656565470f96b52"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#26f42a2cd1cc43fe92043a7b358fc304"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#40fda681d6cb417dbb28bfee3a573e73"/>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#70d7edc4a0c5422c8164e52cf09e8b91"/>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#40fda681d6cb417dbb28bfee3a573e73"/>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#60de5ba1ca5b497a8c0e376303904e32"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2d38bacfdfb84f7ca0c42d993cffb60e"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#488ccd4ec9e14e078cfb6b784b8033e5"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e9ffe37bc1e24f119b8e3e472d4a05a7"/>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#ba8c89ccde994064acfd1da38663ef93"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#ba8c89ccde994064acfd1da38663ef93"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0462449fe97345d58166356b88c7c499"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#847ba3dc5a7d400d95e6846e40cb6eb3">
+    <rdfs:comment>张江</rdfs:comment>
+    <谱曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
+    <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2cf506a8b53840b1b3a22091f806c9fc">
+    <rdfs:comment>齐秦</rdfs:comment>
+    <演唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#01005481865545128e2b28cab127c4fb"/>
+    <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#01005481865545128e2b28cab127c4fb"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e8f4f8cd206f4470bb1893e7dd57d906">
+    <rdfs:comment>袁咏琳</rdfs:comment>
+    <演唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0bc35157d89e44feb0fd8b1f59848294"/>
+    <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0bc35157d89e44feb0fd8b1f59848294"/>
+  </拟人>
+  <地区 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#a64882524aa2411e85b1f6f8503384b4">
+    <rdfs:comment>美国</rdfs:comment>
+    <公民>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#7ef376a8aebc49ca95bb5128674da1b8">
+        <有身高>198厘米/6英尺6英寸</有身高>
+        <有URL信息来源>http://baike.baidu.com/view/2879.htm</有URL信息来源>
+        <有NBA选秀>1996年第1轮第13位被黄蜂队选中</有NBA选秀>
+        <有毕业院校>劳尔梅里恩高中</有毕业院校>
+        <有场上位置>得分后卫/小前锋（锋卫摇摆人）</有场上位置>
+        <owl:sameAs>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#040d7885c5f84f6496d337fb1c3d0430">
+            <rdfs:comment>渣科</rdfs:comment>
+          </拟人>
+        </owl:sameAs>
+        <有别名>飞侠，黑曼巴、蜗壳、渣科</有别名>
+        <有球衣号码>24号</有球衣号码>
+        <owl:sameAs>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#348e10a903e44813a9976d363a9661e1">
+            <rdfs:comment>飞侠，黑曼巴</rdfs:comment>
+          </拟人>
+        </owl:sameAs>
+        <有描述>科比·布莱恩特（Kobe Bryant），1978年8月23日出生于美国宾夕法尼亚州费城，前美国职业篮球运动员，司职得分后卫/小前锋（锋卫摇摆人），整个篮球职业生涯（1996年-2016年）一直效力于NBA洛杉矶湖人队，是前美国职业篮球运动员乔·布莱恩特的儿子。 科比是NBA最好的得分手之一，突破、投篮、罚球、三分球他都驾轻就熟，几乎没有进攻盲区，单场比赛81分的个人纪录就有力地证明了这一点。除了疯狂的得分外，科比的组织能力也很出众，经常担任球队进攻的第一发起人。另外科比还是联盟中最好的防守人之一，贴身防守非常具有压迫性。 2016年4月14日，在结束了生涯最后一场主场对阵爵士的常规赛之后，科比·布莱恩特正式宣布退役。</有描述>
+        <有出生地>美国宾夕法尼亚州费城</有出生地>
+        <有专业特点>高效的得分手、善于组织与防守</有专业特点>
+        <有体重>96千克/205磅</有体重>
+        <有主要奖项>NBA最有价值球员奖（2008） 两届NBA总决赛最有价值球员奖（2009-2010） 四届NBA全明星赛最有价值球员奖（2002；2007；2009；2011） 五届NBA总冠军（2000-2002；2009-2010） 18次全明星（1998；2000-2016）</有主要奖项>
+        <有官网>http://www.kobebryant.com/</有官网>
+        <owl:sameAs>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#ddcf2f5bbe424424b81b7515c6b3a585">
+            <rdfs:comment>蜗壳</rdfs:comment>
+          </拟人>
+        </owl:sameAs>
+        <rdfs:comment>科比·布莱恩特</rdfs:comment>
+        <有父亲>乔·布莱恩特[1]</有父亲>
+        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#7ef376a8aebc49ca95bb5128674da1b8"/>
+        <有运动项目>篮球</有运动项目>
+        <有国籍>美国</有国籍>
+        <有中文名>科比·比恩·布莱恩特</有中文名>
+        <有出生日期>1978年8月23日</有出生日期>
+        <有所属运动队>已退役</有所属运动队>
+        <有妻子>瓦妮莎·布莱恩特</有妻子>
+        <有外文名>Kobe Bean Bryant</有外文名>
+        <有picSrc>1463382751378882.jpg</有picSrc>
+      </拟人>
+    </公民>
+    <公民 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e4b1896956e444c98dc445451968c910"/>
+    <公民>
+      <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e8f85c67e03648c2a8daaebeb4f97276">
+        <唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#cd7101eb2c4444718a805c6ab24b5ea1"/>
+        <有职业>歌手、演员</有职业>
+        <有中文名>许慧欣</有中文名>
+        <有picSrc>1463383478395784.jpg</有picSrc>
+        <有外文名>eVonne</有外文名>
+        <j.0:体重>163cm/45kg</j.0:体重>
+        <有唱片公司>环球唱片、大国翼星</有唱片公司>
+        <有出生日期>1979年12月5日</有出生日期>
+        <有国籍>美国</有国籍>
+        <有毕业院校>德州大学奥斯汀心理系</有毕业院校>
+        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e8f85c67e03648c2a8daaebeb4f97276"/>
+        <演唱 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#cd7101eb2c4444718a805c6ab24b5ea1"/>
+        <有妹妹>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0fde4ec92efd448786492a925d2d6feb">
+            <rdfs:comment>许嘉凌</rdfs:comment>
+          </拟人>
+        </有妹妹>
+        <有出生地>美国德克萨斯州</有出生地>
+        <有URL信息来源>http://baike.baidu.com/view/6674.htm</有URL信息来源>
+        <妹妹 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#0fde4ec92efd448786492a925d2d6feb"/>
+        <有主要成就>第十四届金曲奖最佳新人奖 2002TVB8金曲榜最佳女新人奖 G-Music风云榜白金音乐奖 2010 中国能量女性奖</有主要成就>
+        <有描述>许慧欣，1979年12月5日生于美国德克萨斯州，中国台湾女歌手、演员，毕业于德州大学奥斯汀心理系。 许慧欣，在上大学期间，帮朋友的朋友Benny录制的Demos而意外被前经纪人韩罗贤发掘入行。2002年，发行首张音乐专辑《快乐为主》，正式步入歌坛并凭借该专辑获得第14届金曲奖最佳新人奖。2011年，参演百老汇舞台剧《Anything Goes海上情缘》。2013年1月11日，发行音乐专辑《欣进化eVolution》。[1-2]  2013年10月，许慧欣与男友在巴厘岛举行婚礼。[3] </有描述>
+        <有代表作品>爱情抗体、孤独芭蕾、七月七日晴、威尼斯迷路、爱极限、黑天鹅</有代表作品>
+        <有经纪公司>北京百娱国际文化传媒有限公司</有经纪公司>
+        <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#歌手"/>
+        <rdfs:comment>许慧欣</rdfs:comment>
+        <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#演员"/>
+      </拟人>
+    </公民>
+  </地区>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#3f510f5befc24f51905c7f39f23af9e4">
+    <rdfs:comment>卢恒宇</rdfs:comment>
+    <导演 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#be9281fd777a43ea98f017c3ede4166a"/>
+    <执导 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#be9281fd777a43ea98f017c3ede4166a"/>
+    <拍 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#be9281fd777a43ea98f017c3ede4166a"/>
+  </拟人>
+  <地区 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#c2457b1812b442e19aa712abf32e5982">
+    <rdfs:comment>新加坡</rdfs:comment>
+    <公民>
+      <歌手 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#94b9c006140548f9b3fba31ea424e524">
+        <有好友>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f9f79c7999aa40f7993c4e7e89a3302d">
+            <rdfs:comment>吴克羣</rdfs:comment>
+          </拟人>
+        </有好友>
+        <有夫妻>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#7b793b50a77b4aa587b2eebdb8a1ec78">
+            <rdfs:comment>李鑫雨</rdfs:comment>
+          </拟人>
+        </有夫妻>
+        <有国籍>新加坡</有国籍>
+        <有URL信息来源>http://baike.baidu.com/view/9141.htm</有URL信息来源>
+        <好友 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f9f79c7999aa40f7993c4e7e89a3302d"/>
+        <经纪公司>
+          <公司 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#e6c55afd88b9452088ca67313433da47">
+            <rdfs:comment>乐华娱乐</rdfs:comment>
+          </公司>
+        </经纪公司>
+        <夫妻 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#7b793b50a77b4aa587b2eebdb8a1ec78"/>
+        <有中文名>阿杜</有中文名>
+        <有主要成就>2002年全球华语歌曲排行榜最佳新人铜奖 新加坡金曲奖“最佳新人奖”金奖、“最具潜质本地新人” 第二届金曲红人颁奖典礼最佳新人 十大华语金曲：他一定很爱你 2003年年度最受欢迎男歌手五强奖 2004年港台地区最佳销量男歌手 2010年媒体推荐最具特色艺人大奖 海外华人特别成就奖 收起</有主要成就>
+        <rdfs:comment>阿杜</rdfs:comment>
+        <有歧义说明>新加坡歌手</有歧义说明>
+        <有外文名>Ado</有外文名>
+        <有职业>歌手</有职业>
+        <有体重>64kg</有体重>
+        <owl:sameAs>
+          <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#3686e8f1be644f2d88349f3d53ebf585">
+            <rdfs:comment>杜成义</rdfs:comment>
+          </拟人>
+        </owl:sameAs>
+        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#94b9c006140548f9b3fba31ea424e524"/>
+        <有别名>杜成义</有别名>
+        <有师弟>林俊杰</有师弟>
+        <有描述>阿杜，原名杜成义，1973年3月11日出生，新加坡歌手。 在当歌手之前，阿杜是建筑工地的工头，直到有一天，阿杜陪同朋友去参加一个三千多人报名的试音比赛，意外受到评审的肯定与青睐，立刻与他签约为培训的歌手，加入海蝶唱片，从此步入歌坛[1]  。2002年发行第一张专辑《天黑》；同年，发行专辑《坚持到底》。2007年，发行专辑《差一点》[2]  ，阿杜凭借歌曲《差一点》获得雪碧原创港台金曲奖[3]  。2008年，发行专辑《Do The Best》[4]  。2010年，发行专辑《没什么好怕》[5-6]  ，并凭借该专辑获得CCTV《环球红歌盛典》媒体推荐最具特色艺人大奖。2011年11月8日，签约乐华娱乐[7]  。2012年，发行专辑《第9次初恋》[8]  。2013年，参与安徽卫视的综艺节目《我为歌狂》[9]  。 2016年1月11日，阿杜在微博宣布结婚喜讯[10]  。</有描述>
+        <有星座>双鱼座</有星座>
+        <有经纪公司>乐华娱乐</有经纪公司>
+        <rdf:type rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#拟人"/>
+        <有主要成就>2002年全球华语歌曲排行榜最佳新人铜奖 新加坡金曲奖“最佳新人奖”金奖、“最具潜质本地新人” 第二届金曲红人颁奖典礼最佳新人 十大华语金曲：他一定很爱你 2003年年度最受欢迎男歌手五强奖 展开 主要成就 2002年全球华语歌曲排行榜最佳新人铜奖 新加坡金曲奖“最佳新人奖”金奖、“最具潜质本地新人” 第二届金曲红人颁奖典礼最佳新人 十大华语金曲：他一定很爱你 2003年年度最受欢迎男歌手五强奖 2004年港台地区最佳销量男歌手 2010年媒体推荐最具特色艺人大奖 海外华人特别成就奖 收起</有主要成就>
+        <有代表作品>坚持到底、他一定很爱你、天黑、第九次出恋</有代表作品>
+        <有picSrc>1463383325240726.jpg</有picSrc>
+        <有身高>172cm</有身高>
+        <有语言>国语、英语、闽南语</有语言>
+        <有出生日期>1973年3月11日</有出生日期>
+        <有血型>AB型</有血型>
+      </歌手>
+    </公民>
+  </地区>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#bddf16bd37de493dbc0d93a9196ad203">
+    <rdfs:comment>庄冬昕</rdfs:comment>
+    <编曲>
+      <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b7128e5dbe974e4aa61c5fb3a3cc0aeb">
+        <有描述>《连带关系》是由Twins演唱的一首歌曲，由周杰伦作曲，陈少琪作词，收录于专辑《桐话妍语》中。</有描述>
+        <有谱曲>周杰伦</有谱曲>
+        <rdfs:comment>连带关系</rdfs:comment>
+        <有编曲>庄冬昕</有编曲>
+        <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b7128e5dbe974e4aa61c5fb3a3cc0aeb"/>
+        <有所属专辑>桐话妍语</有所属专辑>
+        <有歌曲原唱>Twins</有歌曲原唱>
+        <有发行时间>2008年1月</有发行时间>
+        <有URL信息来源>http://baike.baidu.com/view/1741596.htm</有URL信息来源>
+        <有填词>陈少琪</有填词>
+        <有中文名称>连带关系</有中文名称>
+        <有picSrc>1463383590304165.jpg</有picSrc>
+      </音乐>
+    </编曲>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b7128e5dbe974e4aa61c5fb3a3cc0aeb"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f21b5b9672424a168690d2e83d3a4e28">
+    <rdfs:comment>施人诚</rdfs:comment>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f0c28fb947eb44c8b357a8584dfdc584"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#f0c28fb947eb44c8b357a8584dfdc584"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#8b95d133dbf14a32b2990814068c8966">
+    <rdfs:comment>韩冰</rdfs:comment>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#13a9f0529f3c4fb58f881cd12360907f"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#003591e11a2541229dae8d9f88744e9c">
+    <rdfs:comment>林文炫</rdfs:comment>
+    <填词 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#dcf09131ced242d5a7bafbac8281ccee"/>
+  </拟人>
+  <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#6284aeab88114e5eb0068eaf6a660ef2">
+    <rdfs:comment>吴庆隆</rdfs:comment>
+    <编曲 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#5d3d42b8166748318255acdb6773aec8"/>
+    <写 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#5d3d42b8166748318255acdb6773aec8"/>
   </拟人>
   <日本 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#17318604ac194b7b83904f8106d546bc">
     <rdfs:comment>火影忍者</rdfs:comment>
@@ -8920,6 +8937,26 @@
     <有主持人>华少</有主持人>
     <有picSrc>http://d.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=49147d5eb67eca8012053ee1a918f0e0/ac4bd11373f08202a1aa4a424dfbfbedab641b97.jpg</有picSrc>
   </其它>
+  <其它 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2504f9c6ed884656b95650034ebac671">
+    <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2504f9c6ed884656b95650034ebac671"/>
+    <有歧义说明>2004年暴雪娱乐开发的角色扮演游戏</有歧义说明>
+    <有分级>T（ESRB） 12（PEGI） 15+（CSRR)</有分级>
+    <有发行日期>2004年</有发行日期>
+    <有游戏平台>PC</有游戏平台>
+    <有描述>《魔兽世界》（World of Warcraft）是由著名游戏公司暴雪娱乐所制作的第一款网络游戏，属于大型多人在线角色扮演游戏。游戏以该公司出品的即时战略游戏《魔兽争霸》的剧情为历史背景，依托魔兽争霸的历史事件和英雄人物，魔兽世界有着完整的历史背景时间线。[1]  玩家在魔兽世界中冒险、完成任务、新的历险、探索未知的世界、征服怪物等。 2003年《魔兽争霸III：冰封王座》发售之后，暴雪娱乐正式宣布了《魔兽世界》的开发计划（之前已经秘密开发了数年之久）。魔兽世界于2004年在北美公开测试，同年11月23日开始在美国、新西兰、加拿大、澳洲与墨西哥发行。截至2008年底，全球的魔兽世界付费用户已超过1150万人，并成功打进吉尼斯世界纪录大全。2008年4月，魔兽世界在MMORPG市场占有率达62%。[2]  截止2014年01月，全世界创建的账号总数已超过一亿（含试玩版账号），人物角色达到5亿。共有244个国家和地区的人在玩《魔兽世界》，包括南极、巴哈马，圣诞岛，以及托克劳群岛之类。[3]  在中国大陆的原代理商为第九城市，2005年3月21日下午开始限量测试，同年6月6日正式商业化运营。2009年6月7日起中国地区运营商变更为网易。[4]  [5] </有描述>
+    <有picSrc>1464612686141237.jpg</有picSrc>
+    <有中文名>魔兽世界</有中文名>
+    <有游戏类型>大型多人在线角色扮演游戏</有游戏类型>
+    <有开发商>暴雪娱乐</有开发商>
+    <rdfs:comment>魔兽世界</rdfs:comment>
+    <有URL信息来源>http://baike.baidu.com/subview/2605/9954500.htm</有URL信息来源>
+    <有运营商>网易（中国大陆地区）</有运营商>
+    <有游戏语言>英语，中文等等</有游戏语言>
+    <有游戏画面>3D</有游戏画面>
+    <有picSrc>http://e.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=1da70f196509c93d07f209f1a7069fe1/0b46f21fbe096b6322941b470e338744ebf8ac1c.jpg</有picSrc>
+    <有原版名称>World of Warcraft</有原版名称>
+    <有发行商>暴雪娱乐</有发行商>
+  </其它>
   <其它 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#2aa5897103cf469ab5368286ef22f736">
     <有曲目数量>11首</有曲目数量>
     <有发行地区>台湾</有发行地区>
@@ -9330,6 +9367,25 @@
     <rdfs:comment>青花瓷</rdfs:comment>
     <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#b9e6399d2d1942c3a746590fb7d1e045"/>
   </其它>
+  <其它 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#c570fde9450a4b808f1ef0878b05d53a">
+    <有法译>monde</有法译>
+    <有歧义说明>词语</有歧义说明>
+    <有俄译>мир</有俄译>
+    <有出处>中国语文</有出处>
+    <有原意>大自然的总名</有原意>
+    <有英译>world</有英译>
+    <rdfs:comment>世界</rdfs:comment>
+    <有中文名>世界</有中文名>
+    <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#c570fde9450a4b808f1ef0878b05d53a"/>
+    <有URL信息来源>http://baike.baidu.com/subview/8083/7031108.htm</有URL信息来源>
+    <有论坛>世界吧</有论坛>
+    <有picSrc>http://d.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=4fb2153b319b033b2c88fbdc2df551ee/38dbb6fd5266d01692bc9617922bd40735fa3563.jpg</有picSrc>
+    <有注音>shi jie</有注音>
+    <有德译>welt</有德译>
+    <有外文名>World</有外文名>
+    <有描述>广义的世界（world），就是——全部、所有、一切。 现在通俗语文中，世界比宇宙的含义，丰富广泛的多。</有描述>
+    <有picSrc>1464612848159814.jpg</有picSrc>
+  </其它>
   <拟人 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#edd8b6693d7c4fe3a59c675c2f126c8d">
     <有民族>高山族</有民族>
     <有身高>177cm</有身高>
@@ -9396,6 +9452,19 @@
     <有picSrc>1463383194407499.jpg</有picSrc>
     <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#5b530d30b8ef4744af0d2e871ac98120"/>
   </音乐>
+  <其它 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#6719a80647d54c98961447fa1f4afa59">
+    <有URL信息来源>http://baike.baidu.com/subview/435451/11104871.htm</有URL信息来源>
+    <有歧义说明>日本群马县的上毛三山之一</有歧义说明>
+    <有所在地>日本群马县</有所在地>
+    <有picSrc>http://b.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=90779e5ed31373f0f53f68999c342cc6/caef76094b36acaf6fe990d97ed98d1001e99c8d.jpg</有picSrc>
+    <有描述>秋名山，是由妙义，赤城，上毛山组成的一座双重式火山，尤其以四个惊险而陡峭的五连发夹弯出名，而且，五连发夹弯还是《头文字D》里面的重要场景之一，这里也是车神（藤原拓海）的发迹地。</有描述>
+    <有火山类型>双重式火山</有火山类型>
+    <rdfs:comment>秋名山</rdfs:comment>
+    <有picSrc>1464612570290559.jpg</有picSrc>
+    <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#6719a80647d54c98961447fa1f4afa59"/>
+    <有中文名>秋名山</有中文名>
+    <有实名>榛名山</有实名>
+  </其它>
   <动作 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#ece52086963e4e528f2fe12bf7e3eb86">
     <有对白语言>英语，俄语</有对白语言>
     <有制片人>迈克尔·贝，肯尼·贝茨</有制片人>
@@ -11188,6 +11257,26 @@
     <有所属类别>歌曲名</有所属类别>
     <有作曲>杉山胜彦</有作曲>
     <有歧义说明>中岛美嘉演唱歌曲</有歧义说明>
+  </其它>
+  <其它 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#8c7a4236e0454379a8a81f62a5fa9d9e">
+    <有描述>《魔兽世界》（World of Warcraft）是由著名游戏公司暴雪娱乐所制作的第一款网络游戏，属于大型多人在线角色扮演游戏。游戏以该公司出品的即时战略游戏《魔兽争霸》的剧情为历史背景，依托魔兽争霸的历史事件和英雄人物，魔兽世界有着完整的历史背景时间线。[1]  玩家在魔兽世界中冒险、完成任务、新的历险、探索未知的世界、征服怪物等。 2003年《魔兽争霸III：冰封王座》发售之后，暴雪娱乐正式宣布了《魔兽世界》的开发计划（之前已经秘密开发了数年之久）。魔兽世界于2004年在北美公开测试，同年11月23日开始在美国、新西兰、加拿大、澳洲与墨西哥发行。截至2008年底，全球的魔兽世界付费用户已超过1150万人，并成功打进吉尼斯世界纪录大全。2008年4月，魔兽世界在MMORPG市场占有率达62%。[2]  截止2014年01月，全世界创建的账号总数已超过一亿（含试玩版账号），人物角色达到5亿。共有244个国家和地区的人在玩《魔兽世界》，包括南极、巴哈马，圣诞岛，以及托克劳群岛之类。[3]  在中国大陆的原代理商为第九城市，2005年3月21日下午开始限量测试，同年6月6日正式商业化运营。2009年6月7日起中国地区运营商变更为网易。[4]  [5] </有描述>
+    <rdfs:comment>魔兽世界</rdfs:comment>
+    <有原版名称>World of Warcraft</有原版名称>
+    <有游戏类型>大型多人在线角色扮演游戏</有游戏类型>
+    <是 rdf:resource="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#8c7a4236e0454379a8a81f62a5fa9d9e"/>
+    <有游戏语言>英语，中文等等</有游戏语言>
+    <有游戏画面>3D</有游戏画面>
+    <有发行商>暴雪娱乐</有发行商>
+    <有开发商>暴雪娱乐</有开发商>
+    <有picSrc>1464612826350233.jpg</有picSrc>
+    <有中文名>魔兽世界</有中文名>
+    <有picSrc>http://e.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=1da70f196509c93d07f209f1a7069fe1/0b46f21fbe096b6322941b470e338744ebf8ac1c.jpg</有picSrc>
+    <有运营商>网易（中国大陆地区）</有运营商>
+    <有URL信息来源>http://baike.baidu.com/subview/2605/9954500.htm?fromtitle=%E9%AD%94%E5%85%BD&amp;fromid=2879937&amp;type=syn</有URL信息来源>
+    <有歧义说明>网络游戏《魔兽世界》的简称</有歧义说明>
+    <有游戏平台>PC</有游戏平台>
+    <有分级>T（ESRB） 12（PEGI） 15+（CSRR)</有分级>
+    <有发行日期>2004年</有发行日期>
   </其它>
   <音乐 rdf:about="http://www.semanticweb.org/narutoku/ontologies/2016/3/my-ontology#db0155ca3d91440492aadcc6d7e766d0">
     <有所属专辑>熊猫人</有所属专辑>

@@ -169,7 +169,10 @@ public class QueryServiceImpl implements QueryServiceI {
 		return polysemantStatements;
 	}
 	
-	public void handle(Map<Integer, Integer> nums,int counter[], int counterIndex) {  
+	public void handle(Map<Integer, Integer> nums,int counter[], int counterIndex) {
+		if(counterIndex < 0) {
+			return ;
+		}
         counter[counterIndex]++;
         int index = 0;
         int length = 0;
