@@ -64,18 +64,22 @@ public class OntologyConstructionPageProcessor extends BaseDAOImpl implements Pa
             page.setSkip(true);
         }
         
-       /*if(OntologyConstructionLauncher.count < 1) {
-        	//page.addTargetRequests(page.getHtml().links().regex("(https://github\\.com/\\w+/\\w+)").all());
+        if(page.getResultItems().getRequest().getUrl().split("#").length >= 2) {
+        	page.setSkip(true);
+        }
+        
+       /*if(OntologyConstructionLauncher.count < 10) {
             page.addTargetRequests(page.getHtml().links().regex("http://baike\\.baidu\\.com/.*").all());
-            //page.addTargetRequest("http://baike.baidu.com/subview/9514/15201085.htm");
             ++OntologyConstructionLauncher.count;
-        }*/
-       /* page.addTargetRequest("http://baike.baidu.com/subview/2321/5786291.htm"); // 火影忍者
+        }
+       	page.addTargetRequest("http://baike.baidu.com/subview/2321/5786291.htm"); // 火影忍者
         page.addTargetRequest("http://baike.baidu.com/subview/8980/5236815.htm"); // 死神
         page.addTargetRequest("http://baike.baidu.com/subview/9514/15201085.htm"); // 美人鱼
+        page.addTargetRequest(" http://baike.baidu.com/subview/82349/6500980.htm"); // 喜剧之王
+       
         page.addTargetRequest("http://baike.baidu.com/subview/12085227/12482265.htm"); // 美国队长3
         page.addTargetRequest("http://baike.baidu.com/view/5081.htm");	// 周星驰
-        page.addTargetRequest("http://baike.baidu.com/view/2632.htm");	// 周杰伦
+        //page.addTargetRequest("http://baike.baidu.com/view/2632.htm");	// 周杰伦
         page.addTargetRequest("http://baike.baidu.com/view/27362.htm");	// 习近平
         page.addTargetRequest("http://baike.baidu.com/view/1471.htm");	// 北京大学
         page.addTargetRequest("http://baike.baidu.com/view/1247049.htm");	// 阿里巴巴集团

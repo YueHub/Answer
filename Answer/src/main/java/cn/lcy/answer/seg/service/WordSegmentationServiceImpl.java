@@ -30,6 +30,11 @@ public class WordSegmentationServiceImpl implements WordSegmentationServiceI {
 	public WordSegmentResult wordSegmentation(String question) {
 		// 命名实体
 		List<PolysemantNamedEntity> polysemantNamedEntities = new ArrayList<PolysemantNamedEntity>();
+		for(String dictRow : dictIndividualList) {
+			// 覆盖模式插入
+			CustomDictionary.insert(dictRow.split("_")[1], "n 2048");
+		}
+		
 		// 本次分词主要为命名实体识别
 		List<Term> terms = HanLP.segment(question);
 		
@@ -73,13 +78,10 @@ public class WordSegmentationServiceImpl implements WordSegmentationServiceI {
 					}
 					polysemantNamedEntitiy.setPosition(id);
 					polysemantNamedEntities.add(polysemantNamedEntitiy);
-					// 覆盖模式插入
-					CustomDictionary.insert(dictIndividualName, "n 1024");
 				}
 				++id;
 			}
 		}
-		
 		// 加载用户词典后的分词
 		List<Term> termList = HanLP.segment(question);
 		

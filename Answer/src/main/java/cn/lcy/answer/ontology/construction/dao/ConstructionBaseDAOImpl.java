@@ -24,7 +24,8 @@ public class ConstructionBaseDAOImpl extends BaseDAOImpl implements Construction
 	 */
 	public static String ontologySource = SOURCE + "Answer_Ontology_V2.owl";
 	
-	public static final String PIC_SAVE_PATH = "G://Programming//Git//AnswerRepository//Answer//src//main//webapp//front//answer_image";
+	// G://Programming//Git//Answer//Answer//src//main//webapp//front//answer_image
+	public static final String PIC_SAVE_PATH = "D://answer_image";
 
 	public static final Model loadModel = FileManager.get().readModel(model, ontologySource);
 	
@@ -46,6 +47,7 @@ public class ConstructionBaseDAOImpl extends BaseDAOImpl implements Construction
 	
 	@Override
 	public void addSubClass(OntClass ontClass, OntClass subClass) {
+		
 		ontClass.addSubClass(subClass);
 	}
 	

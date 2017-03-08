@@ -373,6 +373,11 @@
         		      doc:"#922E00",
         		      demo:"#a7af00"
         	  }
+        	  if(returnVal.length == 0) {
+        		  $('#knowledge').css('display','none');
+        		  return;
+        	  }
+        	  
         	  // 初始化
         	  var sys_knowledge_graph = arbor.ParticleSystem()
         	  // 设置相关参数	stiffness:硬度	repulsion:排斥力	gravity:重力  
@@ -381,6 +386,7 @@
         	  sys_knowledge_graph.renderer = Renderer("#knowledge_graph")
         	  // 传入结点和连接
         	  // 添加结点
+        	  
         	  for(var i = 0; i < returnVal.length; i++) {
         		  var knowledgeGraphStatements = returnVal[i].knowledgeGraphStatements;
         		  for(var j = 0; j < knowledgeGraphStatements.length; j++) {

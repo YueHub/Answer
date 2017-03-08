@@ -1,7 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>OracleBigData</groupId>
-  <artifactId>SSHE</artifactId>
+  <groupId>cn.lcy</groupId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <build>
@@ -124,19 +123,12 @@
         </dependency>
         
         <!-- hibernate4 -->
-        <dependency>
+       <!--  <dependency>
              <groupId>org.hibernate</groupId>
              <artifactId>hibernate-core</artifactId>
              <version>4.1.7.Final</version>
-        </dependency>
+        </dependency> -->
         
-         <!-- MySql数据库驱动包 -->
-         <dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.34</version>
-		</dependency>
-         
           <!--Druid连接池包 -->
          <dependency>
              <groupId>com.alibaba</groupId>
@@ -182,5 +174,30 @@
 	        <artifactId>webmagic-extension</artifactId>
 	        <version>0.5.3</version>
 	    </dependency>
+	    
+	    <!-- Hanlp -->
+	    <!-- https://mvnrepository.com/artifact/com.hankcs/hanlp -->
+		<!-- <dependency>
+		    <groupId>com.hankcs</groupId>
+		    <artifactId>hanlp</artifactId>
+		    <version>portable-1.2.9</version>
+		</dependency> -->
+		    
+		<!-- Stanford Parser -->
+		<!-- https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-parser -->
+		<dependency>
+		    <groupId>edu.stanford.nlp</groupId>
+		    <artifactId>stanford-parser</artifactId>
+		    <version>3.6.0</version>
+		</dependency>
+		
+		<!-- MySql数据库驱动包 -->
+        <!--  <dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.34</version>
+		</dependency> -->
+		    
   </dependencies>
+  <artifactId>answer</artifactId>
 </project>

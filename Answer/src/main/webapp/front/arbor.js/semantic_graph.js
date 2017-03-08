@@ -364,6 +364,11 @@
         		      demo:"#a7af00"
         	  }
         	  
+        	  if(semanticGraphStatements.length == 0) {
+        		  $('#semantic').css('display','none');
+        		  return;
+        	  }
+        	  
         	  // 初始化
         	  var sys_graph = arbor.ParticleSystem()
         	  // 设置相关参数	stiffness:硬度	repulsion:排斥力	gravity:重力  

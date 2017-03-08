@@ -1,18 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html>
-<!-- saved from url=(0026)http://magi.peak-labs.com/ -->
-<html manifest="home.manifest">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!--[if lt IE 9]>
-	<script src="http://cdn.peak-labs.com/webassets/magiweb/js/css3-mediaqueries.js"></script>
-	<script src="http://cdn.peak-labs.com/webassets/magiweb/js/html5.js"></script>
-<![endif]-->
 <meta charset="utf-8">
 <meta name="keywords" content="Answer,搜索,语义理解,搜索引擎,领域本体,自然语言搜索,智能搜索,语义网,电影搜索">
 <meta name="description" content="Answer是基于电影领域本体的自动问答系统，同时也会给出全文搜索引擎的搜索结果">
-<link rel="dns-prefetch" href="http://www.peak-labs.com/">
 <meta name="renderer" content="webkit">
 <meta http-equiv="Cache-Control" content="no-siteapp">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
@@ -21,7 +15,6 @@
 <link rel="stylesheet" type="text/css" href="./answer_main/answer_main_css/answer-main-css.css">
 <title>Answer</title>
 <script src="./answer_main/answer_main_js/tagcanvas.min.js" type="text/javascript"></script>
-<script src="./answer_main/answer_main_js/magi-js.js" type="text/javascript"></script>
 
 <!-- LOGO -->
 <link rel="stylesheet" type="text/css" href="./answer_logo/css/style.css" /> 
@@ -108,8 +101,7 @@
 		<div id="ec" style="text-align: center; padding-top: 20px">
 			<canvas width="738" height="350" id="ex" style="margin-left: auto; margin-right: auto; cursor: pointer;">
 				<ul id="exa">
-					<li><a id="mes" target="_self" href="#">•汞属于过渡金属么? 它的膨胀系数是多少?</a></li>
-					<li><a href="${pageContext.request.contextPath}/front/developerAction!answer.action?question=美人鱼的导演是谁？">美人鱼的导演是谁?</a></li>
+					<li><a id="mes" target="_self" href="${pageContext.request.contextPath}/front/developerAction!answer.action?question=美人鱼的导演是谁？">美人鱼的导演是谁?</a></li>
 					<li><a href="${pageContext.request.contextPath}/front/developerAction!answer.action?question=火影忍者的作者是谁?">火影忍者的作者是谁?</a></li>
 					<li><a href="${pageContext.request.contextPath}/front/developerAction!answer.action?question=周星驰出演过哪些电影?">周星驰出演过哪些电影?</a></li>
 					<li><a href="${pageContext.request.contextPath}/front/developerAction!answer.action?question=周星驰什么时候出生的?">周星驰什么时候出生的?</a></li>

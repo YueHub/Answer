@@ -10,9 +10,9 @@ import java.net.URLConnection;
 public class PictureDownloader {
 	
 	public static void picDownload(String urlString, String filename,String savePath) throws Exception {
-		System.setProperty("proxySet", "true");  
+		/*System.setProperty("proxySet", "true");  
 	 	System.setProperty("proxyHost", "proxy.asiainfo.com");  
-        System.setProperty("proxyPort", "8080");
+        System.setProperty("proxyPort", "8080");*/
         
         // 构造URL
         URL url = new URL(urlString);  

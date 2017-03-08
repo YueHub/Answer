@@ -20,7 +20,7 @@ $(document).ready(function () {
     sentSelectDomObj = document.getElementById("sentSelect") ,
     textareaEnterNum = 0 ,
     getEnterNumFromStr = null ; // function to get Enter number
-	var targetURL = "http://localhost:8088/Answer/front/developerAction!getDependencyGraph.action"
+	var targetURL = "http://localhost:8080/Answer/front/developerAction!getDependencyGraph.action"
         //ajax
         $.ajax({
             url : targetURL,
