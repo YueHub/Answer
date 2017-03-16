@@ -2,7 +2,7 @@
 
 本科毕业设计－Answer－基于领域本体的语义搜索引擎－Beta0.1
 
-基于本体的语义搜索引擎-Answer-Betav1.0版-重新迁移至GitHub
+基于本体的语义搜索引擎-Answer-Betav0.1版-重新迁移至GitHub
 
 ![image](https://github.com/YueHub/Answer/blob/master/screenShots/主页.png)
 
