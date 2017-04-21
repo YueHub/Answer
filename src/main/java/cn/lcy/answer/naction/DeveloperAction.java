@@ -14,30 +14,35 @@ import org.apache.struts2.interceptor.SessionAware;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import cn.lcy.answer.grammar.service.GrammarParserServiceI;
-import cn.lcy.answer.knowledgegraph.service.KnowledgeGraphServiceI;
-import cn.lcy.answer.log.UserOperationLog;
-import cn.lcy.answer.namedentity.service.NamedEntityServiceI;
-import cn.lcy.answer.ontology.query.service.QueryServiceI;
-import cn.lcy.answer.ontology.query.service.QueryServiceImpl;
-import cn.lcy.answer.seg.service.WordSegmentationServiceI;
-import cn.lcy.answer.sem.graph.service.SemanticGraphServiceI;
-import cn.lcy.answer.sem.model.Answer;
-import cn.lcy.answer.sem.model.AnswerStatement;
-import cn.lcy.answer.sem.model.PolysemantNamedEntity;
-import cn.lcy.answer.sem.model.PolysemantStatement;
-import cn.lcy.answer.sem.model.QueryResult;
-import cn.lcy.answer.sem.model.SemanticGraph;
-import cn.lcy.answer.sem.model.Word;
-import cn.lcy.answer.sem.model.WordSegmentResult;
-import cn.lcy.answer.vo.AnswerResultVO;
-import cn.lcy.answer.vo.DependencyVO;
-import cn.lcy.answer.vo.KnowledgeGraphVO;
-import cn.lcy.answer.vo.PolysemantSituationVO;
-import cn.lcy.answer.vo.SemanticGraphVO;
-
 import com.hankcs.hanlp.corpus.dependency.CoNll.CoNLLSentence;
 import com.hankcs.hanlp.seg.common.Term;
+
+import cn.lcy.answer.log.UserOperationLog;
+import cn.lcy.knowledge.analysis.vo.AnswerResultVO;
+import cn.lcy.knowledge.analysis.vo.DependencyVO;
+import cn.lcy.knowledge.analysis.vo.KnowledgeGraphVO;
+import cn.lcy.knowledge.analysis.vo.PolysemantSituationVO;
+import cn.lcy.knowledge.analysis.vo.SemanticGraphVO;
+import cn.lcy.knowledge.analysis.grammar.service.GrammarParserServiceI;
+import cn.lcy.knowledge.analysis.grammar.service.GrammarParserServiceImpl;
+import cn.lcy.knowledge.analysis.knowledgegraph.service.KnowledgeGraphServiceI;
+import cn.lcy.knowledge.analysis.knowledgegraph.service.KnowledgeGraphServiceImpl;
+import cn.lcy.knowledge.analysis.namedentity.service.NamedEntityServiceI;
+import cn.lcy.knowledge.analysis.namedentity.service.NamedEntityServiceImpl;
+import cn.lcy.knowledge.analysis.ontology.query.service.QueryServiceI;
+import cn.lcy.knowledge.analysis.ontology.query.service.QueryServiceImpl;
+import cn.lcy.knowledge.analysis.seg.service.WordSegmentationServiceI;
+import cn.lcy.knowledge.analysis.seg.service.WordSegmentationServiceImpl;
+import cn.lcy.knowledge.analysis.sem.graph.service.SemanticGraphServiceI;
+import cn.lcy.knowledge.analysis.sem.graph.service.SemanticGraphServiceImpl;
+import cn.lcy.knowledge.analysis.sem.model.Answer;
+import cn.lcy.knowledge.analysis.sem.model.AnswerStatement;
+import cn.lcy.knowledge.analysis.sem.model.PolysemantNamedEntity;
+import cn.lcy.knowledge.analysis.sem.model.PolysemantStatement;
+import cn.lcy.knowledge.analysis.sem.model.QueryResult;
+import cn.lcy.knowledge.analysis.sem.model.SemanticGraph;
+import cn.lcy.knowledge.analysis.sem.model.Word;
+import cn.lcy.knowledge.analysis.sem.model.WordSegmentResult;
 
 @ParentPackage("basePackage")
 @Namespace("/front")
@@ -58,12 +63,12 @@ public class DeveloperAction extends BaseAction implements SessionAware{
 	private static Logger logger = Logger.getLogger("UserLog");
 	
 	private Map<String,Object> session;
-	private WordSegmentationServiceI wordSegmentationService;
-	private NamedEntityServiceI namedEntityService;
-	private GrammarParserServiceI grammarParserService;
-	private SemanticGraphServiceI semanticGraphService;
-	private QueryServiceI queryService;
-	private KnowledgeGraphServiceI knowledgeGraphService;
+	private WordSegmentationServiceI wordSegmentationService = WordSegmentationServiceImpl.getInstance();
+	private NamedEntityServiceI namedEntityService = NamedEntityServiceImpl.getInstance();
+	private GrammarParserServiceI grammarParserService = GrammarParserServiceImpl.getInstance();
+	private SemanticGraphServiceI semanticGraphService = SemanticGraphServiceImpl.getInstance();
+	private QueryServiceI queryService = QueryServiceImpl.getInstance();
+	private KnowledgeGraphServiceI knowledgeGraphService = KnowledgeGraphServiceImpl.getInstance();
 	
 	private String question;
 	
@@ -160,7 +165,7 @@ public class DeveloperAction extends BaseAction implements SessionAware{
 			}
 			
 			// 第九步：根据查询断言构建查询语句
-			List<String> SPARQLS = new QueryServiceImpl().createSparqls(queryStatementsNew);
+			List<String> SPARQLS = queryService.createSparqls(queryStatementsNew);
 			List<QueryResult> queryResults = new ArrayList<QueryResult>();
 			for(String SPARQL : SPARQLS) {
 				// 执行查询语句
@@ -272,62 +277,6 @@ public class DeveloperAction extends BaseAction implements SessionAware{
 	
 	public void setSession(Map<String, Object> session) {
 		this.session = session;
-	}
-	
-	public WordSegmentationServiceI getWordSegmentationService() {
-		return wordSegmentationService;
-	}
-	
-	@Autowired
-	public void setWordSegmentationService(
-			WordSegmentationServiceI wordSegmentationService) {
-		this.wordSegmentationService = wordSegmentationService;
-	}
-	
-	public NamedEntityServiceI getNamedEntityService() {
-		return namedEntityService;
-	}
-	
-	@Autowired
-	public void setNamedEntityService(NamedEntityServiceI namedEntityService) {
-		this.namedEntityService = namedEntityService;
-	}
-	
-	public GrammarParserServiceI getGrammarParserService() {
-		return grammarParserService;
-	}
-	
-	@Autowired
-	public void setGrammarParserService(GrammarParserServiceI grammarParserService) {
-		this.grammarParserService = grammarParserService;
-	}
-	
-	public SemanticGraphServiceI getSemanticGraphService() {
-		return semanticGraphService;
-	}
-	
-	@Autowired
-	public void setSemanticGraphService(SemanticGraphServiceI semanticGraphService) {
-		this.semanticGraphService = semanticGraphService;
-	}
-	
-	public QueryServiceI getQueryService() {
-		return queryService;
-	}
-	
-	@Autowired
-	public void setQueryService(QueryServiceI queryService) {
-		this.queryService = queryService;
-	}
-	
-	public KnowledgeGraphServiceI getKnowledgeGraphService() {
-		return knowledgeGraphService;
-	}
-	
-	@Autowired
-	public void setKnowledgeGraphService(
-			KnowledgeGraphServiceI knowledgeGraphService) {
-		this.knowledgeGraphService = knowledgeGraphService;
 	}
 	
 	public String getQuestion() {
