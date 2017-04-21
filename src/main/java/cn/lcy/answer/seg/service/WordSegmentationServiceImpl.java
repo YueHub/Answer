@@ -6,22 +6,21 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import cn.lcy.answer.enums.OntologyClassEnum;
-import cn.lcy.answer.ontology.construction.service.ConstructionServiceI;
-import cn.lcy.answer.sem.model.PolysemantNamedEntity;
-import cn.lcy.answer.sem.model.Word;
-import cn.lcy.answer.sem.model.WordSegmentResult;
-
 import com.hankcs.hanlp.HanLP;
 import com.hankcs.hanlp.corpus.io.IOUtil;
 import com.hankcs.hanlp.dictionary.CustomDictionary;
 import com.hankcs.hanlp.seg.common.Term;
 
+import cn.lcy.answer.enums.OntologyClassEnum;
+import cn.lcy.answer.sem.model.PolysemantNamedEntity;
+import cn.lcy.answer.sem.model.Word;
+import cn.lcy.answer.sem.model.WordSegmentResult;
+
 @Service("wordSegmentationService")
 public class WordSegmentationServiceImpl implements WordSegmentationServiceI {
 	
 	// 以生省内存的方式读取Answer_Dict词典
-	LinkedList<String> dictIndividualList = IOUtil.readLineListWithLessMemory(ConstructionServiceI.INDIVIDUAL_UUID_DICT_FILE);
+	LinkedList<String> dictIndividualList = IOUtil.readLineListWithLessMemory("/opt/DeepSearch/ProjectsData/DeepSearch/AnswerDict/Answer_Dict.txt");
 	
 	/**
 	 * HanLP分词以及命名实体识别
