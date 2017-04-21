@@ -191,6 +191,17 @@
 		    <version>3.6.0</version>
 		</dependency>
 		
+		<!-- <dependency>
+		    <groupId>org.apache.jena</groupId>
+		    <artifactId>jena-core</artifactId>
+		    <version>3.1.1</version>
+		</dependency>
+		https://mvnrepository.com/artifact/org.apache.jena/jena-arq
+		<dependency>
+		    <groupId>org.apache.jena</groupId>
+		    <artifactId>jena-arq</artifactId>
+		    <version>3.1.1</version>
+		</dependency> -->
 		<!-- MySql数据库驱动包 -->
         <!--  <dependency>
 			<groupId>mysql</groupId>

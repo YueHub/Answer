@@ -8,7 +8,7 @@ public class BaseDAOImpl implements BaseDAOI {
 	 * 本体的文件目录
 	 * ontologies/
 	 */
-	public static final String SOURCE = "D:/Ontologies/";
+	public static final String SOURCE = "/opt/DeepSearch/ProjectsData/DeepSearch/Ontologies/";
 
 	/**
 	 * TODO 修改 本体的标识？
