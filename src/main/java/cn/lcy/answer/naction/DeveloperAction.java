@@ -78,7 +78,7 @@ public class DeveloperAction extends BaseAction implements SessionAware{
 		List<Term> terms = wordSegmentResult.getTerms();
 		List<PolysemantNamedEntity> polysemantNamedEntities = wordSegmentResult.getPolysemantEntities();
 		List<Word> words = wordSegmentResult.getWords();
-		System.out.println("HanLP分词的结果为:"+terms);
+		System.out.println("HanLP分词的结果为:" + terms);
 		
 		// :查询本体库、取出命名实体的相关数据属性和对象属性
 		polysemantNamedEntities = namedEntityService.fillNamedEntities(polysemantNamedEntities);
