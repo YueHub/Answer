@@ -12,21 +12,24 @@ import org.apache.struts2.convention.annotation.Result;
 import org.apache.struts2.convention.annotation.Results;
 import org.apache.struts2.interceptor.SessionAware;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.hankcs.hanlp.corpus.dependency.CoNll.CoNLLSentence;
 import com.hankcs.hanlp.seg.common.Term;
 
 import cn.lcy.answer.log.UserOperationLog;
-import cn.lcy.knowledge.analysis.vo.AnswerResultVO;
-import cn.lcy.knowledge.analysis.vo.DependencyVO;
-import cn.lcy.knowledge.analysis.vo.KnowledgeGraphVO;
-import cn.lcy.knowledge.analysis.vo.PolysemantSituationVO;
-import cn.lcy.knowledge.analysis.vo.SemanticGraphVO;
+import cn.lcy.answer.service.GrammarParserGraphServiceI;
+import cn.lcy.answer.service.GrammarParserGraphServiceImpl;
+import cn.lcy.answer.service.KnowledgeGraphServiceI;
+import cn.lcy.answer.service.KnowledgeGraphServiceImpl;
+import cn.lcy.answer.service.SemanticGraphViewServiceI;
+import cn.lcy.answer.service.SemanticGraphViewServiceImpl;
+import cn.lcy.answer.vo.AnswerResultVO;
+import cn.lcy.answer.vo.DependencyVO;
+import cn.lcy.answer.vo.KnowledgeGraphVO;
+import cn.lcy.answer.vo.PolysemantSituationVO;
+import cn.lcy.answer.vo.SemanticGraphVO;
 import cn.lcy.knowledge.analysis.grammar.service.GrammarParserServiceI;
 import cn.lcy.knowledge.analysis.grammar.service.GrammarParserServiceImpl;
-import cn.lcy.knowledge.analysis.knowledgegraph.service.KnowledgeGraphServiceI;
-import cn.lcy.knowledge.analysis.knowledgegraph.service.KnowledgeGraphServiceImpl;
 import cn.lcy.knowledge.analysis.namedentity.service.NamedEntityServiceI;
 import cn.lcy.knowledge.analysis.namedentity.service.NamedEntityServiceImpl;
 import cn.lcy.knowledge.analysis.ontology.query.service.QueryServiceI;
@@ -50,7 +53,7 @@ import cn.lcy.knowledge.analysis.sem.model.WordSegmentResult;
 @Results({
 	@Result(name = "answer_result", location = "/front/answer_result.jsp")
 	}) 
-public class DeveloperAction extends BaseAction implements SessionAware{
+public class DeveloperAction extends BaseAction implements SessionAware {
 
 	/**
 	 * default serial version ID
@@ -234,8 +237,9 @@ public class DeveloperAction extends BaseAction implements SessionAware{
 	 * @return
 	 */
 	public String getDependencyGraph() {
+		GrammarParserGraphServiceI grammarParserGraphService = GrammarParserGraphServiceImpl.getInstance();
 		CoNLLSentence coNLLsentence = (CoNLLSentence)session.get("coNLLsentence");
-		DependencyVO dependencyVO = grammarParserService.getDependencyGraphVO(coNLLsentence); 	// 获取依存语法图
+		DependencyVO dependencyVO = grammarParserGraphService.getDependencyGraphVO(coNLLsentence); 	// 获取依存语法图
 		this.writeJson(dependencyVO); // 将依赖关系VO对象以JSON格式写入到前端
 		return "answer_result";
 	}
@@ -245,11 +249,13 @@ public class DeveloperAction extends BaseAction implements SessionAware{
 	 * @return
 	 */
 	public String getSemanticGraph() {
+		SemanticGraphViewServiceI semanticGraphViewService = SemanticGraphViewServiceImpl.getInstance();
+		
 		@SuppressWarnings("unchecked")
 		List<AnswerStatement> queryStatements = (List<AnswerStatement>)session.get("queryStatements");
 		SemanticGraphVO semanticGraphVO = new SemanticGraphVO();
 		if(queryStatements != null) {
-			semanticGraphVO = semanticGraphService.getSemanticGraphVO(queryStatements); // 将语义图解析成前端能够处理的json格式
+			semanticGraphVO = semanticGraphViewService.getSemanticGraphVO(queryStatements); // 将语义图解析成前端能够处理的json格式
 		}
 		this.writeJson(semanticGraphVO); 	// 将语义图以JSON格式写到前端
 		return "answer_result";
