@@ -313,6 +313,19 @@ color
 }
 }
 @media screen and (min-width:1120px) {
+	/* mine */
+	.logo-main {
+	    width: 300px;
+	    line-height: 60px;
+	    overflow: hidden;
+	    margin: 120px auto 50px;
+	    cursor: hand;
+	}
+	#logo {
+	    width: 100%;
+	    height: 100%;
+	}
+	
 	#lc {
 		position: absolute;
 		top: 0;
