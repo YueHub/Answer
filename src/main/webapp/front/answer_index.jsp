@@ -22,7 +22,7 @@
 <!-- LOGO -->
 <!-- 模式选择 -->
 	<link rel="stylesheet" type="text/css" href="./answer_select/answer_select_css/normalize.css" />
-	<link href='http://fonts.useso.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" media="screen, projection" href="./answer_select/answer_select_css/fancySelect.css">
 	<style type="text/css">
 		*{padding: 0;margin: 0;}
@@ -61,14 +61,19 @@
 <!-- 模式选择 -->
 </head>
 <body>
-	<div class="main clearfix" style='width:300px;margin:60px auto;cursor:hand;' onclick="document.location='answer_index.jsp'">
+<%-- 	<div class="main clearfix" style='width:300px;margin:60px auto;cursor:hand;' onclick="document.location='answer_index.jsp'">
 		<div class="circle " style="float:left;" >
 			<h1>Answer</h1>
 		</div>
 		<div style="cursor:hand;">
 			<span style='font-size:60px;margin-left:30px;'>Answer</span>
 		</div>
+	</div> --%>
+	
+	<div class="logo-main" onclick="document.location='mobile_index.jsp'">
+		<a href="answer_index.jsp"><img id="logo" alt="logo" src="./answer_logo/answer-logo.png"></a>
 	</div>
+	
 	<div id="sc" class="f-main">
 		<div id="u">
 			<div id="main">
