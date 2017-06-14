@@ -16,32 +16,32 @@
 	
 		<!-- 模式选择 -->
 		<link rel="stylesheet" type="text/css" href="./css/answer-select-css/normalize.css" />
-		<link rel="stylesheet" type="text/css" media="screen, projection" href="./css/answer-select-css/fancy-select.css">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./css/fancy-select-css/fancy-select.css">
 		<!-- 模式选择 -->
 	
 		<!-- arbor.js 结点联系可视化 -->
-		<link rel="stylesheet" href="./js/arbor.js/mxh7kqd-e.css">
+		<link rel="stylesheet" href="./css/arbor-js/mxh7kqd-e.css">
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<style type="text/css">.tk-athelas{font-family:"athelas-1","athelas-2",serif;}</style>
-		<script type="text/javascript" src="./js/arbor.js/mxh7kqd.js"></script>
+		<script type="text/javascript" src="./js/arbor-js/mxh7kqd.js"></script>
 		<script src="./js/libs/jquery-2.2.3.min.js"></script>
-		<script src="./js/arbor.js/jquery.address-1.4.min.js"></script>
-		<script src="./js/arbor.js/arbor.js"></script>
-		<script src="./js/arbor.js/arbor-tween.js"></script>
-		<script src="./js/arbor.js/arbor-graphics.js"></script>
-		<script src="./js/arbor.js/semantic_graph.js"></script>
-		<script src="./js/arbor.js/knowledge_graph.js"></script>
+		<script src="./js/arbor-js/jquery.address-1.4.min.js"></script>
+		<script src="./js/arbor-js/arbor.js"></script>
+		<script src="./js/arbor-js/arbor-tween.js"></script>
+		<script src="./js/arbor-js/arbor-graphics.js"></script>
+		<script src="./js/arbor-js/semantic_graph.js"></script>
+		<script src="./js/arbor-js/knowledge_graph.js"></script>
 		<!-- arbor.js 结点联系可视化 -->
 	
 		<!-- LTP 结点关联力导图-->
-		<link rel="stylesheet" href="./ltp_dependency/draw.css"/>
+		<link rel="stylesheet" href="./css/ltp-dependency/draw.css"/>
 	    <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style>
-		<script type="text/javascript" src="./ltp_dependency/jsobj_extension.js"></script>
-		<script type="text/javascript" src="./ltp_dependency/draw_obj.js"></script>
-		<script type="text/javascript" src="./ltp_dependency/draw_sent_view.js"></script>
-		<script type="text/javascript" src="./ltp_dependency/draw_para_view.js"></script>
-		<script type="text/javascript" src="./ltp_dependency/draw_load.js"></script>
-	    <script src="./ltp_dependency/holder.js"></script>
+		<script type="text/javascript" src="./js/ltp-dependency/jsobj_extension.js"></script>
+		<script type="text/javascript" src="./js/ltp-dependency/draw_obj.js"></script>
+		<script type="text/javascript" src="./js/ltp-dependency/draw_sent_view.js"></script>
+		<script type="text/javascript" src="./js/ltp-dependency/draw_para_view.js"></script>
+		<script type="text/javascript" src="./js/ltp-dependency/draw_load.js"></script>
+	    <script type="text/javascript" src="../js/ltp-dependency/holder.js"></script>
 		<!-- LTP 结点关联力导图-->
 		
 		<!-- bootstrap -->
@@ -49,16 +49,16 @@
 		<!-- bootstrap -->
 		
 		<!-- 图标1 -->
-		<link rel="stylesheet" href="css/answer-main-css/kinerloader2.css"/>
+		<link rel="stylesheet" href="./css/answer-main-css/kinerloader2.css"/>
 		<!-- 图标1 -->
 		
 		<!-- 图标2 -->
-		<link href="css/libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="./css/libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 		<!-- 图标2 -->
 		
 		<!-- 滚动条 -->
 		<!-- Custom scrollbars CSS -->
-		<link href="./scroll_bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+		<link href="./css/scroll-bar/jquery.mCustomScrollbar.css" rel="stylesheet" />
 		<!-- 滚动条 -->
 		
 		<!-- 传统搜索结果  -->
@@ -420,7 +420,7 @@
 	        <div class="row-fluid">
 	            <div id="mask" class="span12" style="display: none;">
 	                <div id="loadingTag" style="display: block; left: 380.5px;"> <!-- At First , it hidden -->
-	                    <img width="28px" height="28px" src="./ltp_dependency/ajax_loader.gif">
+	                    <img width="28px" height="28px" src="./css/ltp-dependency/ajax_loader.gif">
 	                    <span class="text-info">分析中...如果长时间无反应，请点击<code>分析</code>重试.</span>
 	                </div>
 	            </div>
@@ -573,7 +573,7 @@
 		
 		<!-- 模式选择 -->
 		<script src="./js/libs/jquery-2.2.3.min.js"></script>
-		<script src="./js/answer-select-js/fancy-select.js"></script>
+		<script src="./js/fancy-select-js/fancy-select.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$('#basic-usage-demo').fancySelect();
@@ -581,7 +581,7 @@
 		</script>
 		<!-- 模式选择 -->
 		<!-- 右侧弹窗 -->
-		<script src="src/cta.js"></script>
+		<script src="./js/cta/cta.js"></script>
 			<script>
 			var closeFn;
 			function closeShowingModal() {
@@ -616,7 +616,7 @@
 		
 		<!-- 滚动条 -->
 		<!-- custom scrollbars plugin -->
-		<script src="./scroll_bar/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="./js/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
 		<script>
 			(function($){
 				$(window).load(function(){
