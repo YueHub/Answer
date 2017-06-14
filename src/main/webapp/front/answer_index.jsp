@@ -19,8 +19,8 @@
 		<script src="./js/answer-main-js/tagcanvas.min.js" type="text/javascript"></script>
 		
 		<!-- 模式选择 -->
-		<link rel="stylesheet" type="text/css" href="./css/answer-select-css/normalize.css" />
-		<link rel="stylesheet" type="text/css" media="screen, projection" href="./css/answer-select-css/fancy-select.css">
+		<link rel="stylesheet" type="text/css" href="./css/fancy-select-css/normalize.css" />
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./css/fancy-select-css/fancy-select.css">
 		<!-- 模式选择 -->
 	</head>
 	<body>
@@ -117,7 +117,7 @@
 	       </script>
 	<!-- 模式选择 -->
 		<script src="./js/libs/jquery-2.2.3.min.js"></script>
-		<script src="./js/answer-select-js/fancy-select.js"></script>
+		<script src="./js/fancy-select-js/fancy-select.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$('#basic-usage-demo').fancySelect();
