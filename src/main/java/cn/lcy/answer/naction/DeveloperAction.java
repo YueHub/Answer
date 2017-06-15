@@ -229,6 +229,7 @@ public class DeveloperAction extends BaseAction implements SessionAware {
 		UserOperationLog userOperationLog = new UserOperationLog();
 		this.initLog(userOperationLog); // 初始化日志
 		logger.info(userOperationLog);
+		this.writeJson(answerResultVO);
 		return "answer_result";
 	}
 	
