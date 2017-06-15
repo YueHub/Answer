@@ -345,23 +345,6 @@
 		<div class="k" style="min-height: 54px;">
 		<div id='b_content'>
 			<ol id='b_results'>
-				<%-- <li class="b_algo" style='padding:10px;'>
-					<h2><a style='font-size:18px;color:#464646;' href="http://comic.qq.com/zt2013/hynaruto/index.htm" target="_blank"><strong>火影忍者naruto</strong>_腾讯动漫_腾讯网</a></h2>
-					<div class="b_caption">
-					<p style='color:#717171;font-size:14px;'>最新<strong>火影忍者</strong>漫画，最大的<strong>火影忍者</strong>fans聚集地，腾讯
-						<strong>火影忍者</strong>专区! ... 分享按钮不再出现？确定取消</p>
-						<div class="b_attribution">
-							<cite style='font-size:13px;color:#AFAFAF;'>comic.qq.com/zt2013/hy<strong>naruto</strong>/index.htm</cite>
-							<a href="http://cn.bing.com/search?q=%E7%81%AB%E5%BD%B1%E5%BF%8D%E8%80%85&amp;go=%E6%8F%90%E4%BA%A4&amp;qs=n&amp;form=QBLH&amp;pq=%E7%81%AB%E5%BD%B1%E5%BF%8D%E8%80%85&amp;sc=8-4&amp;sp=-1&amp;sk=&amp;cvid=CB53F4CC4AC24E20BCC6047EEE8CF2B0#" aria-label="此网站的操作" aria-haspopup="true"><a href="#" aria-label="此网站的操作" aria-haspopup="true"><span class="c_tlbxTrg"><span class="c_tlbxTrgIcn sw_ddgn"></span><span class="c_tlbxTrgIcn sw_ddgn"></span><span class="c_tlbxH" h="BASE:CACHEDPAGEDEFAULT" k="SERP,5199.1">
-							</span>
-							</span>
-							</a>
-							</a>
-						</div>
-					</div>
-					<div style='height:1px;width:100%;margin-top:20px;overflow:hidden;background:rgba(0, 0, 0, 0.28);'></div>
-				</li>
-			
 				<li class="b_algo" style='padding:10px;'>
 					<h2><a style='font-size:18px;color:#464646;' href="http://comic.qq.com/zt2013/hynaruto/index.htm" target="_blank"><strong>火影忍者naruto</strong>_腾讯动漫_腾讯网</a></h2>
 					<div class="b_caption"><p style='color:#717171;font-size:14px;'>最新<strong>火影忍者</strong>漫画，最大的<strong>火影忍者</strong>fans聚集地，腾讯
@@ -375,7 +358,7 @@
 							</a>
 						</div>
 					</div>
-				</li> --%>
+				</li>
 			</ol>
 		</div>
 		</div>
@@ -523,38 +506,6 @@
 			<%-- </s:if> --%>
 			<!-- 消岐 -->
 			
-			
-			<!-- 查询语句 -->
-			<%-- <s:if test="#session.answerResultVO.polysemantSituationVOs.size > 1"> --%>
-			<div id='query'>
-			<div class="bsm">
-			<i class="fa fa-cog fa-spin fa-fw" style='font-size:30px;color:#777777;'></i>
-			<span style='font-size:20px;font-family:"SimHei";'>构造的查询语句</span>
-			</div>
-			<s:iterator value='#session.answerResultVO.polysemantSituationVOs' id='polysemantSituationVO'>
-				<div class="k" style="min-height: 54px;">
-					<s:iterator value='#polysemantSituationVO.SPARQLS' id='SPARQL'>
-						<div class="n fk"></div>
-						<div class="in">
-							<font class="wb"><s:property value='#SPARQL'/></font><br/>
-						</div>
-					</s:iterator>
-				</div>
-				<div class="bf" style='text-align:center;'>
-				<s:iterator value='#polysemantSituationVO.activePolysemantNamedEntities' id='activePolysemantNamedEntity' status='st'> 
-					<s:if test="#activePolysemantNamedEntity.entityName != null && #st.index == 0">
-					如果<s:property value='#activePolysemantNamedEntity.entityName'/>指的是<span style='font-size:12px;font-weight:bold;'><s:property value='#activePolysemantNamedEntity.polysemantExplain'/></span>
-						<%-- <s:iterator value='#polysemantSituationVO.predicateDisambiguationStatements' id='predicateDisambiguationStatement'>
-							,<s:property value='#predicateDisambiguationStatement.predicate.name'/>指的是<span style='font-size:12px;font-weight:bold;'><s:property value='#predicateDisambiguationStatement.predicate.disambiguationName'/></span>
-						</s:iterator> --%>
-					</s:if>
-				</s:iterator>
-				</div>
-			</s:iterator>
-			</div>
-			<%-- </s:if> --%>
-			<!-- 查询语句 -->
-		
 		<div style="height: 10px; display: block;"></div>
 		<%-- <script language="javascript" type="text/javascript">
 			/* window.parent.postMessage('magibox-answer:true', '*'); */
@@ -714,7 +665,7 @@
 	        	$(b_results).append(sum);
 	        })
 	        .fail(function() {
-	            alert("error");
+	            alert("必应搜索 API 调用失败");
 	        });
 		 });
 		</script>
