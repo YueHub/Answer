@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@taglib uri="/struts-tags" prefix="s"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -13,15 +12,12 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<title>Answer</title>
-		
+		<!-- answer-main -->		
 		<link rel="stylesheet" type="text/css" href="./css/answer-main-css/answer-main-css.css">
-		
-		<script src="./js/answer-main-js/tagcanvas.min.js" type="text/javascript"></script>
-		
-		<!-- 模式选择 -->
+		<!-- fancy select -->
 		<link rel="stylesheet" type="text/css" href="./css/fancy-select-css/normalize.css" />
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="./css/fancy-select-css/fancy-select.css">
-		<!-- 模式选择 -->
+		
 	</head>
 	<body>
 		<div class="logo-main" onclick="document.location='mobile_index.jsp'">
@@ -75,47 +71,12 @@
 				</canvas>
 			</div>
 		</div>
-		
-		<script type="text/javascript">
-			var sps = document.getElementById('exa').children, sul = document.getElementById('suggests');
-	        var mc = parseInt(Math.random()*11), ce = function(){
-	            if(mc>=sps.length)
-	                mc = 0;
-	            var es = document.getElementById('mes');
-	            var qs = sps[mc].innerText||sps[mc].textContent;
-	            es.innerHTML = "• "+qs;
-	            es.setAttribute("href","/i?q="+qs);
-	            mc++;
-	        };
-	        ce();
-	        setInterval(ce,1000);
-	        
-	        // Init samples while empty ...
-	        for(sl = 0;sl < sps.length;sl++){
-	            var o = document.createElement('option');
-	            o.setAttribute('value',sps[sl].innerText||sps[sl].textContent);
-	            sul.appendChild(o);
-	        }
-	        
-	        window.onload = function () {
-	            try {
-	                TagCanvas.Start('ex', null, {
-	                    textFont: 'Verdana, Geneva, sans-serif',
-	                    textColour: '#494949',
-	                    textHeight: 18,
-	                    wheelZoom: false
-	                });
-	            } catch (e) {
-	                document.getElementById('ec').style.display = 'none';
-	            }
-	        };
-	        document.getElementById("i").focus();
-	        document.getElementById('rf').id = "f";
-	        document.getElementById('rfh').id = "fh";
-	        document.getElementById('rfc').id = "fc";
-	        document.getElementById('rfi').id = "fi";
-	       </script>
-	<!-- 模式选择 -->
+	
+	<!-- tag canvas -->
+	<script src="./js/answer-main-js/tagcanvas.min.js" type="text/javascript"></script>
+	<!-- tag canvas -->
+	<script src="./js/tag-canvas-js/tag-canvas.js"></script>
+	<!-- fancy select -->
 		<script src="./js/libs/jquery-2.2.3.min.js"></script>
 		<script src="./js/fancy-select-js/fancy-select.js"></script>
 		<script type="text/javascript">
@@ -123,6 +84,5 @@
 				$('#basic-usage-demo').fancySelect();
 			});
 		</script>
-	<!-- 模式选择 -->
 	</body>
 </html>
