@@ -2,7 +2,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>cn.lcy</groupId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
   <build>
  	 <plugins>
 	  		<plugin>
@@ -37,11 +36,34 @@
 	                </archive>
 	            </configuration>
 	        </plugin>
+	        <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
         </plugins>
   </build>
+  <!-- spring boot -->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.7.RELEASE</version>
+  </parent>
   
   <dependencies>
-  
+ 		<!-- spring boot -->
+  		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
   		<!-- Junit -->
         <dependency>
             <groupId>junit</groupId>
@@ -51,7 +73,7 @@
         </dependency>
   
   		<!-- spring3 -->
-        <dependency>
+        <!-- <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>3.1.2.RELEASE</version>
@@ -85,14 +107,14 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
             <version>3.1.2.RELEASE</version>
-        </dependency>
+        </dependency> -->
         
         <!-- Struts2的核心包 -->
-        <dependency>
+        <!-- <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-core</artifactId>
             <version>2.3.16</version>
-            <!--
+            
             这里的 exclusions 是排除包，因为 Struts2中有javassist，Hibernate中也有javassist,
             所以如果要整合Hibernate，一定要排除掉Struts2中的javassist，否则就冲突了。
             <exclusions>
@@ -101,26 +123,26 @@
                     <artifactId>javassist</artifactId>
                 </exclusion>
             </exclusions> 
-            -->
+           
         </dependency>
-        <!-- convention-plugin插件，使用了这个插件之后，就可以采用注解的方式配置Action -->
+        convention-plugin插件，使用了这个插件之后，就可以采用注解的方式配置Action
         <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-convention-plugin</artifactId>
             <version>2.3.20</version>
         </dependency>
-        <!--config-browser-plugin插件，使用了这个插件之后，就可以很方便的浏览项目中的所有action及其与 jsp view的映射 -->
+        config-browser-plugin插件，使用了这个插件之后，就可以很方便的浏览项目中的所有action及其与 jsp view的映射
         <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-config-browser-plugin</artifactId>
             <version>2.3.20</version>
-        </dependency>
+        </dependency> -->
         <!-- Struts2和Spring整合插件 -->
-        <dependency>
+<!--         <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-spring-plugin</artifactId>
             <version>2.3.4.1</version>
-        </dependency>
+        </dependency> -->
         
         <!-- hibernate4 -->
        <!--  <dependency>
@@ -137,11 +159,11 @@
          </dependency>
          
          <!--aspectjweaver包 -->
-         <dependency>
+        <!--  <dependency>
              <groupId>org.aspectj</groupId>
              <artifactId>aspectjweaver</artifactId>
              <version>1.8.5</version>
-         </dependency>
+         </dependency> -->
          
          <!-- fastJson -->
 		<dependency>
@@ -151,7 +173,7 @@
 		</dependency>
 		
 		<!-- jstl -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
@@ -162,19 +184,7 @@
 			<version>2.2.1-b03</version>
 			<scope>provided</scope>
 		</dependency>
-		
-		<!-- WebMagic -->
-		<dependency>
-	        <groupId>us.codecraft</groupId>
-	        <artifactId>webmagic-core</artifactId>
-	        <version>0.5.3</version>
-	    </dependency>
-	    <dependency>
-	        <groupId>us.codecraft</groupId>
-	        <artifactId>webmagic-extension</artifactId>
-	        <version>0.5.3</version>
-	    </dependency>
-	    
+	     -->
 	    <!-- Hanlp -->
 	    <!-- https://mvnrepository.com/artifact/com.hankcs/hanlp -->
 		<!-- <dependency>
@@ -211,4 +221,5 @@
 		    
   </dependencies>
   <artifactId>answer</artifactId>
+  <packaging>war</packaging>
 </project>
