@@ -13,11 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.hankcs.hanlp.corpus.dependency.CoNll.CoNLLSentence;
 import com.hankcs.hanlp.seg.common.Term;
 
-import cn.lcy.answer.log.UserOperationLog;
 import cn.lcy.answer.service.KnowledgeGraphServiceI;
 import cn.lcy.answer.service.KnowledgeGraphServiceImpl;
 import cn.lcy.answer.vo.AnswerResultVO;
+import cn.lcy.answer.vo.KnowledgeGraphVO;
 import cn.lcy.answer.vo.PolysemantSituationVO;
+import cn.lcy.answer.vo.ShortAnswerVO;
 import cn.lcy.knowledge.analysis.grammar.service.GrammarParserServiceI;
 import cn.lcy.knowledge.analysis.grammar.service.GrammarParserServiceImpl;
 import cn.lcy.knowledge.analysis.namedentity.service.NamedEntityServiceI;
@@ -50,6 +51,10 @@ public class AnswerController {
 	@RequestMapping(value = "/answer", method = RequestMethod.GET)
 	@ResponseBody
 	public AnswerResultVO answer(@RequestParam(value = "q", required = false, defaultValue = "周杰伦") String q) {
+		long askTime = System.currentTimeMillis();
+		AnswerResultVO answerResultVO = new AnswerResultVO();	// 返回的结果对象
+		answerResultVO.setAskTime(askTime);	// 后台接收到提问的时间点
+		
 		// 第一步：HanLP分词
 		WordSegmentResult wordSegmentResult = wordSegmentationService.wordSegmentation(q);
 		List<Term> terms = wordSegmentResult.getTerms();
@@ -58,7 +63,7 @@ public class AnswerController {
 		System.out.println("HanLP分词的结果为:" + terms);
 
 		// :查询本体库、取出命名实体的相关数据属性和对象属性
-		polysemantNamedEntities = namedEntityService.fillNamedEntities(polysemantNamedEntities);
+		namedEntityService.fillNamedEntities(polysemantNamedEntities);
 
 		// 第二步：使用HanLP进行依存句法分析
 		CoNLLSentence coNLLsentence = grammarParserService.dependencyParser(terms);
@@ -73,13 +78,13 @@ public class AnswerController {
 		// 第四步：语义图断言构建
 		List<AnswerStatement> semanticStatements = queryService.createStatement(semanticGraph);
 
-		// 第五步：获取歧义断言
+		// 第五步：获取歧义断言 - 同名实体
 		List<PolysemantStatement> polysemantStatements = queryService.createPolysemantStatements(semanticStatements);
 
 		List<PolysemantSituationVO> polysemantSituationVOs = new ArrayList<PolysemantSituationVO>();
 
 		for (PolysemantStatement polysemantStatement : polysemantStatements) {
-			// 第六步：实体消岐
+			// 第六步：实体消岐 - 实体别名
 			List<AnswerStatement> individualsDisambiguationStatements = queryService
 					.individualsDisambiguation(polysemantStatement.getAnswerStatements());
 			List<AnswerStatement> individualsDisambiguationStatementsNew = new ArrayList<AnswerStatement>();
@@ -196,15 +201,22 @@ public class AnswerController {
 			polysemantSituationVOs.add(polysemantSituationVO);
 		}
 
-		AnswerResultVO answerResultVO = new AnswerResultVO(); // 结果的封装
-		answerResultVO.setWords(words);
-		answerResultVO.setPolysemantSituationVOs(polysemantSituationVOs);
-//		session.put("answerResultVO", answerResultVO); // 传到前端
-//		session.put("polysemantNamedEntities", polysemantNamedEntities); // 用于获取知识图谱
-//		session.put("question", question);
-
-//		UserOperationLog userOperationLog = new UserOperationLog();
+		// 封装结果		
+		long answerTime = System.currentTimeMillis();
+		answerResultVO.setAnswerTime(answerTime);	// 后台完成回答的时间点
 		
+		answerResultVO.setWords(words);	// 包含命名实体等信息
+		
+		ShortAnswerVO shortAnswer = new ShortAnswerVO();
+		shortAnswer.setPolysemantSituationVOs(polysemantSituationVOs);
+		answerResultVO.setShortAnswer(shortAnswer);
+		
+		List<KnowledgeGraphVO> knowledgeGraphVOs = new ArrayList<KnowledgeGraphVO>();
+		if(polysemantNamedEntities != null) {
+			knowledgeGraphVOs = knowledgeGraphService.getKnowledgeGraphVO(polysemantNamedEntities);
+		}
+		answerResultVO.setKnowledgeGraphVOs(knowledgeGraphVOs);
+
 		return answerResultVO;
 	}
 }
