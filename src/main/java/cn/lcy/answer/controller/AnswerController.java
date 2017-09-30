@@ -62,9 +62,6 @@ public class AnswerController {
 		List<Word> words = wordSegmentResult.getWords();
 		System.out.println("HanLP分词的结果为:" + terms);
 
-		// :查询本体库、取出命名实体的相关数据属性和对象属性
-		namedEntityService.fillNamedEntities(polysemantNamedEntities);
-
 		// 第二步：使用HanLP进行依存句法分析
 		CoNLLSentence coNLLsentence = grammarParserService.dependencyParser(terms);
 		System.out.println("HanLP依存语法解析结果：\n" + coNLLsentence);
@@ -78,7 +75,7 @@ public class AnswerController {
 		// 第四步：语义图断言构建
 		List<AnswerStatement> semanticStatements = queryService.createStatement(semanticGraph);
 
-		// 第五步：获取歧义断言 - 同名实体
+		// 第五步：获取歧义断言 - 解决同名实体
 		List<PolysemantStatement> polysemantStatements = queryService.createPolysemantStatements(semanticStatements);
 
 		List<PolysemantSituationVO> polysemantSituationVOs = new ArrayList<PolysemantSituationVO>();
@@ -126,7 +123,7 @@ public class AnswerController {
 				predicateDisambiguationStatementsNew.add(answerStatementNew);
 			}
 
-			// 第八步：构造用于Jena查询的断言
+			// 第八步：构造用于 Jena 查询的断言
 			List<AnswerStatement> queryStatements = queryService
 					.createQueryStatements(predicateDisambiguationStatementsNew);
 			List<AnswerStatement> queryStatementsNew = new ArrayList<AnswerStatement>();
@@ -181,16 +178,15 @@ public class AnswerController {
 			List<PolysemantNamedEntity> activePolysemantNamedEntities = new ArrayList<PolysemantNamedEntity>();
 			int index = 0;
 			for (AnswerStatement answerStatementNew : polysemantStatement.getAnswerStatements()) {
-				PolysemantNamedEntity subjectActivePolysemantNamedEntity = answerStatementNew.getSubject()
-						.getActiveEntity();
-				PolysemantNamedEntity objectActivePolysemantNamedEntity = answerStatementNew.getObject()
-						.getActiveEntity();
+				PolysemantNamedEntity subjectActivePolysemantNamedEntity = answerStatementNew.getSubject().acquireActiveEntity();
+				PolysemantNamedEntity objectActivePolysemantNamedEntity = answerStatementNew.getObject().acquireActiveEntity();
 				if (index == 0) {
 					activePolysemantNamedEntities.add(subjectActivePolysemantNamedEntity);
 					activePolysemantNamedEntities.add(objectActivePolysemantNamedEntity);
 				} else {
 					activePolysemantNamedEntities.add(objectActivePolysemantNamedEntity);
 				}
+				++index;
 			}
 			polysemantSituationVO.setActivePolysemantNamedEntities(activePolysemantNamedEntities);// 激活的命名实体
 			polysemantSituationVO.setIndividualsDisambiguationStatements(individualsDisambiguationStatements);
@@ -200,8 +196,12 @@ public class AnswerController {
 			polysemantSituationVO.setQueryResults(queryResults);
 			polysemantSituationVOs.add(polysemantSituationVO);
 		}
+		
+		// :查询本体库、取出命名实体的相关数据属性和对象属性 - 此时再填充数据，以免前端获取太多冗余数据 
+		namedEntityService.fillNamedEntities(polysemantNamedEntities);
 
-		// 封装结果		
+		// 封装结果
+		answerResultVO.setQuestion(q);	// 设置问题
 		long answerTime = System.currentTimeMillis();
 		answerResultVO.setAnswerTime(answerTime);	// 后台完成回答的时间点
 		
