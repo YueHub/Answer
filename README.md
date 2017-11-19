@@ -4,10 +4,4 @@
 
 基于本体的语义搜索引擎-Answer-Beta v0.9-重新迁移至GitHub
 
-![image](https://github.com/YueHub/Answer/blob/master/screenShots/主页.png)
-
-![image](https://github.com/YueHub/Answer/blob/master/screenShots/完整页面-无知识网络-2.png)
-
-![image](https://github.com/YueHub/Answer/blob/master/screenShots/完整页面-无知识网络.png)
-
-![image](https://github.com/YueHub/Answer/blob/master/screenShots/完整页面.png)
+answer web端: [answer-web-client](https://github.com/YueHub/answer-web-client)
