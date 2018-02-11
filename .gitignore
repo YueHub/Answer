@@ -3,4 +3,10 @@
 .project
 /target
 /data
-/docs
+/docs/developDocs
+
+
+/.idea/workspace.xml
+/.idea/libraries
+/out
+answer.iml
