@@ -27,4 +27,4 @@ GET localhost:8080/answer?q=xxx
 answer web 源码: [answer-web-client](https://github.com/YueHub/answer-web-client)
 
 ## License
-
+[MIT License](https://github.com/YueHub/Answer/blob/master/LICENSE.md)
