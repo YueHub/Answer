@@ -4,11 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.BeanUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.hankcs.hanlp.corpus.dependency.CoNll.CoNLLSentence;
 import com.hankcs.hanlp.seg.common.Term;
@@ -47,7 +43,12 @@ public class AnswerController {
 	private SemanticGraphServiceI semanticGraphService = SemanticGraphServiceImpl.getInstance();
 	private QueryServiceI queryService = QueryServiceImpl.getInstance();
 	private KnowledgeGraphServiceI knowledgeGraphService = KnowledgeGraphServiceImpl.getInstance();
-	
+
+	@GetMapping("/")
+	public String sayHello() {
+	    return "Welcome! Developer!";
+    }
+
 	@RequestMapping(value = "/answer", method = RequestMethod.GET)
 	@ResponseBody
 	public AnswerResultVO answer(@RequestParam(value = "q", required = false, defaultValue = "周杰伦") String q) {
