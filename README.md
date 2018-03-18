@@ -30,5 +30,9 @@ GET localhost:8080/answer?q=xxx
 
 answer web 源码: [answer-web-client](https://github.com/YueHub/answer-web-client)
 
+## 相关文档
+* [简书](https://www.jianshu.com/p/0293a2f605af)
+* [个人博客](https://yuehub.github.io/2018/03/03/Answer-Preface/)
+
 ## License
 [MIT License](https://github.com/YueHub/Answer/blob/master/LICENSE.md)
