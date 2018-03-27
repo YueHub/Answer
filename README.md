@@ -28,10 +28,17 @@ GET localhost:8080/answer?q=xxx
 
 ![image](./screenShots/搜索结果-1.png)
 
-answer web 源码: [answer-web-client](https://github.com/YueHub/answer-web-client)
+answer-web-client 源码: [answer-web-client](https://github.com/YueHub/answer-web-client)
+
+## 系统模块
+[本体构建模块](https://github.com/YueHub/answer-ontology-construction)
+
+[本体查询模块](https://github.com/YueHub/answer-ontology-query)
+
+[语义解析模块](https://github.com/YueHub/answer-knowledge-analysis)
 
 ## 相关文档
-* [简书](https://www.jianshu.com/p/0293a2f605af)
+* [简书](https://www.jianshu.com/nb/17523853)
 * [个人博客](https://yuehub.github.io/2018/03/03/Answer-Preface/)
 
 ## License
