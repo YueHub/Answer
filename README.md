@@ -39,7 +39,7 @@ answer-web-client 源码: [answer-web-client](https://github.com/YueHub/answer-w
 
 ## 相关文档
 * [简书](https://www.jianshu.com/nb/17523853)
-* [个人博客](http://yuehub.gitee.io/categories/项目/Answer-语义搜索/)
+* [个人博客](http://yuehub.gitee.io/categories/技术/项目/Answer-语义搜索/)
 
 ## License
 [MIT License](https://github.com/YueHub/Answer/blob/master/LICENSE.md)
