@@ -7,7 +7,7 @@
 * 使用 Eclipse、Idea 或其它 IDE 导入项目并设置好 maven、jdk 等配置
 * 将 libs 下的 jar 包添加成项目 Library
 * 项目中使用了 [HanLP](https://github.com/hankcs/HanLP) 进行分词，因此需要配置 HanLp 词典和模型路径
-    * 下载 [HanLp Data](https://github.com/hankcs/HanLP/releases/tag/v1.2.9)
+    * 下载 [HanLp Data](https://pan.baidu.com/s/1OZgHZiPd4GYmdoZT1u1MTA)，下载链接中的标准版 data-for-1.2.8-standard.zip 或 完整版data-for-1.2.8-full.zip 
     * 解压
     * 配置 hanlp.properties 文件 root = ”解压后的 data 的父目录“
 * 运行 cn.lcy.answer.AnswerMain
