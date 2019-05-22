@@ -34,6 +34,10 @@ import cn.lcy.knowledge.analysis.sem.model.SemanticGraph;
 import cn.lcy.knowledge.analysis.sem.model.Word;
 import cn.lcy.knowledge.analysis.sem.model.WordSegmentResult;
 
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
 @RestController
 public class AnswerController {
 	
