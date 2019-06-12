@@ -1,9 +1,8 @@
 package cn.lcy.answer.enums;
 
 /**
- * 
- * @author NarutoKu
- *
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
  */
 public enum OntologyClassEnum {
 	// 人

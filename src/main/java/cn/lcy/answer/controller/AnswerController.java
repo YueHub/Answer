@@ -57,23 +57,26 @@ public class AnswerController {
 	@ResponseBody
 	public AnswerResultVO answer(@RequestParam(value = "q", required = false, defaultValue = "周杰伦") String q) {
 		long askTime = System.currentTimeMillis();
-		AnswerResultVO answerResultVO = new AnswerResultVO();	// 返回的结果对象
-		answerResultVO.setAskTime(askTime);	// 后台接收到提问的时间点
+		// 返回的结果对象
+		AnswerResultVO answerResultVO = new AnswerResultVO();
+		// 后台接收到提问的时间点
+		answerResultVO.setAskTime(askTime);
 		
-		// 第一步：HanLP分词
+		/* 第一步：HanLP分词 */
 		WordSegmentResult wordSegmentResult = wordSegmentationService.wordSegmentation(q);
 		List<Term> terms = wordSegmentResult.getTerms();
 		List<PolysemantNamedEntity> polysemantNamedEntities = wordSegmentResult.getPolysemantEntities();
 		List<Word> words = wordSegmentResult.getWords();
 		System.out.println("HanLP分词的结果为:" + terms);
 
-		// 第二步：使用HanLP进行依存句法分析
+		/* 第二步：使用HanLP进行依存句法分析 */
 		CoNLLSentence coNLLsentence = grammarParserService.dependencyParser(terms);
 		System.out.println("HanLP依存语法解析结果：\n" + coNLLsentence);
 
-		// 第三步：语义图构建
+		/* 第三步：语义图构建 */
 		SemanticGraph semanticGraph = semanticGraphService.buildSemanticGraph(coNLLsentence, polysemantNamedEntities);
-		if (semanticGraph.getAllVertices().size() == 0) { // 说明没有语义图算法无法解析该问句
+		/* 说明没有语义图算法无法解析该问句 */
+		if (semanticGraph.getAllVertices().size() == 0) {
 			semanticGraph = semanticGraphService.buildBackUpSemanticGraph(words);
 		}
 
@@ -193,7 +196,8 @@ public class AnswerController {
 				}
 				++index;
 			}
-			polysemantSituationVO.setActivePolysemantNamedEntities(activePolysemantNamedEntities);// 激活的命名实体
+			// 激活的命名实体
+			polysemantSituationVO.setActivePolysemantNamedEntities(activePolysemantNamedEntities);
 			polysemantSituationVO.setIndividualsDisambiguationStatements(individualsDisambiguationStatements);
 			polysemantSituationVO.setPredicateDisambiguationStatements(predicateDisambiguationStatements);
 			polysemantSituationVO.setQueryStatements(queryStatements);
@@ -205,12 +209,15 @@ public class AnswerController {
 		// :查询本体库、取出命名实体的相关数据属性和对象属性 - 此时再填充数据，以免前端获取太多冗余数据 
 		namedEntityService.fillNamedEntities(polysemantNamedEntities);
 
-		// 封装结果
-		answerResultVO.setQuestion(q);	// 设置问题
+		/* 封装结果 */
+		// 设置问题
+		answerResultVO.setQuestion(q);
 		long answerTime = System.currentTimeMillis();
-		answerResultVO.setAnswerTime(answerTime);	// 后台完成回答的时间点
-		
-		answerResultVO.setWords(words);	// 包含命名实体等信息
+		// 后台完成回答的时间点
+		answerResultVO.setAnswerTime(answerTime);
+
+		// 包含命名实体等信息
+		answerResultVO.setWords(words);
 		
 		ShortAnswerVO shortAnswer = new ShortAnswerVO();
 		shortAnswer.setPolysemantSituationVOs(polysemantSituationVOs);
