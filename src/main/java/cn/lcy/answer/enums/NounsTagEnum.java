@@ -1,5 +1,9 @@
 package cn.lcy.answer.enums;
 
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
 public enum NounsTagEnum {
 	// 常用名词
 	n,
