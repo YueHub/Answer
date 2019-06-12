@@ -9,6 +9,10 @@ import java.io.PrintWriter;
 import java.io.RandomAccessFile;
 import java.util.List;
 
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
 public class FileIOUtil {
 	
 	/**
