@@ -4,6 +4,10 @@ import java.util.List;
 
 import cn.lcy.knowledge.analysis.sem.model.Word;
 
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
 public class AnswerResultVO implements java.io.Serializable {
 
 	/**
@@ -14,12 +18,12 @@ public class AnswerResultVO implements java.io.Serializable {
 	/**
 	 * 提问时间 (后台接收到提问的时间点)
 	 */
-	private long askTime;
+	private Long askTime;
 	
 	/**
 	 * 回答时间（后台给出回答的时间点）
 	 */
-	private long answerTime;
+	private Long answerTime;
 	
 	/**
 	 * 问题
@@ -38,19 +42,19 @@ public class AnswerResultVO implements java.io.Serializable {
 	
 	private List<KnowledgeGraphVO> knowledgeGraphVOs;
 
-	public long getAskTime() {
+	public Long getAskTime() {
 		return askTime;
 	}
 
-	public void setAskTime(long askTime) {
+	public void setAskTime(Long askTime) {
 		this.askTime = askTime;
 	}
 
-	public long getAnswerTime() {
+	public Long getAnswerTime() {
 		return answerTime;
 	}
 
-	public void setAnswerTime(long answerTime) {
+	public void setAnswerTime(Long answerTime) {
 		this.answerTime = answerTime;
 	}
 

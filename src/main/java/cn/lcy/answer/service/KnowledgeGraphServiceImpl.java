@@ -14,9 +14,13 @@ import cn.lcy.knowledge.analysis.ontology.query.dao.QueryDAOImpl;
 import cn.lcy.knowledge.analysis.sem.model.PolysemantNamedEntity;
 import cn.lcy.knowledge.analysis.util.StringHandle;
 
-public class KnowledgeGraphServiceImpl implements KnowledgeGraphServiceI {
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
+public class KnowledgeGraphServiceImpl implements KnowledgeGraphService {
 
-	private volatile static KnowledgeGraphServiceI singleInstance;
+	private volatile static KnowledgeGraphService singleInstance;
 	
 	private static QueryDAOI queryDAO;
 	
@@ -29,7 +33,7 @@ public class KnowledgeGraphServiceImpl implements KnowledgeGraphServiceI {
 	 */
 	private KnowledgeGraphServiceImpl() {}
 	
-	public static KnowledgeGraphServiceI getInstance() {
+	public static KnowledgeGraphService getInstance() {
 		if (singleInstance == null) {
 			synchronized (KnowledgeGraphServiceImpl.class) {
 				if (singleInstance == null) {
@@ -51,24 +55,26 @@ public class KnowledgeGraphServiceImpl implements KnowledgeGraphServiceI {
 			KnowledgeGraphVO knowledgeGraphVO = new KnowledgeGraphVO();
 			// 先查询其等价实体 避免搜索星爷时 无法正确返回其属性
 			String sameEntityUUID = null;
-			if (polysemantNameEntity.getIsAliases().equals("0")) { // 如果该实体为实体别名
+			/* 如果该实体为实体别名 */
+			if ("0".equals(polysemantNameEntity.getIsAliases())) {
 				sameEntityUUID = queryDAO.querySameIndividual(polysemantNameEntity.getUUID());
 			}
 			
 			// 得到等价实体名
 			String entityUUID = sameEntityUUID == null ? polysemantNameEntity.getUUID() : sameEntityUUID;
 			
-			//StmtIterator propertyStatements = queryDAO.queryIndividualProperties(polysemantNameEntity.getUUID());
+			// StmtIterator propertyStatements = queryDAO.queryIndividualProperties(polysemantNameEntity.getUUID())
 			List<Statement> propertyStatements = queryDAO.queryIndividualMainProperties(entityUUID);
 			List<PolysemantNamedEntity> subjectPolysemantNamedEntities = new ArrayList<PolysemantNamedEntity>();
-			int count = 0;	// 控制前端的结点个数 20
+			// 控制前端的结点个数 20
+			int count = 0;
 			for (Statement propertyStatement : propertyStatements) {
 				if (count < 10) {
 					KnowledgeGraphStatementVO knowledgeGraphStatementVO = new KnowledgeGraphStatementVO();
 					KnowledgeGraphNodeVO subject = new KnowledgeGraphNodeVO();
 					KnowledgeGraphNodeVO predicate = new KnowledgeGraphNodeVO();
 					KnowledgeGraphNodeVO object = new KnowledgeGraphNodeVO();
-					subject.setID(subjectID);
+					subject.setId(subjectID);
 					subject.setName(polysemantNameEntity.getOntClass() + ":" + polysemantNameEntity.getEntityName());
 					subject.setShape("dot");
 					subject.setColor("red");
@@ -85,13 +91,13 @@ public class KnowledgeGraphServiceImpl implements KnowledgeGraphServiceI {
 					}
 					predicate.setName(predicateName);
 					predicate.setColor("green");
-					predicate.setSize(15);
+					predicate.setSize(Double.valueOf(15));
 					predicate.setAlpha(1);
 					
 					// 是否为文本（以此标识区分对象属性和数据属性）
-					if (!predicateName.equals("type") && !predicateName.equals("有picSrc")) {
+					if (!"type".equals(predicateName) && !"有picSrc".equals(predicateName)) {
 						if (objectNode.isLiteral()) {
-							object.setID(objectID);
+							object.setId(objectID);
 							object.setName(objectNode.toString());
 							// 数据属性为矩形
 							object.setShape("rect");
@@ -99,7 +105,7 @@ public class KnowledgeGraphServiceImpl implements KnowledgeGraphServiceI {
 							// TODO alpha为0表示不可见 1表示可见
 							object.setAlpha(1);
 						} else {
-							object.setID(objectID);
+							object.setId(objectID);
 							String[] objectNodeValueArr = objectNode.toString().split("#");
 							String objectNodeValue = null;
 							if (objectNodeValueArr.length > 1) {
@@ -108,10 +114,12 @@ public class KnowledgeGraphServiceImpl implements KnowledgeGraphServiceI {
 								objectNodeValue = objectNodeValueArr[0];
 							}
 							String objectName = null;
-							if (!StringHandle.isIncludeChinese(objectNodeValue) && objectNodeValue.length() == 32) // 该属性值不是中文且字符长度为32  则表示UUID
+							// 该属性值不是中文且字符长度为32  则表示UUID
+							if (!StringHandle.isIncludeChinese(objectNodeValue) && objectNodeValue.length() == 32) {
 								objectName = queryDAO.queryIndividualComment(objectNodeValue);
-							else 
+							} else {
 								objectName = objectNodeValue;
+							}
 							object.setName(objectName);
 							// 对象属性为圆形
 							object.setShape("dot");

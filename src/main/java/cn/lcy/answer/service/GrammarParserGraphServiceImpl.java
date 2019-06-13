@@ -12,9 +12,13 @@ import cn.lcy.answer.vo.Arg;
 import cn.lcy.answer.vo.DependencyNode;
 import cn.lcy.answer.vo.DependencyVO;
 
-public class GrammarParserGraphServiceImpl implements GrammarParserGraphServiceI {
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
+public class GrammarParserGraphServiceImpl implements GrammarParserGraphService {
 	
-	private volatile static GrammarParserGraphServiceI singleInstance;
+	private volatile static GrammarParserGraphService singleInstance;
 	
 	/**
 	 * 私有化构造方法，实现单例
@@ -25,7 +29,7 @@ public class GrammarParserGraphServiceImpl implements GrammarParserGraphServiceI
 	 * 获取单例
 	 * @return
 	 */
-	public static GrammarParserGraphServiceI getInstance() {
+	public static GrammarParserGraphService getInstance() {
 		if (singleInstance == null) {
 			synchronized (GrammarParserGraphServiceImpl.class) {
 				if (singleInstance == null) {

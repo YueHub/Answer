@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import com.hankcs.hanlp.corpus.dependency.CoNll.CoNLLSentence;
 import com.hankcs.hanlp.seg.common.Term;
 
-import cn.lcy.answer.service.KnowledgeGraphServiceI;
+import cn.lcy.answer.service.KnowledgeGraphService;
 import cn.lcy.answer.service.KnowledgeGraphServiceImpl;
 import cn.lcy.answer.vo.AnswerResultVO;
 import cn.lcy.answer.vo.KnowledgeGraphVO;
@@ -46,7 +46,7 @@ public class AnswerController {
 	private GrammarParserServiceI grammarParserService = GrammarParserServiceImpl.getInstance();
 	private SemanticGraphServiceI semanticGraphService = SemanticGraphServiceImpl.getInstance();
 	private QueryServiceI queryService = QueryServiceImpl.getInstance();
-	private KnowledgeGraphServiceI knowledgeGraphService = KnowledgeGraphServiceImpl.getInstance();
+	private KnowledgeGraphService knowledgeGraphService = KnowledgeGraphServiceImpl.getInstance();
 
 	@GetMapping("/")
 	public String sayHello() {
@@ -153,11 +153,11 @@ public class AnswerController {
 			}
 
 			// 第九步：根据查询断言构建查询语句
-			List<String> SPARQLS = queryService.createSparqls(queryStatementsNew);
+			List<String> sparqls = queryService.createSparqls(queryStatementsNew);
 			List<QueryResult> queryResults = new ArrayList<QueryResult>();
-			for (String SPARQL : SPARQLS) {
+			for (String sparql : sparqls) {
 				// 执行查询语句
-				QueryResult queryResult = queryService.queryOntology(SPARQL);
+				QueryResult queryResult = queryService.queryOntology(sparql);
 				List<Answer> answersNew = new ArrayList<Answer>();
 				for (Answer answer : queryResult.getAnswers()) {
 					String[] uuidArr = answer.getContent().split(":");
@@ -201,7 +201,7 @@ public class AnswerController {
 			polysemantSituationVO.setIndividualsDisambiguationStatements(individualsDisambiguationStatements);
 			polysemantSituationVO.setPredicateDisambiguationStatements(predicateDisambiguationStatements);
 			polysemantSituationVO.setQueryStatements(queryStatements);
-			polysemantSituationVO.setSPARQLS(SPARQLS);
+			polysemantSituationVO.setSparqls(sparqls);
 			polysemantSituationVO.setQueryResults(queryResults);
 			polysemantSituationVOs.add(polysemantSituationVO);
 		}

@@ -2,6 +2,10 @@ package cn.lcy.answer.vo;
 
 import java.util.List;
 
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
 public class ShortAnswerVO {
 	
 	private List<PolysemantSituationVO> polysemantSituationVOs;

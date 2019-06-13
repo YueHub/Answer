@@ -1,5 +1,9 @@
 package cn.lcy.answer.vo;
 
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
 public class Arg implements java.io.Serializable {
 	
 	/**

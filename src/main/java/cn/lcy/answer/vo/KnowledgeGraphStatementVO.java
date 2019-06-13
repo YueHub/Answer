@@ -1,5 +1,9 @@
 package cn.lcy.answer.vo;
 
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
 public class KnowledgeGraphStatementVO implements java.io.Serializable {
 
 	/**

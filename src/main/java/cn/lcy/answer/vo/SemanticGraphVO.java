@@ -3,6 +3,10 @@ package cn.lcy.answer.vo;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
 public class SemanticGraphVO implements java.io.Serializable {
 
 	/**

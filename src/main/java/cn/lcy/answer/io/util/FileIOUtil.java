@@ -45,7 +45,6 @@ public class FileIOUtil {
 					randomFile.close();
 				} catch(IOException e) {
 					e.printStackTrace();
-					return false;
 				}
 			}
 		}
@@ -84,22 +83,29 @@ public class FileIOUtil {
 					randomFile.close();
 				} catch(IOException e) {
 					e.printStackTrace();
-					return false;
 				}
 			}
 		}
 		return true;
 	}
-	
-	// 修改文件某一行内容
+
+	/**
+	 * 修改文件某一行内容
+	 * @param filePath
+	 * @param rowNum
+	 * @param rowUpdate
+	 * @return
+	 */
 	public static boolean updateContent(String filePath, Long rowNum, String rowUpdate) {
 		int count = 0;
         String row = null;
          
         try {
-            FileReader fileReader = new FileReader(filePath);//源文件
+			// 源文件
+            FileReader fileReader = new FileReader(filePath);
             BufferedReader in = new BufferedReader(fileReader);
-            FileWriter fileWriter = new FileWriter(filePath + ".temp");//缓存文件
+			// 缓存文件
+            FileWriter fileWriter = new FileWriter(filePath + ".temp");
             PrintWriter pw = new PrintWriter(fileWriter);
             while((row = in.readLine()) != null){
                 count++;
