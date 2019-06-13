@@ -7,6 +7,10 @@ import cn.lcy.knowledge.analysis.sem.model.PolysemantNamedEntity;
 import cn.lcy.knowledge.analysis.sem.model.PolysemantStatement;
 import cn.lcy.knowledge.analysis.sem.model.QueryResult;
 
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
 public class PolysemantSituationVO implements java.io.Serializable {
 	
 	/**
@@ -26,7 +30,7 @@ public class PolysemantSituationVO implements java.io.Serializable {
 	
 	private List<AnswerStatement> queryStatements;
 	
-	private List<String> SPARQLS;
+	private List<String> sparqls;
 	
 	private List<QueryResult> queryResults;
 	
@@ -81,15 +85,15 @@ public class PolysemantSituationVO implements java.io.Serializable {
 		this.queryStatements = queryStatements;
 	}
 
-	public List<String> getSPARQLS() {
-		return SPARQLS;
-	}
+  public List<String> getSparqls() {
+    return sparqls;
+  }
 
-	public void setSPARQLS(List<String> sPARQLS) {
-		SPARQLS = sPARQLS;
-	}
+  public void setSparqls(List<String> sparqls) {
+    this.sparqls = sparqls;
+  }
 
-	public List<QueryResult> getQueryResults() {
+  public List<QueryResult> getQueryResults() {
 		return queryResults;
 	}
 

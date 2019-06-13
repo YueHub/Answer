@@ -1,5 +1,9 @@
 package cn.lcy.answer.log;
 
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
 public class Log {
 	
 	private String ipAddress;
@@ -62,6 +66,7 @@ public class Log {
 		this.question = question;
 	}
 
+	@Override
 	public String toString() {
 		return ipAddress + "#" + client + "#" + protocol + "#" + requestType + "#" + requestURL + "#" + question;
 	}

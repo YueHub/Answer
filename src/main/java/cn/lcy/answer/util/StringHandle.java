@@ -1,5 +1,9 @@
 package cn.lcy.answer.util;
 
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
 public class StringHandle {
 	
 	/**
@@ -8,7 +12,8 @@ public class StringHandle {
 	 * @return
 	 */
 	public static boolean isChinese(char c) {
-	      return c >= 0x4E00 &&  c <= 0x9FA5;// 根据字节码判断
+		// 根据字节码判断
+		return c >= 0x4E00 &&  c <= 0x9FA5;
 	}
 	
 	/**
@@ -17,9 +22,14 @@ public class StringHandle {
 	 * @return
 	 */
 	public static boolean isIncludeChinese(String str) {
-		if (str == null) return false;
+		if (str == null) {
+			return false;
+		}
 		for (char c : str.toCharArray()) {
-			if (isChinese(c)) return true;// 有一个中文字符就返回
+			/* 有一个中文字符就返回 */
+			if (isChinese(c)) {
+				return true;
+			}
 		}
 		return false;
 	}

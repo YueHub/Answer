@@ -1,5 +1,9 @@
 package cn.lcy.answer.vo;
 
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
 public class SemanticGraphNodeVO implements java.io.Serializable {
 	
 	/**
@@ -10,7 +14,7 @@ public class SemanticGraphNodeVO implements java.io.Serializable {
 	/**
 	 * 连接线顺序 
 	 */
-	private int ID;
+	private Integer id;
 
 	/**
 	 * 结点名称
@@ -30,20 +34,20 @@ public class SemanticGraphNodeVO implements java.io.Serializable {
 	/**
 	 * 结点大小
 	 */
-	private double size;
+	private Double size;
 
-	private int alpha;
-	
+	private Integer alpha;
 
-	public int getID() {
-		return ID;
-	}
 
-	public void setID(int iD) {
-		ID = iD;
-	}
-	
-	public String getName() {
+  public Integer getId() {
+    return id;
+  }
+
+  public void setId(Integer id) {
+    this.id = id;
+  }
+
+  public String getName() {
 		return name;
 	}
 
@@ -67,19 +71,19 @@ public class SemanticGraphNodeVO implements java.io.Serializable {
 		this.color = color;
 	}
 
-	public double getSize() {
+	public Double getSize() {
 		return size;
 	}
 
-	public void setSize(double size) {
+	public void setSize(Double size) {
 		this.size = size;
 	}
 	
-	public int getAlpha() {
+	public Integer getAlpha() {
 		return alpha;
 	}
 
-	public void setAlpha(int alpha) {
+	public void setAlpha(Integer alpha) {
 		this.alpha = alpha;
 	}
 }

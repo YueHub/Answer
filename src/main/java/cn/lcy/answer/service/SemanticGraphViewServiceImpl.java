@@ -12,7 +12,11 @@ import cn.lcy.knowledge.analysis.sem.model.AnswerStatement;
 import cn.lcy.knowledge.analysis.sem.model.PolysemantNamedEntity;
 import cn.lcy.knowledge.analysis.sem.model.Word;
 
-public class SemanticGraphViewServiceImpl implements SemanticGraphViewServiceI {
+/**
+ * @author YueHub <lcy.dev@foxmail.com>
+ * @github https://github.com/YueHub
+ */
+public class SemanticGraphViewServiceImpl implements SemanticGraphViewService {
 
 	private volatile static SemanticGraphViewServiceImpl singleInstance;
 	
@@ -25,7 +29,7 @@ public class SemanticGraphViewServiceImpl implements SemanticGraphViewServiceI {
 	 * 获取单例
 	 * @return
 	 */
-	public static SemanticGraphViewServiceI getInstance() {
+	public static SemanticGraphViewService getInstance() {
 		if (singleInstance == null) {
 			synchronized (SemanticGraphViewServiceImpl.class) {
 				if (singleInstance == null) {
@@ -49,7 +53,7 @@ public class SemanticGraphViewServiceImpl implements SemanticGraphViewServiceI {
 	    		SemanticGraphNodeVO predicate = new SemanticGraphNodeVO();
 	    		SemanticGraphNodeVO object = new SemanticGraphNodeVO();
 	    		
-	    		subject.setID(queryStatement.getSubject().getPosition());
+	    		subject.setId(queryStatement.getSubject().getPosition());
 	    		if (queryStatement.getSubject().getName().split(":").length > 1) {
 	    			subject.setName(queryStatement.getSubject().getName().split(":")[1]);
 	    		} else {
@@ -61,15 +65,15 @@ public class SemanticGraphViewServiceImpl implements SemanticGraphViewServiceI {
 	    		subject.setShape("dot");
 	    		subject.setAlpha(1);
 	    		
-	    		predicate.setID(queryStatement.getPredicate().getPosition());
+	    		predicate.setId(queryStatement.getPredicate().getPosition());
 	    		predicate.setName(queryStatement.getPredicate().getName());
 	    		predicate.setColor("#b2b19d");
-	    		predicate.setSize(15);
+	    		predicate.setSize(Double.valueOf(15));
 	    		// 默认为矩形
-	    		//predicate.setShape("rect");
+	    		// predicate.setShape("rect")
 	    		predicate.setAlpha(1);
 	    		
-	    		object.setID(queryStatement.getObject().getPosition());
+	    		object.setId(queryStatement.getObject().getPosition());
 	    		object.setName(queryStatement.getObject().getName());
 	    		object.setColor("#b2b19d");
 	    		object.setShape("dot");
