@@ -10,17 +10,17 @@ public class SemanticGraphStatementVO implements java.io.Serializable {
 	 *  default serial version ID
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	/**
 	 * 主语
 	 */
 	private SemanticGraphNodeVO subject;
-	
+
 	/**
 	 * 谓语
 	 */
 	private SemanticGraphNodeVO predicate;
-	
+
 	/**
 	 * 宾语
 	 */
@@ -49,4 +49,13 @@ public class SemanticGraphStatementVO implements java.io.Serializable {
 	public void setObject(SemanticGraphNodeVO object) {
 		this.object = object;
 	}
+
+  @Override
+  public String toString() {
+    return "SemanticGraphStatementVO{" +
+      "subject=" + subject +
+      ", predicate=" + predicate +
+      ", object=" + object +
+      '}';
+  }
 }

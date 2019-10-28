@@ -13,7 +13,7 @@ public class SemanticGraphVO implements java.io.Serializable {
 	 *  default serial version ID
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	private List<SemanticGraphStatementVO> semanticGraphStatements = new ArrayList<SemanticGraphStatementVO>();
 
 	public List<SemanticGraphStatementVO> getSemanticGraphStatements() {
@@ -24,4 +24,11 @@ public class SemanticGraphVO implements java.io.Serializable {
 			List<SemanticGraphStatementVO> semanticGraphStatements) {
 		this.semanticGraphStatements = semanticGraphStatements;
 	}
+
+  @Override
+  public String toString() {
+    return "SemanticGraphVO{" +
+      "semanticGraphStatements=" + semanticGraphStatements +
+      '}';
+  }
 }

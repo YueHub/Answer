@@ -10,17 +10,17 @@ public class KnowledgeGraphStatementVO implements java.io.Serializable {
 	 *  default serial version ID
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	/**
 	 * 主语
 	 */
 	private KnowledgeGraphNodeVO subject;
-	
+
 	/**
 	 * 谓语
 	 */
 	private KnowledgeGraphNodeVO predicate;
-	
+
 	/**
 	 * 宾语
 	 */
@@ -49,4 +49,13 @@ public class KnowledgeGraphStatementVO implements java.io.Serializable {
 	public void setObject(KnowledgeGraphNodeVO object) {
 		this.object = object;
 	}
+
+  @Override
+  public String toString() {
+    return "KnowledgeGraphStatementVO{" +
+      "subject=" + subject +
+      ", predicate=" + predicate +
+      ", object=" + object +
+      '}';
+  }
 }

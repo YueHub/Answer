@@ -17,14 +17,14 @@ import cn.lcy.answer.vo.DependencyVO;
  * @github https://github.com/YueHub
  */
 public class GrammarParserGraphServiceImpl implements GrammarParserGraphService {
-	
+
 	private volatile static GrammarParserGraphService singleInstance;
-	
+
 	/**
 	 * 私有化构造方法，实现单例
 	 */
 	private GrammarParserGraphServiceImpl() {}
-	
+
 	/**
 	 * 获取单例
 	 * @return
@@ -39,25 +39,25 @@ public class GrammarParserGraphServiceImpl implements GrammarParserGraphService 
 		}
 		return singleInstance;
 	}
-	
+
 	/**
 	 * 依存句法分析
 	 */
 	public CoNLLSentence dependencyParser(List<Term> terms) {
 	    // 基于神经网络的高性能依存句法分析器
 	    IDependencyParser parser = new NeuralNetworkDependencyParser().enableDeprelTranslator(false);
-    	CoNLLSentence coNLLsentence = parser.parse(terms);
-    	return coNLLsentence;
+    	CoNLLSentence cONllSentence = parser.parse(terms);
+    	return cONllSentence;
 	}
-	
+
 	/**
 	 * 获取依存语法图
 	 */
 	@Override
-	public DependencyVO getDependencyGraphVO(CoNLLSentence coNLLsentence) {
+	public DependencyVO getDependencyGraphVO(CoNLLSentence cONllSentence) {
 		DependencyVO dependencyVO = new DependencyVO();
-		if (coNLLsentence != null) {
-			for (CoNLLWord dependency : coNLLsentence) {
+		if (cONllSentence != null) {
+			for (CoNLLWord dependency : cONllSentence) {
 				DependencyNode dependencyNode = new DependencyNode();
 				Arg arg = new Arg();
 				arg.setLength(0);
