@@ -7,7 +7,7 @@ import java.util.List;
  * @github https://github.com/YueHub
  */
 public class ShortAnswerVO {
-	
+
 	private List<PolysemantSituationVO> polysemantSituationVOs;
 
 	public List<PolysemantSituationVO> getPolysemantSituationVOs() {
@@ -17,4 +17,11 @@ public class ShortAnswerVO {
 	public void setPolysemantSituationVOs(List<PolysemantSituationVO> polysemantSituationVOs) {
 		this.polysemantSituationVOs = polysemantSituationVOs;
 	}
+
+  @Override
+  public String toString() {
+    return "ShortAnswerVO{" +
+      "polysemantSituationVOs=" + polysemantSituationVOs +
+      '}';
+  }
 }

@@ -8,7 +8,7 @@ import java.util.List;
  * @github https://github.com/YueHub
  */
 public class KnowledgeGraphVO implements java.io.Serializable {
-	
+
 	/**
 	 *  default serial version ID
 	 */
@@ -24,4 +24,11 @@ public class KnowledgeGraphVO implements java.io.Serializable {
 			List<KnowledgeGraphStatementVO> knowledgeGraphStatements) {
 		this.knowledgeGraphStatements = knowledgeGraphStatements;
 	}
+
+  @Override
+  public String toString() {
+    return "KnowledgeGraphVO{" +
+      "knowledgeGraphStatements=" + knowledgeGraphStatements +
+      '}';
+  }
 }

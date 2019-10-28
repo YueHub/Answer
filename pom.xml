@@ -1,46 +1,47 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>cn.lcy</groupId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
- 	 <plugins>
-	  		<plugin>
-	            <groupId>org.apache.maven.plugins</groupId>
-	            <artifactId>maven-dependency-plugin</artifactId>
-	            <executions>
-	                <execution>
-	                    <id>copy-dependencies</id>
-	                    <phase>prepare-package</phase>
-	                    <goals>
-	                        <goal>copy-dependencies</goal>
-	                    </goals>
-	                    <configuration>
-	                        <outputDirectory>${project.build.directory}/lib</outputDirectory>
-	                        <overWriteReleases>false</overWriteReleases>
-	                        <overWriteSnapshots>false</overWriteSnapshots>
-	                        <overWriteIfNewer>true</overWriteIfNewer>
-	                    </configuration>
-	                </execution>
-	            </executions>
-	        </plugin>
-	        <plugin>
-	            <groupId>org.apache.maven.plugins</groupId>
-	            <artifactId>maven-jar-plugin</artifactId>
-	            <configuration>
-	                <archive>
-	                    <manifest>
-	                        <addClasspath>true</addClasspath>
-	                        <classpathPrefix>lib/</classpathPrefix>
-	                        <mainClass>theMainClass</mainClass>
-	                    </manifest>
-	                </archive>
-	            </configuration>
-	        </plugin>
-	        <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy-dependencies</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/lib</outputDirectory>
+              <overWriteReleases>false</overWriteReleases>
+              <overWriteSnapshots>false</overWriteSnapshots>
+              <overWriteIfNewer>true</overWriteIfNewer>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>lib/</classpathPrefix>
+              <mainClass>theMainClass</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
   </build>
   <!-- spring boot -->
   <parent>
@@ -48,78 +49,78 @@
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>1.5.7.RELEASE</version>
   </parent>
-  
-  <dependencies>
- 		<!-- spring boot -->
-  		<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-  		<!-- Junit -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-  
-          <!--Druid连接池包 -->
-         <dependency>
-             <groupId>com.alibaba</groupId>
-             <artifactId>druid</artifactId>
-             <version>1.0.12</version>
-         </dependency>
-         
-         <!--aspectjweaver包 -->
-        <!--  <dependency>
-             <groupId>org.aspectj</groupId>
-             <artifactId>aspectjweaver</artifactId>
-             <version>1.8.5</version>
-         </dependency> -->
-         
-         <!-- fastJson -->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>fastjson</artifactId>
-			<version>1.1.24</version>
-		</dependency>
 
-	    <!-- Hanlp -->
-	    <!-- https://mvnrepository.com/artifact/com.hankcs/hanlp -->
-		<!-- <dependency>
-		    <groupId>com.hankcs</groupId>
-		    <artifactId>hanlp</artifactId>
-		    <version>portable-1.2.9</version>
-		</dependency> -->
-		    
-		<!-- Stanford Parser -->
-		<!-- https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-parser -->
-		<dependency>
-		    <groupId>edu.stanford.nlp</groupId>
-		    <artifactId>stanford-parser</artifactId>
-		    <version>3.6.0</version>
-		</dependency>
-		
-		<!-- <dependency>
-		    <groupId>org.apache.jena</groupId>
-		    <artifactId>jena-core</artifactId>
-		    <version>3.1.1</version>
-		</dependency>
-		https://mvnrepository.com/artifact/org.apache.jena/jena-arq
-		<dependency>
-		    <groupId>org.apache.jena</groupId>
-		    <artifactId>jena-arq</artifactId>
-		    <version>3.1.1</version>
-		</dependency> -->
+  <dependencies>
+    <!-- spring boot -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <!-- Junit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!--Druid连接池包 -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.0.12</version>
+    </dependency>
+
+    <!--aspectjweaver包 -->
+    <!--  <dependency>
+         <groupId>org.aspectj</groupId>
+         <artifactId>aspectjweaver</artifactId>
+         <version>1.8.5</version>
+     </dependency> -->
+
+    <!-- fastJson -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.1.24</version>
+    </dependency>
+
+    <!-- Hanlp -->
+    <!-- https://mvnrepository.com/artifact/com.hankcs/hanlp -->
+    <!-- <dependency>
+        <groupId>com.hankcs</groupId>
+        <artifactId>hanlp</artifactId>
+        <version>portable-1.2.9</version>
+    </dependency> -->
+
+    <!-- Stanford Parser -->
+    <!-- https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-parser -->
+    <dependency>
+      <groupId>edu.stanford.nlp</groupId>
+      <artifactId>stanford-parser</artifactId>
+      <version>3.6.0</version>
+    </dependency>
+
+    <!-- <dependency>
+        <groupId>org.apache.jena</groupId>
+        <artifactId>jena-core</artifactId>
+        <version>3.1.1</version>
+    </dependency>
+    https://mvnrepository.com/artifact/org.apache.jena/jena-arq
+    <dependency>
+        <groupId>org.apache.jena</groupId>
+        <artifactId>jena-arq</artifactId>
+        <version>3.1.1</version>
+    </dependency> -->
   </dependencies>
   <artifactId>answer</artifactId>
 </project>

@@ -9,14 +9,14 @@ import cn.lcy.knowledge.analysis.sem.model.PolysemantNamedEntity;
  * @github https://github.com/YueHub
  */
 public class KnowledgeGraphNodeVO implements java.io.Serializable {
-	
+
 	/**
 	 *  default serial version ID
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	/**
-	 * 连接线顺序 
+	 * 连接线顺序
 	 */
 	private Integer id;
 
@@ -24,27 +24,27 @@ public class KnowledgeGraphNodeVO implements java.io.Serializable {
 	 * 结点名称
 	 */
 	private String name;
-	
+
 	/**
 	 * 结点形状
 	 */
 	private String shape;
-	
+
 	/**
 	 * 结点颜色
 	 */
 	private String color;
-	
+
 	/**
 	 * 结点大小
 	 */
 	private Double size;
 
 	/**
-	 * 
+	 *
 	 */
 	private Integer alpha;
-	
+
 	private List<PolysemantNamedEntity> polysemantNamedEntities;
 
   public Integer getId() {
@@ -86,7 +86,7 @@ public class KnowledgeGraphNodeVO implements java.io.Serializable {
 	public void setSize(Double size) {
 		this.size = size;
 	}
-	
+
 	public Integer getAlpha() {
 		return alpha;
 	}
@@ -103,4 +103,17 @@ public class KnowledgeGraphNodeVO implements java.io.Serializable {
 			List<PolysemantNamedEntity> polysemantNamedEntities) {
 		this.polysemantNamedEntities = polysemantNamedEntities;
 	}
+
+  @Override
+  public String toString() {
+    return "KnowledgeGraphNodeVO{" +
+      "id=" + id +
+      ", name='" + name + '\'' +
+      ", shape='" + shape + '\'' +
+      ", color='" + color + '\'' +
+      ", size=" + size +
+      ", alpha=" + alpha +
+      ", polysemantNamedEntities=" + polysemantNamedEntities +
+      '}';
+  }
 }

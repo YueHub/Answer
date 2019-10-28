@@ -12,28 +12,28 @@ import cn.lcy.knowledge.analysis.sem.model.QueryResult;
  * @github https://github.com/YueHub
  */
 public class PolysemantSituationVO implements java.io.Serializable {
-	
+
 	/**
 	 *  default serial version ID
 	 */
 	private static final long serialVersionUID = 1L;
 
 	private PolysemantStatement polysemantStatement;
-	
+
 	private List<AnswerStatement> semanticStatements;
-	
+
 	private List<PolysemantNamedEntity> activePolysemantNamedEntities;
-	
+
 	private List<AnswerStatement> individualsDisambiguationStatements;
-	
+
 	private List<AnswerStatement> predicateDisambiguationStatements;
-	
+
 	private List<AnswerStatement> queryStatements;
-	
+
 	private List<String> sparqls;
-	
+
 	private List<QueryResult> queryResults;
-	
+
 	public PolysemantStatement getPolysemantStatement() {
 		return polysemantStatement;
 	}
@@ -49,7 +49,7 @@ public class PolysemantSituationVO implements java.io.Serializable {
 	public void setSemanticStatements(List<AnswerStatement> semanticStatements) {
 		this.semanticStatements = semanticStatements;
 	}
-	
+
 	public List<PolysemantNamedEntity> getActivePolysemantNamedEntities() {
 		return activePolysemantNamedEntities;
 	}
@@ -100,4 +100,18 @@ public class PolysemantSituationVO implements java.io.Serializable {
 	public void setQueryResults(List<QueryResult> queryResults) {
 		this.queryResults = queryResults;
 	}
+
+  @Override
+  public String toString() {
+    return "PolysemantSituationVO{" +
+      "polysemantStatement=" + polysemantStatement +
+      ", semanticStatements=" + semanticStatements +
+      ", activePolysemantNamedEntities=" + activePolysemantNamedEntities +
+      ", individualsDisambiguationStatements=" + individualsDisambiguationStatements +
+      ", predicateDisambiguationStatements=" + predicateDisambiguationStatements +
+      ", queryStatements=" + queryStatements +
+      ", sparqls=" + sparqls +
+      ", queryResults=" + queryResults +
+      '}';
+  }
 }

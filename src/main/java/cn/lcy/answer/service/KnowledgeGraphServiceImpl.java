@@ -21,18 +21,18 @@ import cn.lcy.knowledge.analysis.util.StringHandle;
 public class KnowledgeGraphServiceImpl implements KnowledgeGraphService {
 
 	private volatile static KnowledgeGraphService singleInstance;
-	
+
 	private static QueryDAOI queryDAO;
-	
+
 	static {
 		queryDAO = QueryDAOImpl.getInstance();
 	}
-	
+
 	/**
 	 * 私有化构造方法，实现单例模式
 	 */
 	private KnowledgeGraphServiceImpl() {}
-	
+
 	public static KnowledgeGraphService getInstance() {
 		if (singleInstance == null) {
 			synchronized (KnowledgeGraphServiceImpl.class) {
@@ -43,28 +43,28 @@ public class KnowledgeGraphServiceImpl implements KnowledgeGraphService {
 		}
 		return singleInstance;
 	}
-	
-	
+
+
 
 	@Override
 	public List<KnowledgeGraphVO> getKnowledgeGraphVO(List<PolysemantNamedEntity> polysemantNamedEntities) {
-		List<KnowledgeGraphVO> knowledgeGraphVOs = new ArrayList<KnowledgeGraphVO>();
-		int subjectID = 0;
-		int objectID = 0;
+		List<KnowledgeGraphVO> knowledgeGraphVos = new ArrayList<KnowledgeGraphVO>();
+		int subjectId = 0;
+		int objectId = 0;
 		for (PolysemantNamedEntity polysemantNameEntity : polysemantNamedEntities) {
 			KnowledgeGraphVO knowledgeGraphVO = new KnowledgeGraphVO();
 			// 先查询其等价实体 避免搜索星爷时 无法正确返回其属性
-			String sameEntityUUID = null;
+			String sameEntityUuid = null;
 			/* 如果该实体为实体别名 */
 			if ("0".equals(polysemantNameEntity.getIsAliases())) {
-				sameEntityUUID = queryDAO.querySameIndividual(polysemantNameEntity.getUUID());
+        sameEntityUuid = queryDAO.querySameIndividual(polysemantNameEntity.getUUID());
 			}
-			
+
 			// 得到等价实体名
-			String entityUUID = sameEntityUUID == null ? polysemantNameEntity.getUUID() : sameEntityUUID;
-			
+			String entityUuid = sameEntityUuid == null ? polysemantNameEntity.getUUID() : sameEntityUuid;
+
 			// StmtIterator propertyStatements = queryDAO.queryIndividualProperties(polysemantNameEntity.getUUID())
-			List<Statement> propertyStatements = queryDAO.queryIndividualMainProperties(entityUUID);
+			List<Statement> propertyStatements = queryDAO.queryIndividualMainProperties(entityUuid);
 			List<PolysemantNamedEntity> subjectPolysemantNamedEntities = new ArrayList<PolysemantNamedEntity>();
 			// 控制前端的结点个数 20
 			int count = 0;
@@ -74,7 +74,7 @@ public class KnowledgeGraphServiceImpl implements KnowledgeGraphService {
 					KnowledgeGraphNodeVO subject = new KnowledgeGraphNodeVO();
 					KnowledgeGraphNodeVO predicate = new KnowledgeGraphNodeVO();
 					KnowledgeGraphNodeVO object = new KnowledgeGraphNodeVO();
-					subject.setId(subjectID);
+					subject.setId(subjectId);
 					subject.setName(polysemantNameEntity.getOntClass() + ":" + polysemantNameEntity.getEntityName());
 					subject.setShape("dot");
 					subject.setColor("red");
@@ -93,11 +93,11 @@ public class KnowledgeGraphServiceImpl implements KnowledgeGraphService {
 					predicate.setColor("green");
 					predicate.setSize(Double.valueOf(15));
 					predicate.setAlpha(1);
-					
+
 					// 是否为文本（以此标识区分对象属性和数据属性）
 					if (!"type".equals(predicateName) && !"有picSrc".equals(predicateName)) {
 						if (objectNode.isLiteral()) {
-							object.setId(objectID);
+							object.setId(objectId);
 							object.setName(objectNode.toString());
 							// 数据属性为矩形
 							object.setShape("rect");
@@ -105,7 +105,7 @@ public class KnowledgeGraphServiceImpl implements KnowledgeGraphService {
 							// TODO alpha为0表示不可见 1表示可见
 							object.setAlpha(1);
 						} else {
-							object.setId(objectID);
+							object.setId(objectId);
 							String[] objectNodeValueArr = objectNode.toString().split("#");
 							String objectNodeValue = null;
 							if (objectNodeValueArr.length > 1) {
@@ -137,14 +137,14 @@ public class KnowledgeGraphServiceImpl implements KnowledgeGraphService {
 						knowledgeGraphStatementVO.setPredicate(predicate);
 						knowledgeGraphStatementVO.setObject(object);
 						knowledgeGraphVO.getKnowledgeGraphStatements().add(knowledgeGraphStatementVO);
-						++subjectID;
-						++objectID;
+						++subjectId;
+						++objectId;
 					}
 				}
 				++count;
 			}
-			knowledgeGraphVOs.add(knowledgeGraphVO);
+      knowledgeGraphVos.add(knowledgeGraphVO);
 		}
-		return knowledgeGraphVOs;
+		return knowledgeGraphVos;
 	}
 }

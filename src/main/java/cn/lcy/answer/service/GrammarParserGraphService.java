@@ -12,9 +12,9 @@ public interface GrammarParserGraphService {
 
 	/**
 	 * 获取依赖图
-	 * @param coNLLsentence
+	 * @param cONllSentence
 	 * @return
 	 */
-	DependencyVO getDependencyGraphVO(CoNLLSentence coNLLsentence);
-	
+	DependencyVO getDependencyGraphVO(CoNLLSentence cONllSentence);
+
 }
