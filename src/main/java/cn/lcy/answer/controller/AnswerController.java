@@ -227,7 +227,7 @@ public class AnswerController {
     if (polysemantNamedEntities != null) {
       knowledgeGraphVOs = knowledgeGraphService.getKnowledgeGraphVO(polysemantNamedEntities);
     }
-    answerResultVO.setKnowledgeGraphVOs(knowledgeGraphVOs);
+    answerResultVO.setKnowledgeGraphVos(knowledgeGraphVOs);
 
     return answerResultVO;
   }
