@@ -9,28 +9,28 @@ import java.util.List;
  */
 public class DependencyVO implements java.io.Serializable {
 
-	/**
-	 *  default serial version ID
-	 */
-	private static final long serialVersionUID = 1L;
+    /**
+     * default serial version ID
+     */
+    private static final long serialVersionUID = 1L;
 
-	/**
-	 * 依存关系的弧线集合
-	 */
-	private List<DependencyNode> dependencyNodes = new ArrayList<DependencyNode>();
+    /**
+     * 依存关系的弧线集合
+     */
+    private List<DependencyNode> dependencyNodes = new ArrayList<DependencyNode>();
 
-	public List<DependencyNode> getDependencyNodes() {
-		return dependencyNodes;
-	}
+    public List<DependencyNode> getDependencyNodes() {
+        return dependencyNodes;
+    }
 
-	public void setDependencyNodes(List<DependencyNode> dependencyNodes) {
-		this.dependencyNodes = dependencyNodes;
-	}
+    public void setDependencyNodes(List<DependencyNode> dependencyNodes) {
+        this.dependencyNodes = dependencyNodes;
+    }
 
-  @Override
-  public String toString() {
-    return "DependencyVO{" +
-      "dependencyNodes=" + dependencyNodes +
-      '}';
-  }
+    @Override
+    public String toString() {
+        return "DependencyVO{" +
+                "dependencyNodes=" + dependencyNodes +
+                '}';
+    }
 }

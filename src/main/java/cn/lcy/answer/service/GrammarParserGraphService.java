@@ -10,11 +10,12 @@ import cn.lcy.answer.vo.DependencyVO;
  */
 public interface GrammarParserGraphService {
 
-	/**
-	 * 获取依赖图
-	 * @param cONllSentence
-	 * @return
-	 */
-	DependencyVO getDependencyGraphVO(CoNLLSentence cONllSentence);
+    /**
+     * 获取依赖图
+     *
+     * @param cONllSentence
+     * @return
+     */
+    DependencyVO getDependencyGraphVO(CoNLLSentence cONllSentence);
 
 }

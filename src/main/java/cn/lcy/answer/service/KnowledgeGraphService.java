@@ -11,12 +11,13 @@ import cn.lcy.knowledge.analysis.sem.model.PolysemantNamedEntity;
  */
 public interface KnowledgeGraphService {
 
-	/**
-	 * 获取命名实体的知识图谱
-	 * @param polysemantEntities
-	 * @return
-	 */
-	List<KnowledgeGraphVO> getKnowledgeGraphVO(List<PolysemantNamedEntity> polysemantEntities);
-	
-	
+    /**
+     * 获取命名实体的知识图谱
+     *
+     * @param polysemantEntities
+     * @return
+     */
+    List<KnowledgeGraphVO> getKnowledgeGraphVO(List<PolysemantNamedEntity> polysemantEntities);
+
+
 }

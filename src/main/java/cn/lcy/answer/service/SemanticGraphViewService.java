@@ -10,13 +10,14 @@ import cn.lcy.knowledge.analysis.sem.model.AnswerStatement;
  * @github https://github.com/YueHub
  */
 public interface SemanticGraphViewService {
-	
-	/**
-	 * 获取语义图 便于前端显示
-	 * @param queryStatements
-	 * @return
-	 */
-	SemanticGraphVO getSemanticGraphVO(List<AnswerStatement> queryStatements);
-	
-	
+
+    /**
+     * 获取语义图 便于前端显示
+     *
+     * @param queryStatements
+     * @return
+     */
+    SemanticGraphVO getSemanticGraphVO(List<AnswerStatement> queryStatements);
+
+
 }

@@ -14,106 +14,109 @@ import java.util.List;
  * @github https://github.com/YueHub
  */
 public class FileIOUtil {
-	
-	/**
-	 * 向某一个文件追加内容（单个字符串）
-	 * @param filePath
-	 * @param appendContent
-	 * @return
-	 */
-	public static boolean appendContent(String filePath, String appendContent) {
-		// 随机文件访问对象
-		RandomAccessFile randomFile = null;
-		try {
-			// 打开一个随机访问文件流，按读写方式     
-			randomFile = new RandomAccessFile(filePath, "rw");     
-	        // 文件长度，字节数
-	        long fileLength = randomFile.length();
-			// TODO 测试阶段为覆盖写入
-			//long fileLength = 0;
-	        // 将写文件指针移到文件尾
-	        randomFile.seek(fileLength);
-	        // 追加内容
-        	String content = new String(appendContent.getBytes("UTF-8"),"ISO8859_1");
-        	randomFile.writeBytes(content);
-	        randomFile.writeBytes("\r\n");
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			if(randomFile != null) {
-				try {
-					randomFile.close();
-				} catch(IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-		return true;
-	}
-	
-	/**
-	 * 向某一个文件追加内容（字符串列表）
-	 * @return
-	 */
-	public static boolean appendContent(String filePath, List<String> appendContents) {
-		// 随机文件访问对象
-		RandomAccessFile randomFile = null;
-		try {
-			// 打开一个随机访问文件流，按读写方式     
-			randomFile = new RandomAccessFile(filePath, "rw");     
-	        // 文件长度，字节数
-	        long fileLength = randomFile.length();
-			// TODO 测试阶段为覆盖写入
-			//long fileLength = 0;
-	        // 将写文件指针移到文件尾
-	        randomFile.seek(fileLength);
-	        // 追加内容
-	        for(String appendContent : appendContents) {
-	        	System.out.println("appendContent"+appendContent);
-	        	String content = new String(appendContent.getBytes("UTF-8"),"ISO8859_1");
-	        	randomFile.writeBytes(content);
-	        	
-		        randomFile.writeBytes("\r\n");
-	        }
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			if(randomFile != null) {
-				try {
-					randomFile.close();
-				} catch(IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-		return true;
-	}
 
-	/**
-	 * 修改文件某一行内容
-	 * @param filePath
-	 * @param rowNum
-	 * @param rowUpdate
-	 * @return
-	 */
-	public static boolean updateContent(String filePath, Long rowNum, String rowUpdate) {
-		int count = 0;
-        String row = null;
-         
+    /**
+     * 向某一个文件追加内容（单个字符串）
+     *
+     * @param filePath
+     * @param appendContent
+     * @return
+     */
+    public static boolean appendContent(String filePath, String appendContent) {
+        // 随机文件访问对象
+        RandomAccessFile randomFile = null;
         try {
-			// 源文件
+            // 打开一个随机访问文件流，按读写方式
+            randomFile = new RandomAccessFile(filePath, "rw");
+            // 文件长度，字节数
+            long fileLength = randomFile.length();
+            // TODO 测试阶段为覆盖写入
+            //long fileLength = 0;
+            // 将写文件指针移到文件尾
+            randomFile.seek(fileLength);
+            // 追加内容
+            String content = new String(appendContent.getBytes("UTF-8"), "ISO8859_1");
+            randomFile.writeBytes(content);
+            randomFile.writeBytes("\r\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (randomFile != null) {
+                try {
+                    randomFile.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 向某一个文件追加内容（字符串列表）
+     *
+     * @return
+     */
+    public static boolean appendContent(String filePath, List<String> appendContents) {
+        // 随机文件访问对象
+        RandomAccessFile randomFile = null;
+        try {
+            // 打开一个随机访问文件流，按读写方式
+            randomFile = new RandomAccessFile(filePath, "rw");
+            // 文件长度，字节数
+            long fileLength = randomFile.length();
+            // TODO 测试阶段为覆盖写入
+            //long fileLength = 0;
+            // 将写文件指针移到文件尾
+            randomFile.seek(fileLength);
+            // 追加内容
+            for (String appendContent : appendContents) {
+                System.out.println("appendContent" + appendContent);
+                String content = new String(appendContent.getBytes("UTF-8"), "ISO8859_1");
+                randomFile.writeBytes(content);
+
+                randomFile.writeBytes("\r\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (randomFile != null) {
+                try {
+                    randomFile.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 修改文件某一行内容
+     *
+     * @param filePath
+     * @param rowNum
+     * @param rowUpdate
+     * @return
+     */
+    public static boolean updateContent(String filePath, Long rowNum, String rowUpdate) {
+        int count = 0;
+        String row = null;
+
+        try {
+            // 源文件
             FileReader fileReader = new FileReader(filePath);
             BufferedReader in = new BufferedReader(fileReader);
-			// 缓存文件
+            // 缓存文件
             FileWriter fileWriter = new FileWriter(filePath + ".temp");
             PrintWriter pw = new PrintWriter(fileWriter);
-            while((row = in.readLine()) != null){
+            while ((row = in.readLine()) != null) {
                 count++;
-                if(count == rowNum){
-                	row = rowUpdate;
+                if (count == rowNum) {
+                    row = rowUpdate;
                     pw.println(row);
                     pw.flush();
-                }else{
+                } else {
                     pw.println(row);
                     pw.flush();
                 }
@@ -126,7 +129,7 @@ public class FileIOUtil {
             BufferedReader i = new BufferedReader(f);
             FileWriter w = new FileWriter(filePath);
             PrintWriter p = new PrintWriter(w);
-            while((row = i.readLine()) != null){
+            while ((row = i.readLine()) != null) {
                 p.println(row);
                 p.flush();
             }
