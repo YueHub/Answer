@@ -5,8 +5,8 @@ package cn.lcy.answer.enums;
  * @github https://github.com/YueHub
  */
 public enum AnswerTypeEnum {
-	// 表格
-	TABLE,
-	// 字符串
-	STRING,
+    // 表格
+    TABLE,
+    // 字符串
+    STRING,
 }

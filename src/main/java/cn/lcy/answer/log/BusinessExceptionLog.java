@@ -5,5 +5,5 @@ package cn.lcy.answer.log;
  * @github https://github.com/YueHub
  */
 public class BusinessExceptionLog extends Log {
-	
+
 }

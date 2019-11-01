@@ -8,20 +8,20 @@ import java.util.List;
  */
 public class ShortAnswerVO {
 
-	private List<PolysemantSituationVO> polysemantSituationVOs;
+    private List<PolysemantSituationVO> polysemantSituationVOs;
 
-	public List<PolysemantSituationVO> getPolysemantSituationVOs() {
-		return polysemantSituationVOs;
-	}
+    public List<PolysemantSituationVO> getPolysemantSituationVOs() {
+        return polysemantSituationVOs;
+    }
 
-	public void setPolysemantSituationVOs(List<PolysemantSituationVO> polysemantSituationVOs) {
-		this.polysemantSituationVOs = polysemantSituationVOs;
-	}
+    public void setPolysemantSituationVOs(List<PolysemantSituationVO> polysemantSituationVOs) {
+        this.polysemantSituationVOs = polysemantSituationVOs;
+    }
 
-  @Override
-  public String toString() {
-    return "ShortAnswerVO{" +
-      "polysemantSituationVOs=" + polysemantSituationVOs +
-      '}';
-  }
+    @Override
+    public String toString() {
+        return "ShortAnswerVO{" +
+                "polysemantSituationVOs=" + polysemantSituationVOs +
+                '}';
+    }
 }
