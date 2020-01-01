@@ -92,68 +92,17 @@ public class AnswerController {
             // 第六步：实体消岐 - 实体别名
             List<AnswerStatement> individualsDisambiguationStatements = queryService
                     .individualsDisambiguation(polysemantStatement.getAnswerStatements());
-            List<AnswerStatement> individualsDisambiguationStatementsNew = new ArrayList<AnswerStatement>();
-            for (AnswerStatement answerStatement : individualsDisambiguationStatements) {
-                Word subject = answerStatement.getSubject();
-                Word predicate = answerStatement.getPredicate();
-                Word object = answerStatement.getObject();
-                Word subjectNew = new Word();
-                Word predicateNew = new Word();
-                Word objectNew = new Word();
-                BeanUtils.copyProperties(subject, subjectNew);
-                BeanUtils.copyProperties(predicate, predicateNew);
-                BeanUtils.copyProperties(object, objectNew);
-                AnswerStatement answerStatementNew = new AnswerStatement();
-                answerStatementNew.setSubject(subjectNew);
-                answerStatementNew.setPredicate(predicateNew);
-                answerStatementNew.setObject(objectNew);
-                individualsDisambiguationStatementsNew.add(answerStatementNew);
-            }
 
             // 第七步：谓语消岐
             List<AnswerStatement> predicateDisambiguationStatements = queryService
-                    .predicateDisambiguation(individualsDisambiguationStatementsNew);
-            List<AnswerStatement> predicateDisambiguationStatementsNew = new ArrayList<AnswerStatement>();
-            for (AnswerStatement answerStatement : predicateDisambiguationStatements) {
-                Word subject = answerStatement.getSubject();
-                Word predicate = answerStatement.getPredicate();
-                Word object = answerStatement.getObject();
-                Word subjectNew = new Word();
-                Word predicateNew = new Word();
-                Word objectNew = new Word();
-                BeanUtils.copyProperties(subject, subjectNew);
-                BeanUtils.copyProperties(predicate, predicateNew);
-                BeanUtils.copyProperties(object, objectNew);
-                AnswerStatement answerStatementNew = new AnswerStatement();
-                answerStatementNew.setSubject(subjectNew);
-                answerStatementNew.setPredicate(predicateNew);
-                answerStatementNew.setObject(objectNew);
-                predicateDisambiguationStatementsNew.add(answerStatementNew);
-            }
+                    .predicateDisambiguation(individualsDisambiguationStatements);
 
             // 第八步：构造用于 Jena 查询的断言
             List<AnswerStatement> queryStatements = queryService
-                    .createQueryStatements(predicateDisambiguationStatementsNew);
-            List<AnswerStatement> queryStatementsNew = new ArrayList<AnswerStatement>();
-            for (AnswerStatement answerStatement : queryStatements) {
-                Word subject = answerStatement.getSubject();
-                Word predicate = answerStatement.getPredicate();
-                Word object = answerStatement.getObject();
-                Word subjectNew = new Word();
-                Word predicateNew = new Word();
-                Word objectNew = new Word();
-                BeanUtils.copyProperties(subject, subjectNew);
-                BeanUtils.copyProperties(predicate, predicateNew);
-                BeanUtils.copyProperties(object, objectNew);
-                AnswerStatement answerStatementNew = new AnswerStatement();
-                answerStatementNew.setSubject(subjectNew);
-                answerStatementNew.setPredicate(predicateNew);
-                answerStatementNew.setObject(objectNew);
-                queryStatementsNew.add(answerStatementNew);
-            }
+                    .createQueryStatements(predicateDisambiguationStatements);
 
             // 第九步：根据查询断言构建查询语句
-            List<String> sparqls = queryService.createSparqls(queryStatementsNew);
+            List<String> sparqls = queryService.createSparqls(queryStatements);
             List<QueryResult> queryResults = new ArrayList<QueryResult>();
             for (String sparql : sparqls) {
                 // 执行查询语句
